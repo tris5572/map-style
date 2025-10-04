@@ -1912,7 +1912,7 @@
       "source": "openmaptiles",
       "source-layer": "boundary",
       "filter": ["all", ["in", "admin_level", 2, 4], ["==", "maritime", 1]],
-      "layout": { "line-cap": "round", "line-join": "round" },
+      "layout": { "line-cap": "round", "line-join": "round", "visibility": "none" },
       "paint": {
         "line-color": "rgba(154, 189, 214, 1)",
         "line-opacity": {
