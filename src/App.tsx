@@ -9,7 +9,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import "./App.css";
 import * as mapStyleJson from "../public/styles/light.json";
 
-function App() {
+export function App() {
   return (
     <div id="map">
       <Map
@@ -29,5 +29,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
