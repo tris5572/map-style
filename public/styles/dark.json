@@ -30,7 +30,7 @@
   "sprite": "https://tile.openstreetmap.jp/styles/osm-bright-ja/sprite",
   "glyphs": "https://mierune.github.io/fonts/{fontstack}/{range}.pbf",
   "layers": [
-    { "id": "background", "type": "background", "paint": { "background-color": "#f8f4f0" } },
+    { "id": "background", "type": "background", "paint": { "background-color": "hsl(200 10% 15%)" } },
     {
       "id": "landcover-glacier",
       "type": "fill",
@@ -61,8 +61,8 @@
         "fill-color": {
           "base": 1,
           "stops": [
-            [12, "hsla(30, 19%, 90%, 0.4)"],
-            [16, "hsla(30, 19%, 90%, 0.2)"]
+            [12, "hsl(30 19% 50% / 0.4)"],
+            [16, "hsl(30 19% 50% / 0.2)"]
           ]
         }
       }
@@ -83,7 +83,7 @@
       "source": "openmaptiles",
       "source-layer": "landuse",
       "filter": ["all", ["==", "$type", "Polygon"], ["==", "class", "industrial"]],
-      "paint": { "fill-color": "hsla(49, 100%, 88%, 0.34)" }
+      "paint": { "fill-color": "hsl(60 100% 50% / 5%)" }
     },
     {
       "id": "landuse-cemetery",
@@ -306,7 +306,7 @@
       "filter": ["==", "$type", "Polygon"],
       "layout": { "visibility": "visible" },
       "paint": {
-        "fill-color": "#a0c8f0",
+        "fill-color": "hsl(200 0% 0%)",
         "fill-opacity": 1,
         "fill-translate": {
           "base": 1,
@@ -325,7 +325,7 @@
       "source-layer": "water",
       "filter": ["all", ["!=", "intermittent", 1]],
       "layout": { "visibility": "visible" },
-      "paint": { "fill-color": "hsl(210, 67%, 85%)" }
+      "paint": { "fill-color": "hsl(200 0% 0%)" }
     },
     {
       "id": "water-intermittent",
@@ -1972,8 +1972,8 @@
         "text-size": 14
       },
       "paint": {
-        "text-color": "#74aee9",
-        "text-halo-color": "rgba(255,255,255,0.7)",
+        "text-color": "hsl(200 0% 40%)",
+        "text-halo-color": "hsla(200 0% 50% / 30%)",
         "text-halo-width": 1.5
       }
     },
@@ -1994,8 +1994,8 @@
         "text-size": 14
       },
       "paint": {
-        "text-color": "#74aee9",
-        "text-halo-color": "rgba(255,255,255,0.7)",
+        "text-color": "hsl(200 0% 40%)",
+        "text-halo-color": "hsla(200 0% 50% / 30%)",
         "text-halo-width": 1.5
       }
     },
@@ -2022,8 +2022,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#74aee9",
-        "text-halo-color": "rgba(255,255,255,0.7)",
+        "text-color": "hsl(200 0% 40%)",
+        "text-halo-color": "hsla(200 0% 50% / 30%)",
         "text-halo-width": 1.5
       }
     },
