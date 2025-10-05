@@ -1853,14 +1853,14 @@
       "filter": ["all", [">=", "admin_level", 4], ["<=", "admin_level", 8], ["!=", "maritime", 1]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "#9e9cab",
+        "line-color": "hsl(0, 0%, 70%)",
         "line-dasharray": [3, 1, 1, 1],
         "line-width": {
           "base": 1.4,
           "stops": [
             [4, 0.4],
             [5, 1],
-            [12, 3]
+            [12, 2]
           ]
         }
       }
