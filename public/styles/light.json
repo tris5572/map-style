@@ -1851,7 +1851,7 @@
       "source": "openmaptiles",
       "source-layer": "boundary",
       "filter": ["all", [">=", "admin_level", 4], ["<=", "admin_level", 8], ["!=", "maritime", 1]],
-      "layout": { "line-join": "round" },
+      "layout": { "line-join": "round", "visibility": "none" },
       "paint": {
         "line-color": "hsl(0, 0%, 70%)",
         "line-dasharray": [3, 1, 1, 1],
