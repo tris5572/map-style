@@ -387,8 +387,8 @@
         "fill-color": {
           "base": 1,
           "stops": [
-            [15.5, "#f2eae2"],
-            [16, "#dfdbd7"]
+            [15.5, "hsl(40 10% 20%)"],
+            [16, "hsl(40 10% 10%)"]
           ]
         }
       }
@@ -401,7 +401,7 @@
       "source-layer": "building",
       "layout": { "visibility": "visible" },
       "paint": {
-        "fill-color": "#f2eae2",
+        "fill-color": "hsl(40 10% 20%)",
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -409,7 +409,7 @@
             [16, 1]
           ]
         },
-        "fill-outline-color": "#dfdbd7",
+        "fill-outline-color": "hsl(40 10% 10%)",
         "fill-translate": {
           "base": 1,
           "stops": [
