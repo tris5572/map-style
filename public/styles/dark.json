@@ -449,7 +449,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["==", "class", "minor"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "#cfcdca",
+        "line-color": "hsl(200 10% 35%)",
         "line-opacity": {
           "stops": [
             [12, 0],
@@ -468,15 +468,35 @@
       }
     },
     {
-      "id": "tunnel-secondary-tertiary-casing",
+      "id": "tunnel-tertiary-casing",
       "type": "line",
       "metadata": { "mapbox:group": "1444849354174.1904" },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "secondary", "tertiary"]],
+      "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "tertiary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(50, 100%, 40%)",
+        "line-color": "hsl(50 20% 50%)",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [8, 1.5],
+            [20, 17]
+          ]
+        }
+      }
+    },
+    {
+      "id": "tunnel-secondary-casing",
+      "type": "line",
+      "metadata": { "mapbox:group": "1444849354174.1904" },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "tertiary"]],
+      "layout": { "line-join": "round" },
+      "paint": {
+        "line-color": "hsl(50 20% 50%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -496,7 +516,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "primary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(50, 100%, 40%)",
+        "line-color": "hsl(50 20% 50%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -517,7 +537,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "trunk"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(30, 100%, 70%)",
+        "line-color": "hsl(30 20% 50%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -599,7 +619,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["==", "class", "minor_road"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "#fff",
+        "line-color": "hsl(200 5% 10%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -620,7 +640,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "tertiary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(60, 80%, 99%)",
+        "line-color": "hsl(60 20% 30%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -640,7 +660,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "secondary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(55, 100%, 98%)",
+        "line-color": "hsl(55 20% 10%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -660,7 +680,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "primary", "trunk"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(30, 100%, 90%)",
+        "line-color": "hsl(30 20% 10%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -680,7 +700,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "primary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(50, 100%, 80%)",
+        "line-color": "hsl(50 20% 10%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -967,7 +987,7 @@
       ],
       "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
-        "line-color": "#cfcdca",
+        "line-color": "hsl(200 10% 35%)",
         "line-opacity": {
           "stops": [
             [12, 0],
@@ -994,7 +1014,7 @@
       "filter": ["all", ["!in", "brunnel", "bridge", "tunnel"], ["in", "class", "tertiary"]],
       "layout": { "line-cap": "butt", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(50, 100%, 40%)",
+        "line-color": "hsl(50 20% 50%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -1014,7 +1034,7 @@
       "filter": ["all", ["!in", "brunnel", "bridge", "tunnel"], ["in", "class", "secondary"]],
       "layout": { "line-cap": "butt", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(50, 100%, 40%)",
+        "line-color": "hsl(50 20% 50%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -1035,7 +1055,7 @@
       "filter": ["all", ["!in", "brunnel", "bridge", "tunnel"], ["in", "class", "primary"]],
       "layout": { "line-cap": "butt", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(50, 100%, 40%)",
+        "line-color": "hsl(50 20% 50%)",
         "line-opacity": {
           "stops": [
             [7, 0],
@@ -1063,7 +1083,7 @@
       "filter": ["all", ["!in", "brunnel", "bridge", "tunnel"], ["in", "class", "trunk"]],
       "layout": { "line-cap": "butt", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(30, 100%, 50%)",
+        "line-color": "hsl(30 20% 50%)",
         "line-opacity": {
           "stops": [
             [5, 0],
@@ -1194,7 +1214,7 @@
       ],
       "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
-        "line-color": "#fff",
+        "line-color": "hsl(200 5% 30%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -1215,7 +1235,7 @@
       "filter": ["all", ["!in", "brunnel", "bridge", "tunnel"], ["in", "class", "tertiary"]],
       "layout": { "line-cap": "round", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(60, 80%, 95%)",
+        "line-color": "hsl(60 20% 30%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1235,7 +1255,7 @@
       "filter": ["all", ["!in", "brunnel", "bridge", "tunnel"], ["in", "class", "secondary"]],
       "layout": { "line-cap": "round", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(55, 100%, 80%)",
+        "line-color": "hsl(55 20% 30%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1259,7 +1279,7 @@
       ],
       "layout": { "line-cap": "round", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(50, 100%, 60%)",
+        "line-color": "hsl(50 20% 30%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1283,7 +1303,7 @@
       ],
       "layout": { "line-cap": "round", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(30, 100%, 80%)",
+        "line-color": "hsl(30 20% 30%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1502,15 +1522,35 @@
       }
     },
     {
-      "id": "bridge-secondary-tertiary-casing",
+      "id": "bridge-tertiary-casing",
       "type": "line",
       "metadata": { "mapbox:group": "1444849334699.1902" },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "secondary", "tertiary"]],
+      "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "tertiary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(50, 100%, 40%)",
+        "line-color": "hsl(60 20% 30%)",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [8, 1.5],
+            [20, 28]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-secondary-casing",
+      "type": "line",
+      "metadata": { "mapbox:group": "1444849334699.1902" },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "secondary"]],
+      "layout": { "line-join": "round" },
+      "paint": {
+        "line-color": "hsl(50 20% 50%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -1530,7 +1570,7 @@
       "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "trunk"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(30, 100%, 80%)",
+        "line-color": "hsl(30 20% 50%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1551,7 +1591,7 @@
       "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "primary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(50, 100%, 40%)",
+        "line-color": "hsl(50 20% 50%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1676,7 +1716,7 @@
       "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "tertiary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(60, 80%, 95%)",
+        "line-color": "hsl(60 20% 30%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1696,7 +1736,7 @@
       "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "secondary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(55, 100%, 80%)",
+        "line-color": "hsl(55 20% 30%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1716,7 +1756,7 @@
       "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "trunk"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(30, 100%, 80%)",
+        "line-color": "hsl(30 20% 30%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1736,7 +1776,7 @@
       "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "primary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(50, 100%, 60%)",
+        "line-color": "hsl(50 20% 30%)",
         "line-width": {
           "base": 1.2,
           "stops": [
