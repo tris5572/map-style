@@ -136,7 +136,7 @@
             [9, true]
           ]
         },
-        "fill-color": "#6a4",
+        "fill-color": "hsl(110 20% 50%)",
         "fill-opacity": 0.1,
         "fill-outline-color": "hsla(0, 0%, 0%, 0.03)"
       }
@@ -148,7 +148,7 @@
       "source": "openmaptiles",
       "source-layer": "landcover",
       "filter": ["==", "class", "grass"],
-      "paint": { "fill-color": "#d8e8c8", "fill-opacity": 1 }
+      "paint": { "fill-color": "hsl(110 20% 15%)", "fill-opacity": 1 }
     },
     {
       "id": "landcover-grass-park",
@@ -157,7 +157,7 @@
       "source": "openmaptiles",
       "source-layer": "park",
       "filter": ["==", "class", "public_park"],
-      "paint": { "fill-color": "#d8e8c8", "fill-opacity": 0.8 }
+      "paint": { "fill-color": "hsl(110 20% 15%)", "fill-opacity": 1 }
     },
     {
       "id": "waterway_tunnel",
