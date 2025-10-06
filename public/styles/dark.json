@@ -74,7 +74,7 @@
       "source": "openmaptiles",
       "source-layer": "landuse",
       "filter": ["all", ["==", "$type", "Polygon"], ["==", "class", "commercial"]],
-      "paint": { "fill-color": "hsla(0, 60%, 87%, 0.23)" }
+      "paint": { "fill-color": "hsla(0 60% 87% / 0.23)" }
     },
     {
       "id": "landuse-industrial",
@@ -92,7 +92,7 @@
       "source": "openmaptiles",
       "source-layer": "landuse",
       "filter": ["==", "class", "cemetery"],
-      "paint": { "fill-color": "#e0e4dd" }
+      "paint": { "fill-color": "hsl(130 10% 15%)" }
     },
     {
       "id": "landuse-hospital",
@@ -101,7 +101,7 @@
       "source": "openmaptiles",
       "source-layer": "landuse",
       "filter": ["==", "class", "hospital"],
-      "paint": { "fill-color": "#fde" }
+      "paint": { "fill-color": "hsl(0 10% 15%)" }
     },
     {
       "id": "landuse-school",
@@ -110,7 +110,7 @@
       "source": "openmaptiles",
       "source-layer": "landuse",
       "filter": ["==", "class", "school"],
-      "paint": { "fill-color": "#f0e8f8" }
+      "paint": { "fill-color": "hsl(300 10% 15%)" }
     },
     {
       "id": "landuse-railway",
@@ -119,7 +119,7 @@
       "source": "openmaptiles",
       "source-layer": "landuse",
       "filter": ["==", "class", "railway"],
-      "paint": { "fill-color": "hsla(30, 19%, 90%, 0.4)" }
+      "paint": { "fill-color": "hsla(30, 10%, 10%, 0.4)" }
     },
     {
       "id": "landcover-wood",
