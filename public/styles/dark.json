@@ -374,7 +374,7 @@
       "source-layer": "landcover",
       "filter": ["all", ["==", "class", "sand"]],
       "layout": { "visibility": "visible" },
-      "paint": { "fill-color": "rgba(245, 238, 188, 1)", "fill-opacity": 1 }
+      "paint": { "fill-color": "hsl(60 20% 30%)", "fill-opacity": 1 }
     },
     {
       "id": "building",
@@ -774,7 +774,7 @@
       "filter": ["all", ["in", "class", "taxiway"]],
       "layout": { "line-cap": "round", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "rgba(153, 153, 153, 1)",
+        "line-color": "hsl(200 0% 20%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.5,
@@ -795,7 +795,7 @@
       "filter": ["all", ["in", "class", "runway"]],
       "layout": { "line-cap": "round", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "rgba(153, 153, 153, 1)",
+        "line-color": "hsl(200 0% 20%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.5,
@@ -816,7 +816,7 @@
       "filter": ["all", ["==", "$type", "Polygon"], ["in", "class", "runway", "taxiway"]],
       "layout": { "visibility": "visible" },
       "paint": {
-        "fill-color": "rgba(255, 255, 255, 1)",
+        "fill-color": "hsl(200 0% 30%)",
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -836,7 +836,7 @@
       "filter": ["all", ["in", "class", "taxiway"], ["==", "$type", "LineString"]],
       "layout": { "line-cap": "round", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1)",
+        "line-color": "hsl(200 0% 30%)",
         "line-opacity": {
           "base": 1,
           "stops": [
@@ -863,7 +863,7 @@
       "filter": ["all", ["in", "class", "runway"], ["==", "$type", "LineString"]],
       "layout": { "line-cap": "round", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1)",
+        "line-color": "hsl(200 0% 30%)",
         "line-opacity": {
           "base": 1,
           "stops": [
@@ -888,7 +888,7 @@
       "source-layer": "transportation",
       "filter": ["all", ["==", "$type", "Polygon"], ["==", "class", "pier"]],
       "layout": { "visibility": "visible" },
-      "paint": { "fill-antialias": true, "fill-color": "#f8f4f0" }
+      "paint": { "fill-antialias": true, "fill-color": "hsl(200 10% 10%)" }
     },
     {
       "id": "road_pier",
@@ -899,7 +899,7 @@
       "filter": ["all", ["==", "$type", "LineString"], ["in", "class", "pier"]],
       "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
-        "line-color": "#f8f4f0",
+        "line-color": "hsl(200 10% 10%)",
         "line-width": {
           "base": 1.2,
           "stops": [
