@@ -516,7 +516,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "primary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(50 20% 50%)",
+        "line-color": "hsl(50 20% 40%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -640,7 +640,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "tertiary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(60 20% 30%)",
+        "line-color": "hsl(60 20% 10%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1014,7 +1014,7 @@
       "filter": ["all", ["!in", "brunnel", "bridge", "tunnel"], ["in", "class", "tertiary"]],
       "layout": { "line-cap": "butt", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(50 20% 40%)",
+        "line-color": "hsl(50 20% 30%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -1034,7 +1034,7 @@
       "filter": ["all", ["!in", "brunnel", "bridge", "tunnel"], ["in", "class", "secondary"]],
       "layout": { "line-cap": "butt", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(50 20% 40%)",
+        "line-color": "hsl(50 20% 30%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -1055,7 +1055,7 @@
       "filter": ["all", ["!in", "brunnel", "bridge", "tunnel"], ["in", "class", "primary"]],
       "layout": { "line-cap": "butt", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(50 20% 50%)",
+        "line-color": "hsl(50 20% 30%)",
         "line-opacity": {
           "stops": [
             [7, 0],
@@ -1235,7 +1235,7 @@
       "filter": ["all", ["!in", "brunnel", "bridge", "tunnel"], ["in", "class", "tertiary"]],
       "layout": { "line-cap": "round", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(60 20% 30%)",
+        "line-color": "hsl(60 20% 20%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1255,7 +1255,7 @@
       "filter": ["all", ["!in", "brunnel", "bridge", "tunnel"], ["in", "class", "secondary"]],
       "layout": { "line-cap": "round", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(55 20% 30%)",
+        "line-color": "hsl(55 20% 20%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1279,7 +1279,7 @@
       ],
       "layout": { "line-cap": "round", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(50 20% 30%)",
+        "line-color": "hsl(50 20% 20%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1550,13 +1550,34 @@
       "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "secondary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(50 20% 50%)",
+        "line-color": "hsl(50 20% 30%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
           "stops": [
             [8, 1.5],
             [20, 28]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-primary-casing",
+      "type": "line",
+      "metadata": { "mapbox:group": "1444849334699.1902" },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "primary"]],
+      "layout": { "line-join": "round" },
+      "paint": {
+        "line-color": "hsl(50 20% 30%)",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [5, 0.4],
+            [6, 0.6],
+            [7, 1.5],
+            [20, 26]
           ]
         }
       }
@@ -1571,27 +1592,6 @@
       "layout": { "line-join": "round" },
       "paint": {
         "line-color": "hsl(30 20% 50%)",
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [5, 0.4],
-            [6, 0.6],
-            [7, 1.5],
-            [20, 26]
-          ]
-        }
-      }
-    },
-    {
-      "id": "bridge-primary-casing",
-      "type": "line",
-      "metadata": { "mapbox:group": "1444849334699.1902" },
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "primary"]],
-      "layout": { "line-join": "round" },
-      "paint": {
-        "line-color": "hsl(50 20% 50%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1716,7 +1716,7 @@
       "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "tertiary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(60 20% 30%)",
+        "line-color": "hsl(60 20% 20%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1736,7 +1736,7 @@
       "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "secondary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(55 20% 30%)",
+        "line-color": "hsl(55 20% 20%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1756,7 +1756,7 @@
       "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "trunk"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(30 20% 30%)",
+        "line-color": "hsl(30 20% 20%)",
         "line-width": {
           "base": 1.2,
           "stops": [
