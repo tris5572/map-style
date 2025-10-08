@@ -1632,7 +1632,7 @@
       "source-layer": "transportation",
       "filter": ["all", ["==", "$type", "LineString"], ["all", ["==", "brunnel", "bridge"], ["==", "class", "path"]]],
       "paint": {
-        "line-color": "#f8f4f0",
+        "line-color": "hsl(200 20% 30%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1650,7 +1650,7 @@
       "source-layer": "transportation",
       "filter": ["all", ["==", "$type", "LineString"], ["all", ["==", "brunnel", "bridge"], ["==", "class", "path"]]],
       "paint": {
-        "line-color": "#cba",
+        "line-color": "hsl(200 0% 50%)",
         "line-dasharray": [1.5, 0.75],
         "line-width": {
           "base": 1.2,
