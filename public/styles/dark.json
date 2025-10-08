@@ -428,7 +428,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "service", "track"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "#cfcdca",
+        "line-color": "hsl(200 20% 30%)",
         "line-dasharray": [0.5, 0.25],
         "line-width": {
           "base": 1.2,
@@ -599,7 +599,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "service", "track"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "#fff",
+        "line-color": "hsl(200 0% 50%)",
         "line-width": {
           "base": 1.2,
           "stops": [
