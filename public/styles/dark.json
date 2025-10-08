@@ -2265,8 +2265,8 @@
         }
       },
       "paint": {
-        "text-color": "hsl(30, 23%, 62%)",
-        "text-halo-color": "#f8f4f0",
+        "text-color": "hsl(200 0% 90%)",
+        "text-halo-color": "hsl(200 0% 10%)",
         "text-halo-width": 0.5
       }
     },
@@ -2290,7 +2290,7 @@
           ]
         }
       },
-      "paint": { "text-color": "#765", "text-halo-blur": 0.5, "text-halo-width": 1 }
+      "paint": { "text-color": "hsl(200 0% 90%)", "text-halo-blur": 0.5, "text-halo-width": 1 }
     },
     {
       "id": "highway-name-major",
@@ -2312,7 +2312,7 @@
           ]
         }
       },
-      "paint": { "text-color": "#765", "text-halo-blur": 0.5, "text-halo-width": 1 }
+      "paint": { "text-color": "hsl(200 0% 90%)", "text-halo-blur": 0.5, "text-halo-width": 1 }
     },
     {
       "id": "highway-shield",
