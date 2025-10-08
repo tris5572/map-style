@@ -40,7 +40,7 @@
       "filter": ["==", "subclass", "glacier"],
       "layout": { "visibility": "visible" },
       "paint": {
-        "fill-color": "#fff",
+        "fill-color": "hsl(0 0% 50%)",
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -74,7 +74,7 @@
       "source": "openmaptiles",
       "source-layer": "landuse",
       "filter": ["all", ["==", "$type", "Polygon"], ["==", "class", "commercial"]],
-      "paint": { "fill-color": "hsla(0 60% 87% / 0.23)" }
+      "paint": { "fill-color": "hsla(0 60% 87% / 0.1)" }
     },
     {
       "id": "landuse-industrial",
@@ -579,7 +579,7 @@
       "source-layer": "transportation",
       "filter": ["all", ["==", "$type", "LineString"], ["all", ["==", "brunnel", "tunnel"], ["==", "class", "path"]]],
       "paint": {
-        "line-color": "#cba",
+        "line-color": "hsl(200 10% 30%)",
         "line-dasharray": [1.5, 0.75],
         "line-width": {
           "base": 1.2,
@@ -919,7 +919,7 @@
       "layout": { "visibility": "visible" },
       "paint": {
         "fill-antialias": false,
-        "fill-color": "hsla(0, 0%, 89%, 0.56)",
+        "fill-color": "hsla(0 0% 50% / 0.5)",
         "fill-opacity": 0.9,
         "fill-outline-color": "#cfcdca"
       }
@@ -1776,7 +1776,7 @@
       "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "primary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(50 20% 30%)",
+        "line-color": "hsl(50 20% 20%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1893,7 +1893,7 @@
       "filter": ["all", [">=", "admin_level", 4], ["<=", "admin_level", 8], ["!=", "maritime", 1]],
       "layout": { "line-join": "round", "visibility": "none" },
       "paint": {
-        "line-color": "hsl(0, 0%, 70%)",
+        "line-color": "hsl(0 0% 50%)",
         "line-dasharray": [3, 1, 1, 1],
         "line-width": {
           "base": 1.4,
@@ -1913,7 +1913,7 @@
       "filter": ["all", ["==", "admin_level", 2], ["!=", "maritime", 1], ["!=", "disputed", 1]],
       "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
-        "line-color": "hsl(248, 7%, 66%)",
+        "line-color": "hsl(248 4% 45%)",
         "line-width": {
           "base": 1,
           "stops": [
@@ -2705,7 +2705,7 @@
       "source-layer": "island",
       "minzoom": 0,
       "layout": { "visibility": "visible" },
-      "paint": { "fill-color": "#fff", "fill-opacity": 1 }
+      "paint": { "fill-color": "hsl(200 10% 10%)", "fill-opacity": 1 }
     },
     {
       "id": "island-hoppo-name",
@@ -2722,8 +2722,8 @@
         }
       },
       "paint": {
-        "text-color": "#333",
-        "text-halo-color": "rgba(255, 255, 255, 0.8)",
+        "text-color": "hsl(200 0% 90%)",
+        "text-halo-color": "hsl(200 0% 10%)",
         "text-halo-width": 1.2
       }
     },
@@ -2752,8 +2752,8 @@
         }
       },
       "paint": {
-        "text-color": "#333",
-        "text-halo-color": "rgba(255, 255, 255, 0.8)",
+        "text-color": "hsl(200 0% 90%)",
+        "text-halo-color": "hsl(200 0% 10%)",
         "text-halo-width": 1.2
       }
     },
