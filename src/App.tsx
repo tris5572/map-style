@@ -7,7 +7,7 @@ import Map, {
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./App.css";
-import * as mapStyleJson from "../public/styles/dark.json";
+import * as mapStyleJson from "../public/dark/style.json";
 
 export function App() {
   return (
