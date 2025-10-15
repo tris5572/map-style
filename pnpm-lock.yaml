@@ -20,6 +20,9 @@ importers:
       react-map-gl:
         specifier: ^8.1.0
         version: 8.1.0(maplibre-gl@5.8.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      svg2png-wasm:
+        specifier: ^1.4.1
+        version: 1.4.1
     devDependencies:
       '@eslint/js':
         specifier: ^9.36.0
@@ -1283,6 +1286,10 @@ packages:
   supports-color@7.2.0:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
+
+  svg2png-wasm@1.4.1:
+    resolution: {integrity: sha512-ZFy1NtwZVAsslaTQoI+/QqX2sg0vjmgJ/jGAuLZZvYcRlndI54hLPiwLC9JzXlFBerfxN5JiS7kpEUG0mrXS3Q==}
+    deprecated: svg2png-wasm is no longer supported. Please use the resvg-js package instead.
 
   tinyglobby@0.2.15:
     resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
@@ -2659,6 +2666,8 @@ snapshots:
   supports-color@7.2.0:
     dependencies:
       has-flag: 4.0.0
+
+  svg2png-wasm@1.4.1: {}
 
   tinyglobby@0.2.15:
     dependencies:
