@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { getViewDataList } from "./svg-data-reader";
+import { getViewDataList, parseViewBox } from "./svg-data-reader";
 
 describe("getViewDataList()", () => {
   test("空の文字列が入力されたときは、空配列を返すこと", () => {
@@ -64,5 +64,31 @@ describe("getViewDataList()", () => {
       { id: "view_id", viewBox: "0 1 2 3" },
       { id: "view_id2", viewBox: "6 7 8 9" },
     ]);
+  });
+});
+
+describe("parseViewBox()", () => {
+  test("通常指定のとき、データを得られること", () => {
+    expect(parseViewBox("0 1 2 3")).toEqual({ x: 0, y: 1, width: 2, height: 3 });
+  });
+
+  test("複数桁のとき、データを得られること", () => {
+    expect(parseViewBox("1 10 100 1000")).toEqual({ x: 1, y: 10, width: 100, height: 1000 });
+  });
+
+  test("区切り文字が多いときでも、データを得られること", () => {
+    expect(parseViewBox("0  1 \t2 \n3")).toEqual({ x: 0, y: 1, width: 2, height: 3 });
+  });
+
+  test("指定が多いときでも、データを得られること", () => {
+    expect(parseViewBox("0 1 2 3 4")).toEqual({ x: 0, y: 1, width: 2, height: 3 });
+  });
+
+  test("空文字列のとき、undefined を返すこと", () => {
+    expect(parseViewBox("")).toBeUndefined();
+  });
+
+  test("指定が足りないとき、undefined を返すこと", () => {
+    expect(parseViewBox("0 1 2")).toBeUndefined();
   });
 });
