@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { getViewDataList, parseViewBox } from "./svg-data-reader";
+import { getViewDataList, parseViewBox } from "./sprite-utils";
 
 describe("getViewDataList()", () => {
   test("空の文字列が入力されたときは、空配列を返すこと", () => {
