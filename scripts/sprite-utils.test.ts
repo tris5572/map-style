@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { getViewDataList, parseViewBox } from "./sprite-utils";
+import { doubledSpriteJson, getViewDataList, parseViewBox } from "./sprite-utils";
 
 describe("getViewDataList()", () => {
   test("空の文字列が入力されたときは、空配列を返すこと", () => {
@@ -90,5 +90,27 @@ describe("parseViewBox()", () => {
 
   test("指定が足りないとき、undefined を返すこと", () => {
     expect(parseViewBox("0 1 2")).toBeUndefined();
+  });
+});
+
+describe("doubledSpriteJson()", () => {
+  test("空のデータを渡したとき、空のデータを返すこと", () => {
+    expect(doubledSpriteJson({})).toEqual({});
+  });
+
+  test("データを渡したとき、数値が2倍になったデータを返すこと", () => {
+    const input = { a: { x: 0, y: 1, width: 2, height: 3, pixelRatio: 1 } };
+    expect(doubledSpriteJson(input)).toEqual({ a: { x: 0, y: 2, width: 4, height: 6, pixelRatio: 2 } });
+  });
+
+  test("複数のデータを渡したとき、数値が2倍になったデータを返すこと", () => {
+    const input = {
+      a: { x: 0, y: 1, width: 2, height: 3, pixelRatio: 1 },
+      bc: { x: 5, y: 6, width: 7, height: 8, pixelRatio: 9 },
+    };
+    expect(doubledSpriteJson(input)).toEqual({
+      a: { x: 0, y: 2, width: 4, height: 6, pixelRatio: 2 },
+      bc: { x: 10, y: 12, width: 14, height: 16, pixelRatio: 18 },
+    });
   });
 });

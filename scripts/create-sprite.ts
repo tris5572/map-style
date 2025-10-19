@@ -7,7 +7,7 @@ PNG へ変換するとともに情報の JSON ファイルを生成し、デプ�
 
 import { svg2png, initialize } from "svg2png-wasm";
 import { readFileSync, writeFileSync } from "node:fs";
-import { createSpriteJson } from "./sprite-utils.ts";
+import { createSpriteJson, doubledSpriteJson } from "./sprite-utils.ts";
 
 /** 処理対象のスタイル名。フォルダ名やスプライトのファイル名を同名にする必要がある。 */
 const TARGET_STYLE_NAMES = ["dark"];
@@ -24,13 +24,20 @@ export async function create() {
   for (const name of TARGET_STYLE_NAMES) {
     const svg = readFileSync("./sprite-svg/dark.svg").toString();
 
-    const png = await svg2png(svg, {
+    const png1 = await svg2png(svg, {
       scale: 1,
     });
-    const spriteData = createSpriteJson(svg);
+    const spriteData1 = createSpriteJson(svg);
+    writeFileSync(`${OUTPUT_DIR}${name}/sprite.png`, png1);
+    writeFileSync(`${OUTPUT_DIR}${name}/sprite.json`, JSON.stringify(spriteData1));
 
-    writeFileSync(`${OUTPUT_DIR}${name}/sprite.png`, png);
-    writeFileSync(`${OUTPUT_DIR}${name}/sprite.json`, JSON.stringify(spriteData));
+    // 高解像度用のデータを生成
+    const png2 = await svg2png(svg, {
+      scale: 2,
+    });
+    const spriteData2 = doubledSpriteJson(spriteData1);
+    writeFileSync(`${OUTPUT_DIR}${name}/sprite@2x.png`, png2);
+    writeFileSync(`${OUTPUT_DIR}${name}/sprite@2x.json`, JSON.stringify(spriteData2));
   }
 }
 

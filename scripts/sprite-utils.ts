@@ -77,3 +77,25 @@ export function parseViewBox(viewBox: string): { x: number; y: number; width: nu
 
   return v;
 }
+
+/**
+ * スプライトの定義 JSON の値を2倍にしたものを返す
+ *
+ * `@2x` のデータを生成するときに使用する
+ */
+export function doubledSpriteJson(json: SpriteJson): SpriteJson {
+  const result: SpriteJson = {};
+
+  for (const key of Object.keys(json)) {
+    const obj: SpriteJson[string] = {
+      x: json[key].x * 2,
+      y: json[key].y * 2,
+      height: json[key].height * 2,
+      width: json[key].width * 2,
+      pixelRatio: json[key].pixelRatio * 2,
+    };
+    result[key] = obj;
+  }
+
+  return result;
+}
