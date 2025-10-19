@@ -1,4 +1,4 @@
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
   <g fill="hsl(0 0% 80%)">
     <view id="bus_11" viewBox="0 0 20 20" />
     <g transform="translate(0, 0)">
@@ -77,6 +77,13 @@
       <path d="M 10 2 q -1 0.5 -1 1 v 5 l -7 3 v 1 l 7 -0.5 v5 l -2 1 v 0.5 l 3 -0.3 z"
         transform="translate(20) scale(-1, 1)" />
     </g>
-    <!-- <rect x="80" y="0" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
+    <view id="airfield_11" viewBox="100 0 20 20" />
+    <g transform="translate(100, 0)">
+      <path d="M 10 2.5 h -2 v 0.5 h 2 q -1 0 -1 1 v 4 h -6 v 1.5 l 6 2 l 0.5 5 l -2 1 v 0.5 l 3 -0.3 z" />
+      <path d="M 10 2.5 h -2 v 0.5 h 2 q -1 0 -1 1 v 4 h -6 v 1.5 l 6 2 l 0.5 5 l -2 1 v 0.5 l 3 -0.3 z"
+        transform="translate(20) scale(-1, 1)" />
+
+    </g>
+    <!-- <rect x="100" y="0" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
   </g>
 </svg>
