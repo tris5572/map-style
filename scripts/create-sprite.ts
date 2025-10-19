@@ -7,23 +7,31 @@ PNG へ変換するとともに情報の JSON ファイルを生成し、デプ�
 
 import { svg2png, initialize } from "svg2png-wasm";
 import { readFileSync, writeFileSync } from "node:fs";
+import { createSpriteJson } from "./sprite-utils.ts";
 
-const SVG = `
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="50" cy="50" r="50" fill="hsl(200 20% 50%)" />
-</svg>`;
+/** 処理対象のスタイル名。フォルダ名やスプライトのファイル名を同名にする必要がある。 */
+const TARGET_STYLE_NAMES = ["dark"];
+
+const OUTPUT_DIR = "./public/";
 
 // Wasm を読み込んで初期化
 await initialize(readFileSync("./node_modules/svg2png-wasm/svg2png_wasm_bg.wasm"));
 
+/**
+ * SVG ファイルから、スプライトの画像と JSON を生成して保存する。
+ */
 export async function create() {
-  const png1 = await svg2png(SVG, {
-    scale: 1,
-  });
+  for (const name of TARGET_STYLE_NAMES) {
+    const svg = readFileSync("./sprite-svg/dark.svg").toString();
 
-  writeFileSync("./public/sprite.png", png1);
+    const png = await svg2png(svg, {
+      scale: 1,
+    });
+    const spriteData = createSpriteJson(svg);
 
-  console.log("Sprite Create Completed");
+    writeFileSync(`${OUTPUT_DIR}${name}/sprite.png`, png);
+    writeFileSync(`${OUTPUT_DIR}${name}/sprite.json`, JSON.stringify(spriteData));
+  }
 }
 
 await create();
