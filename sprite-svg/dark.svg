@@ -15,6 +15,23 @@
       <rect x="5" y="15" width="2" height="2" rx="0.5" mask="url(#bus_11_mask)" />
       <rect x="13" y="15" width="2" height="2" rx="0.5" mask="url(#bus_11_mask)" />
     </g>
+    <view id="railway_11" viewBox="20 0 20 20" />
+    <g transform="translate(20, 0)">
+      <defs>
+        <mask id="railway_11_mask">
+          <rect x="0" y="0" width="20" height="20" fill="white" />
+          <rect x="6" y="3" width="8" height="1.5" fill="black" />
+          <rect x="5" y="5" width="10" height="5" fill="black" />
+          <circle cx="6" cy="12" r="1" fill="black" />
+          <circle cx="14" cy="12" r="1" fill="black" />
+        </mask>
+      </defs>
+      <rect x="4" y="2" width="12" height="13" rx="1.5" mask="url(#railway_11_mask)" />
+      <path d="M 7 15.5 l -3 3 l 1 0 l 3 -3" />
+      <path d="M 12 15.5 l 3 3 l 1 0 l -3 -3" />
+      <path d="M 5 16 l 10 0" stroke="hsl(0 0% 80%)" stroke-width="0.5" />
+      <path d="M 3.5 17.5 l 13 0" stroke="hsl(0 0% 80%)" stroke-width="0.5" />
+    </g>
     <!-- <rect x="0" y="0" width="20" height="20" fill="none" stroke="red" /> -->
   </g>
 </svg>
