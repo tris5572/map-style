@@ -3,6 +3,40 @@
 */
 
 /**
+ * スプライトの定義 JSON の型
+ */
+type SpriteJson = Record<
+  string,
+  {
+    x: number;
+    y: number;
+    height: number;
+    width: number;
+    pixelRatio: number;
+  }
+>;
+
+/**
+ * SVG から、スプライトの定義 JSON のデータ（等倍）を生成する
+ *
+ * @param svg SVG ファイルの文字列
+ */
+export function createSpriteJson(svg: string): SpriteJson {
+  const viewList = getViewDataList(svg);
+  const jsonData: SpriteJson = {};
+
+  for (const data of viewList) {
+    const viewBox = parseViewBox(data.viewBox);
+    if (!viewBox) {
+      continue;
+    }
+    jsonData[data.id] = { ...viewBox, pixelRatio: 1 };
+  }
+
+  return jsonData;
+}
+
+/**
  * SVG ファイル内の view 要素から、id と viewBox の値のリストを取得する
  */
 export function getViewDataList(svg: string): { id: string; viewBox: string }[] {
