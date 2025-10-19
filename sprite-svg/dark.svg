@@ -71,5 +71,12 @@
       <path d="M 5 16 l 10 0" stroke="hsl(0 0% 80%)" stroke-width="0.5" />
       <path d="M 3.5 17.5 l 13 0" stroke="hsl(0 0% 80%)" stroke-width="0.5" />
     </g>
+    <view id="airport_11" viewBox="80 0 20 20" />
+    <g transform="translate(80, 0)">
+      <path d="M 10 2 q -1 0.5 -1 1 v 5 l -7 3 v 1 l 7 -0.5 v5 l -2 1 v 0.5 l 3 -0.3 z" />
+      <path d="M 10 2 q -1 0.5 -1 1 v 5 l -7 3 v 1 l 7 -0.5 v5 l -2 1 v 0.5 l 3 -0.3 z"
+        transform="translate(20) scale(-1, 1)" />
+    </g>
+    <!-- <rect x="80" y="0" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
   </g>
 </svg>
