@@ -82,8 +82,13 @@
       <path d="M 10 2.5 h -2 v 0.5 h 2 q -1 0 -1 1 v 4 h -6 v 1.5 l 6 2 l 0.5 5 l -2 1 v 0.5 l 3 -0.3 z" />
       <path d="M 10 2.5 h -2 v 0.5 h 2 q -1 0 -1 1 v 4 h -6 v 1.5 l 6 2 l 0.5 5 l -2 1 v 0.5 l 3 -0.3 z"
         transform="translate(20) scale(-1, 1)" />
-
     </g>
-    <!-- <rect x="100" y="0" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
+    <view id="shop_11" viewBox="0 40 20 20" />
+    <g transform="translate(0 40)">
+      <path d="M 3 8 h 14 l -2 8 h -10 z" stroke="hsl(0 0% 80%)" stroke-width="1" stroke-linejoin="round" />
+      <path d="M 5 10 l 1.5 -7 h 7 l 1.5 7 z" fill="none" stroke="hsl(0 0% 80%)" stroke-width="1"
+        stroke-linejoin="round" />
+    </g>
+    <!-- <rect x="0" y="40" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
   </g>
 </svg>
