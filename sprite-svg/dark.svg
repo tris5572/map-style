@@ -150,6 +150,21 @@
       <path d="M 18 7 v6" class="stroke-only" />
       <path d="M 5 11 v 4 l 5 2.5 l 5 -2.5 v -4 l -5 2.5 z" />
     </g>
+    <view id="police_11" viewBox="40 40 20 20" />
+    <g transform="translate(40 40)">
+      <defs>
+        <mask id="police_11_mask">
+          <rect x="0" y="0" width="20" height="20" fill="white" />
+          <path d="M 18 6 l -10 12" style="fill:none; stroke:black; stroke-width:2" />
+        </mask>
+      </defs>
+      <rect x="8" y="8" width="8" height="8" rx="4" ry="2" mask="url(#police_11_mask)" />
+      <rect x="8" y="14" width="8" height="4" rx="1" mask="url(#police_11_mask)" />
+      <path d="M 8 10 l -4 -2 l 3.5 -2" class="stroke-only" style="stroke-width:2" />
+      <rect x="10" y="4" width="4" height="3.5" rx="2" />
+      <rect x="10" y="4" width="4" height="2" />
+      <path d="M 9.5 2 h 5 l -0.5 0.5 h -4 z" class="fill-and-stroke" />
+    </g>
     <view id="shop_11" viewBox="0 60 20 20" />
     <g transform="translate(0 60)">
       <path d="M 3 8 h 14 l -2 8 h -10 z" class="fill-and-stroke" />
@@ -162,6 +177,6 @@
       <circle cx="6" cy="16" r="1.5" />
       <circle cx="14" cy="16" r="1.5" />
     </g>
-    <!-- <rect x="20" y="40" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
+    <!-- <rect x="40" y="40" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
   </g>
 </svg>
