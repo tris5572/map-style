@@ -127,13 +127,13 @@
       <path d="M 3 9 l 7 -2 l 7 2 l -3 6 h -8" mask="url(#ferry_terminal_11_mask)" />
       <path d="M 2 17 c 2 0 2 -2 4 -2 s 2 2 4 2 s 2 -2 4 -2 s 2 2 4 2" class="stroke-only" stroke-width="1.5" />
     </g>
-    <view id="shop_11" viewBox="0 40 20 20" />
-    <g transform="translate(0 40)">
+    <view id="shop_11" viewBox="0 60 20 20" />
+    <g transform="translate(0 60)">
       <path d="M 3 8 h 14 l -2 8 h -10 z" class="fill-and-stroke" />
       <path d="M 5 10 l 1.5 -7 h 7 l 1.5 7 z" class="stroke-only" />
     </g>
-    <view id="grocery_11" viewBox="20 40 20 20" />
-    <g transform="translate(20 40)">
+    <view id="grocery_11" viewBox="20 60 20 20" />
+    <g transform="translate(20 60)">
       <path d="M 15 6 h -12 l 2 7 h 10 v -7 l 1 -4 h 2" class="stroke-only" stroke-width="1.5" />
       <path d="M 15 6 h -12 l 2 7 h 10 z" class="fill-only" />
       <circle cx="6" cy="16" r="1.5" />
