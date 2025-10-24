@@ -20,6 +20,7 @@
     }
   </style>
   <g class="fill-only">
+    <!-- 交通系 1行目 -->
     <view id="bus_11" viewBox="0 0 20 20" />
     <g transform="translate(0, 0)">
       <defs>
@@ -102,6 +103,7 @@
       <path d="M 10 2.5 h -2 v 0.5 h 2 q -1 0 -1 1 v 4 h -6 v 1.5 l 6 2 l 0.5 5 l -2 1 v 0.5 l 3 -0.3 z"
         transform="translate(20) scale(-1, 1)" />
     </g>
+    <!-- 交通系 2行目 -->
     <view id="harbor_11" viewBox="0 20 20 20" />
     <g transform="translate(0, 20)">
       <circle cx="10" cy="5" r="2" class="stroke-only" stroke-width="1.5" />
@@ -127,6 +129,7 @@
       <path d="M 3 9 l 7 -2 l 7 2 l -3 6 h -8" mask="url(#ferry_terminal_11_mask)" />
       <path d="M 2 17 c 2 0 2 -2 4 -2 s 2 2 4 2 s 2 -2 4 -2 s 2 2 4 2" class="stroke-only" stroke-width="1.5" />
     </g>
+    <!-- 公共系 -->
     <view id="school_11" viewBox="0 40 20 20" />
     <g transform="translate(0 40)">
       <defs>
@@ -186,6 +189,7 @@
       </defs>
       <rect x="3" y="4" width="14" height="12" rx="2" mask="url(#post_11_mask)" />
     </g>
+    <!-- 店舗系 -->
     <view id="shop_11" viewBox="0 60 20 20" />
     <g transform="translate(0 60)">
       <path d="M 3 8 h 14 l -2 8 h -10 z" class="fill-and-stroke" />
