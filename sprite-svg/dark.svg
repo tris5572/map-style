@@ -165,6 +165,17 @@
       <rect x="10" y="4" width="4" height="2" />
       <path d="M 9.5 2 h 5 l -0.5 0.5 h -4 z" class="fill-and-stroke" />
     </g>
+    <view id="fire_station_11" viewBox="60 40 20 20" />
+    <g transform="translate(60 40)">
+      <defs>
+        <mask id="fire_station_11_mask">
+          <rect x="0" y="0" width="20" height="20" fill="white" />
+          <path d="M 10 9 Q 5 14 10 15 Q 15 14 10 9 z" style="fill:black" />
+        </mask>
+      </defs>
+      <path d="M 10 3 L 8 8 L 6 5 Q 2 14 10 16 Q 18 14 14 5 L 12 8 z" class="fill-and-stroke"
+        mask="url(#fire_station_11_mask)" />
+    </g>
     <view id="shop_11" viewBox="0 60 20 20" />
     <g transform="translate(0 60)">
       <path d="M 3 8 h 14 l -2 8 h -10 z" class="fill-and-stroke" />
