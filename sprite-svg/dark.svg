@@ -201,6 +201,12 @@
       <path d="M 10 3 C 9 3 8 2 7 2 C 3 2 3 6 3 7 S 4 11 5 13 S 6.5 18 8 18 S 8.5 13 10 13 z" class="fill-only"
         transform="translate(20) scale(-1,1)" />
     </g>
+    <view id="doctor_11" viewBox="40 60 20 20" />
+    <g transform="translate(40 60)">
+      <path d="M 5 3 h -2 v 4 a 4 4 0 0 0 8 0 v -4 h -2 " class="stroke-only" stroke-width="1.5" />
+      <path d="M 7 11 v 2 a 4 4 0 0 0 9 0 v -4" class="stroke-only" stroke-width="1.5" />
+      <circle cx="16" cy="7" r="2" class="stroke-only" stroke-width="1.5" />
+    </g>
     <!-- 店舗系 -->
     <view id="shop_11" viewBox="0 80 20 20" />
     <g transform="translate(0 80)">
@@ -214,6 +220,6 @@
       <circle cx="6" cy="16" r="1.5" />
       <circle cx="14" cy="16" r="1.5" />
     </g>
-    <!-- <rect x="20" y="60" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
+    <!-- <rect x="40" y="60" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
   </g>
 </svg>
