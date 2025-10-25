@@ -27,7 +27,7 @@
     "takeshima": { "type": "vector", "url": "https://tile.openstreetmap.jp/data/takeshima.json" },
     "hoppo": { "type": "vector", "url": "https://tile.openstreetmap.jp/data/hoppo.json" }
   },
-  "sprite": "https://tile.openstreetmap.jp/styles/osm-bright-ja/sprite",
+  "sprite": "https://tris5572.github.io/map-style/dark/sprite",
   "glyphs": "https://mierune.github.io/fonts/{fontstack}/{range}.pbf",
   "layers": [
     { "id": "background", "type": "background", "paint": { "background-color": "hsl(200 10% 15%)" } },
