@@ -189,6 +189,13 @@
       </defs>
       <rect x="3" y="4" width="14" height="12" rx="2" mask="url(#post_11_mask)" />
     </g>
+    <view id="town_hall_11" viewBox="100 40 20 20" />
+    <g transform="translate(100 40)">
+      <path d="M 10 3 l -7 2 v 1 h 14 v -1 z" class="fill-only" />
+      <path d="M 5 14 v -6 h 10 v 6" class="stroke-only" stroke-width="1.5" />
+      <path d="M 8.333 14 v -6 h 3.333 v 6" class="stroke-only" stroke-width="1.5" />
+      <path d="M 5 14 l -2 1.5 v 1 h 14 v -1 l -2 -1.5 z" class="fill-and-stroke" />
+    </g>
     <!-- 公共系 2行目 -->
     <view id="hospital_11" viewBox="0 60 20 20" />
     <g transform="translate(0 60)">
@@ -220,6 +227,6 @@
       <circle cx="6" cy="16" r="1.5" />
       <circle cx="14" cy="16" r="1.5" />
     </g>
-    <!-- <rect x="40" y="60" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
+    <!-- <rect x="100" y="40" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
   </g>
 </svg>
