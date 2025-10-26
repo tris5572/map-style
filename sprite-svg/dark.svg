@@ -257,6 +257,13 @@
       <rect x="3" y="6" width="14" height="11" rx="1" />
       <rect x="7" y="3" width="6" height="12" rx="1" class="stroke-only" stroke-width="1.5" />
     </g>
-    <!-- <rect x="120" y="40" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
+    <!-- 食事系 -->
+    <view id="fast_food_11" viewBox="0 100 20 20" />
+    <g transform="translate(0 100)">
+      <path d="M10 4 q -6 0 -6 3 h 12 q 0 -3 -6 -3" class="fill-and-stroke" stroke-width="1.5" />
+      <rect x="2.5" y="9.5" width="15" height="3" rx="2" />
+      <path d="M 4 15 l 1 1 h 10 l 1 -1 z" class="fill-and-stroke" stroke-width="1.5" />
+    </g>
+    <!-- <rect x="0" y="100" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
   </g>
 </svg>
