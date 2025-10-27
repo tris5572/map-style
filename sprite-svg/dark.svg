@@ -264,6 +264,13 @@
       <rect x="2.5" y="9.5" width="15" height="3" rx="2" />
       <path d="M 4 15 l 1 1 h 10 l 1 -1 z" class="fill-and-stroke" stroke-width="1.5" />
     </g>
-    <!-- <rect x="0" y="100" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
+    <view id="restaurant_11" viewBox="20 100 20 20" />
+    <g transform="translate(20 100)">
+      <path d="M 7 7 h -2 v -4 l -0.4 4 l 2 3 v 7 z" class="fill-and-stroke" />
+      <path d="M 7 7 h -2 v -4 l -0.4 4 l 2 3 v 7 z" class="fill-and-stroke" transform="translate(14 0) scale(-1 1)" />
+      <rect x="6.5" y="2.5" width="1" height="4" rx="0.2" />
+      <path d="M 15 3 q -2 1 -2 3 v4 h 1.5 v 7 h 0.5 z" class="fill-and-stroke" />
+    </g>
+    <!-- <rect x="20" y="100" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
   </g>
 </svg>
