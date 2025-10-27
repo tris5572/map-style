@@ -208,6 +208,13 @@
       <path d="M 12 10 q 1 -0.8 3 -1" class="stroke-only" stroke-width="1" />
       <path d="M 12 12 q 1 -0.8 3 -1" class="stroke-only" stroke-width="1" />
     </g>
+    <view id="embassy_11" viewBox="140 40 20 20" />
+    <g transform="translate(140 40)">
+      <circle cx="4" cy="4" r="1.8" />
+      <path d="M 4 8 v 10" class="stroke-only" stroke-width="1.5" />
+      <path d="M 7.5 6 q 2 -3 5 -1 q 2 2 5 -1 v 6 q -3 3 -5 1 q -3 -2 -5 1 z" class="fill-and-stroke"
+        stroke-width="1.5" />
+    </g>
     <!-- 公共系 2行目 -->
     <view id="hospital_11" viewBox="0 60 20 20" />
     <g transform="translate(0 60)">
@@ -275,6 +282,6 @@
     <g transform="translate(40 100)">
       <path d="M 5 8 v 8 h 10 v -8 a 6.5 3 0 1 0 -10 0 z" class="fill-and-stroke" stroke-width="1.5" />
     </g>
-    <!-- <rect x="40" y="100" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
+    <!-- <rect x="140" y="40" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
   </g>
 </svg>
