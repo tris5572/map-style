@@ -311,6 +311,13 @@
       <path d="M 12 6 h 3 a 2 2 0 0 1 0 4 h -3" class="stroke-only" stroke-width="1.5" />
       <path d="M 3 15 h 12 l -1 1 h -10 z" class="fill-and-stroke" />
     </g>
-    <!-- <rect x="80" y="80" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
+    <view id="bar_11" viewBox="80 100 20 20" />
+    <g transform="translate(80 100)">
+      <path d="M 10 3 h -7 l 7 7 v 6 l -4 1 h 4" class="stroke-only" stroke-width="1.5" />
+      <path d="M 10 3 h -7 l 7 7 v 6 l -4 1 h 4" class="stroke-only" stroke-width="1.5"
+        transform="translate(20 0) scale(-1 1)" />
+      <path d="M 6 6 l 4 4 l 4 -4 z" class="fill-only" />
+    </g>
+    <!-- <rect x="80" y="100" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
   </g>
 </svg>
