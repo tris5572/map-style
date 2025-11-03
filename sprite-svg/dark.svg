@@ -318,6 +318,13 @@
         transform="translate(20 0) scale(-1 1)" />
       <path d="M 6 6 l 4 4 l 4 -4 z" class="fill-only" />
     </g>
-    <!-- <rect x="80" y="100" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
+    <view id="beer_11" viewBox="100 100 20 20" />
+    <g transform="translate(100 100)">
+      <rect x="4" y="7" width="9" height="8" />
+      <rect x="4" y="7" width="9" height="11" rx="1" />
+      <path d="M 12 9 h 2 q 2 0 2 2 v 2 q 0 2 -2 2 h -2" class="stroke-only" stroke-width="1.5" />
+      <path d="M 4 6 q -1 -1 1 -2 q 0.5 -2 3 -1 q 3 -2 4 1 q 2 1 1 2" class="stroke-only" stroke-width="1.2" />
+    </g>
+    <!-- <rect x="100" y="100" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
   </g>
 </svg>
