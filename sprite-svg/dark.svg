@@ -319,39 +319,39 @@
       <path d="M 5 6 L 10 2 L 15 6" class="stroke-only" stroke-width="1.2" />
     </g>
     <!-- 食事系 -->
-    <view id="fast_food_11" viewBox="0 100 20 20" />
-    <g transform="translate(0 100)">
+    <view id="fast_food_11" viewBox="0 120 20 20" />
+    <g transform="translate(0 120)">
       <path d="M10 4 q -6 0 -6 3 h 12 q 0 -3 -6 -3" class="fill-and-stroke" stroke-width="1.5" />
       <rect x="2.5" y="9.5" width="15" height="3" rx="2" />
       <path d="M 4 15 l 1 1 h 10 l 1 -1 z" class="fill-and-stroke" stroke-width="1.5" />
     </g>
-    <view id="restaurant_11" viewBox="20 100 20 20" />
-    <g transform="translate(20 100)">
+    <view id="restaurant_11" viewBox="20 120 20 20" />
+    <g transform="translate(20 120)">
       <path d="M 7 7 h -2 v -4 l -0.4 4 l 2 3 v 7 z" class="fill-and-stroke" />
       <path d="M 7 7 h -2 v -4 l -0.4 4 l 2 3 v 7 z" class="fill-and-stroke" transform="translate(14 0) scale(-1 1)" />
       <rect x="6.5" y="2.5" width="1" height="4" rx="0.2" />
       <path d="M 15 3 q -2 1 -2 3 v4 h 1.5 v 7 h 0.5 z" class="fill-and-stroke" />
     </g>
-    <view id="bakery_11" viewBox="40 100 20 20" />
-    <g transform="translate(40 100)">
+    <view id="bakery_11" viewBox="40 120 20 20" />
+    <g transform="translate(40 120)">
       <path d="M 5 8 v 8 h 10 v -8 a 6.5 3 0 1 0 -10 0 z" class="fill-and-stroke" stroke-width="1.5" />
     </g>
-    <view id="cafe_11" viewBox="60 100 20 20" />
-    <g transform="translate(60 100)">
+    <view id="cafe_11" viewBox="60 120 20 20" />
+    <g transform="translate(60 120)">
       <rect x="4" y="4" width="10" height="6" rx="1" />
       <rect x="4" y="7" width="10" height="6" rx="3" ry="4" />
       <path d="M 12 6 h 3 a 2 2 0 0 1 0 4 h -3" class="stroke-only" stroke-width="1.5" />
       <path d="M 3 15 h 12 l -1 1 h -10 z" class="fill-and-stroke" />
     </g>
-    <view id="bar_11" viewBox="80 100 20 20" />
-    <g transform="translate(80 100)">
+    <view id="bar_11" viewBox="80 120 20 20" />
+    <g transform="translate(80 120)">
       <path d="M 10 3 h -7 l 7 7 v 6 l -4 1 h 4" class="stroke-only" stroke-width="1.5" />
       <path d="M 10 3 h -7 l 7 7 v 6 l -4 1 h 4" class="stroke-only" stroke-width="1.5"
         transform="translate(20 0) scale(-1 1)" />
       <path d="M 6 6 l 4 4 l 4 -4 z" class="fill-only" />
     </g>
-    <view id="beer_11" viewBox="100 100 20 20" />
-    <g transform="translate(100 100)">
+    <view id="beer_11" viewBox="100 120 20 20" />
+    <g transform="translate(100 120)">
       <rect x="4" y="7" width="9" height="8" />
       <rect x="4" y="7" width="9" height="11" rx="1" />
       <path d="M 12 9 h 2 q 2 0 2 2 v 2 q 0 2 -2 2 h -2" class="stroke-only" stroke-width="1.5" />
