@@ -297,6 +297,20 @@
       <rect x="3" y="3" width="10" height="14" rx="1" mask="url(#fuel_11_mask)" />
       <path d="M 12 10 h 2 a 1 1 0 0 1 1 1 v 3 a 1 1 0 0 0 2 0 v -7 h -1.5 v -3" class="stroke-only" />
     </g>
+    <view id="car_11" viewBox="120 80 20 20" />
+    <g transform="translate(120 80)">
+      <defs>
+        <mask id="car_11_mask">
+          <rect x="0" y="0" width="20" height="20" fill="white" />
+          <circle cx="6" cy="12" r="1.5" fill="black" />
+          <circle cx="14" cy="12" r="1.5" fill="black" />
+        </mask>
+      </defs>
+      <rect x="3" y="9" width="14" height="6" rx="1" mask="url(#car_11_mask)" />
+      <rect x="4" y="14" width="3" height="4" rx="1" />
+      <rect x="13" y="14" width="3" height="4" rx="1" />
+      <path d="M 4 10 l 2 -6 h 8 l 2 6" class="stroke-only" stroke-width="1.5" />
+    </g>
     <!-- 食事系 -->
     <view id="fast_food_11" viewBox="0 100 20 20" />
     <g transform="translate(0 100)">
@@ -336,6 +350,6 @@
       <path d="M 12 9 h 2 q 2 0 2 2 v 2 q 0 2 -2 2 h -2" class="stroke-only" stroke-width="1.5" />
       <path d="M 4 6 q -1 -1 1 -2 q 0.5 -2 3 -1 q 3 -2 4 1 q 2 1 1 2" class="stroke-only" stroke-width="1.2" />
     </g>
-    <!-- <rect x="100" y="80" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
+    <!-- <rect x="120" y="80" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
   </g>
 </svg>
