@@ -147,7 +147,7 @@
       </defs>
       <path d="M 6 3 h 8 v 5 h 4 v 9 h -16 v -9 h 4 z" class="fill-only" mask="url(#school_11_mask)" />
     </g>
-    <view id="collage_11" viewBox="20 40 20 20" />
+    <view id="college_11" viewBox="20 40 20 20" />
     <g transform="translate(20 40)">
       <path d="M 18 7 l -8 -4 l -8 4 l 8 4 l 8 -4 z" class="fill-and-stroke" />
       <path d="M 18 7 v6" class="stroke-only" />
