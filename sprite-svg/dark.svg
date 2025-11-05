@@ -246,7 +246,7 @@
       <path d="M 10 3 l -7 4 v 10 h 14 v -10 z" class="fill-and-stroke" stroke-width="2"
         mask="url(#pharmacy_11_mask)" />
     </g>
-    <!-- 店舗系 -->
+    <!-- 店舗系1行目 -->
     <view id="shop_11" viewBox="0 80 20 20" />
     <g transform="translate(0 80)">
       <path d="M 3 8 h 14 l -2 8 h -10 z" class="fill-and-stroke" />
@@ -317,6 +317,16 @@
       <circle cx="7" cy="9" r="1" class="fill-only" />
       <path d="M 8 14 l 1 -2 l 1 2 l 2 -5 l 2 5 z" />
       <path d="M 5 6 L 10 2 L 15 6" class="stroke-only" stroke-width="1.2" />
+    </g>
+    <!-- 店舗系2行目 -->
+    <view id="bank_11" viewBox="0 100 20 20" />
+    <g transform="translate(0 100)">
+      <rect x="2" y="5" width="16" height="10" class="stroke-only" stroke-width="1.5" />
+      <ellipse cx="10" cy="10" rx="2.5" ry="3" class="stroke-only" stroke-width="1.5" />
+      <path d="M 6 7 h -2 v 2" class="stroke-only" />
+      <path d="M 6 13 h -2 v -2" class="stroke-only" />
+      <path d="M 14 7 h 2 v 2" class="stroke-only" />
+      <path d="M 14 13 h 2 v -2" class="stroke-only" />
     </g>
     <!-- 食事系 -->
     <view id="fast_food_11" viewBox="0 120 20 20" />
