@@ -246,6 +246,13 @@
       <path d="M 10 3 l -7 4 v 10 h 14 v -10 z" class="fill-and-stroke" stroke-width="2"
         mask="url(#pharmacy_11_mask)" />
     </g>
+    <view id="prison_11" viewBox="120 60 20 20" />
+    <g transform="translate(120 60)" class="stroke-only" stroke-width="1.5">
+      <rect x="4" y="3" width="12" height="14" />
+      <rect x="8" y="3" width="4" height="14" />
+      <rect x="12" y="8" width="4" height="4" />
+      <path d="M 4 10 h 8" />
+    </g>
     <!-- 店舗系1行目 -->
     <view id="shop_11" viewBox="0 80 20 20" />
     <g transform="translate(0 80)">
@@ -367,6 +374,6 @@
       <path d="M 12 9 h 2 q 2 0 2 2 v 2 q 0 2 -2 2 h -2" class="stroke-only" stroke-width="1.5" />
       <path d="M 4 6 q -1 -1 1 -2 q 0.5 -2 3 -1 q 3 -2 4 1 q 2 1 1 2" class="stroke-only" stroke-width="1.2" />
     </g>
-    <!-- <rect x="140" y="80" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
+    <!-- <rect x="120" y="60" width="20" height="20" fill="none" stroke="red" stroke-width="0.2" /> -->
   </g>
 </svg>
