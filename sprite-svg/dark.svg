@@ -349,6 +349,18 @@
       <circle cx="11" cy="6" r="2.5" class="stroke-only" />
       <path d="M 13 12 h 3.5 v -1.5 v 3" class="stroke-only" stroke-width="1.5" />
     </g>
+    <view id="laundry_11" viewBox="60 100 20 20" />
+    <g transform="translate(60 100)">
+      <defs>
+        <mask id="laundry_11_mask">
+          <rect x="0" y="0" width="20" height="20" fill="white" />
+          <circle cx="10" cy="11" r="4" fill="black" />
+          <rect x="0" y="5" width="20" height="1" fill="black" />
+          <rect x="10" y="3.5" width="5" height="1" fill="black" />
+        </mask>
+      </defs>
+      <rect x="4" y="3" width="12" height="14" rx="1" mask="url(#laundry_11_mask)" />
+    </g>
     <!-- 食事系 -->
     <view id="fast_food_11" viewBox="0 120 20 20" />
     <g transform="translate(0 120)">
