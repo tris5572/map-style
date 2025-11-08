@@ -400,6 +400,14 @@
       <path d="M 12 9 h 2 q 2 0 2 2 v 2 q 0 2 -2 2 h -2" class="stroke-only" stroke-width="1.5" />
       <path d="M 4 6 q -1 -1 1 -2 q 0.5 -2 3 -1 q 3 -2 4 1 q 2 1 1 2" class="stroke-only" stroke-width="1.2" />
     </g>
+    <view id="ice_cream_11" viewBox="120 120 20 20" />
+    <g transform="translate(120 120)">
+      <path d="M 6 8 a 0.7 0.5 0 0 1 0 -1 a 4 4 0 0 1 8 0 a 0.7 0.5 0 0 1 0 1" class="fill-and-stroke"
+        stroke-width="1.2" />
+      <path d="M 6 8 L 10 17 L 14 8 z" class="stroke-only" stroke-width="1.2" />
+      <path d="M 8 11 l 1 -2" class="stroke-only" stroke-width="1" />
+      <path d="M 9 13 l 1 -2" class="stroke-only" stroke-width="1" />
+    </g>
     <!-- <g fill="none" stroke="red" stroke-width="0.2">
       <path d="M 0 0 h 400 M 0 20 h 400 M 0 40 h 400 M 0 60 h 400 M 0 80 h 400 M 0 100 h 400 M 0 120 h 400 M 0 140 h 400 M 0 160 h 400 M 0 180 h 400 M 0 200 h 400" />
       <path d="M 0 0 v 400 M 20 0 v 400 M 40 0 v 400 M 60 0 v 400 M 80 0 v 400 M 100 0 v 400 M 120 0 v 400 M 140 0 v 400 M 160 0 v 400 M 180 0 v 400 M 200 0 v 400" />
