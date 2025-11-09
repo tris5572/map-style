@@ -415,9 +415,10 @@
       <path d="M 8 11 l 1 -2" class="stroke-only" stroke-width="1" />
       <path d="M 9 13 l 1 -2" class="stroke-only" stroke-width="1" />
     </g>
-    <!-- アクティビティ系 -->
-    <view id="park_11" viewBox="0 140 20 20" />
-    <g transform="translate(0 140)">
+    <!-- アクティビティ系1行目 -->
+    <!-- アクティビティ系2行目 -->
+    <view id="park_11" viewBox="0 160 20 20" />
+    <g transform="translate(0 160)">
       <circle cx="7" cy="9" r="2" />
       <circle cx="6" cy="6" r="3" />
       <circle cx="10" cy="5" r="4" />
@@ -425,8 +426,8 @@
       <circle cx="12" cy="9" r="2" />
       <path d="M 7.5 18 l 1 -1 l 0.5 -9 h 2 l 0.5 9 l 1 1 z" class="fill-and-stroke" />
     </g>
-    <view id="garden_11" viewBox="20 140 20 20" />
-    <g transform="translate(20 140)">
+    <view id="garden_11" viewBox="20 160 20 20" />
+    <g transform="translate(20 160)">
       <path d="M 10 17 a 6 6 0 0 1 -6 -5 a 6 6 0 0 1 6 5" class="fill-and-stroke" />
       <path d="M 10 17 a 6 6 0 0 1 6 -5 a 6 6 0 0 1 -6 5" class="fill-and-stroke" />
       <path d="M 10 17 v -8" class="stroke-only" />
