@@ -425,6 +425,13 @@
       <circle cx="12" cy="9" r="2" />
       <path d="M 7.5 18 l 1 -1 l 0.5 -9 h 2 l 0.5 9 l 1 1 z" class="fill-and-stroke" />
     </g>
+    <view id="garden_11" viewBox="20 140 20 20" />
+    <g transform="translate(20 140)">
+      <path d="M 10 17 a 6 6 0 0 1 -6 -5 a 6 6 0 0 1 6 5" class="fill-and-stroke" />
+      <path d="M 10 17 a 6 6 0 0 1 6 -5 a 6 6 0 0 1 -6 5" class="fill-and-stroke" />
+      <path d="M 10 17 v -8" class="stroke-only" />
+      <path d="M 10 2 l -2 3 l -2 -2 a 4 4 0 0 0 4 6 a 4 4 0 0 0 4 -6 l -2 2 z" class="fill-and-stroke" />
+    </g>
     <!-- <g fill="none" stroke="red" stroke-width="0.2">
       <path
         d="M 0 0 h 400 M 0 20 h 400 M 0 40 h 400 M 0 60 h 400 M 0 80 h 400 M 0 100 h 400 M 0 120 h 400 M 0 140 h 400 M 0 160 h 400 M 0 180 h 400 M 0 200 h 400" />
