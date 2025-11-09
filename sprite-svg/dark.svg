@@ -415,9 +415,21 @@
       <path d="M 8 11 l 1 -2" class="stroke-only" stroke-width="1" />
       <path d="M 9 13 l 1 -2" class="stroke-only" stroke-width="1" />
     </g>
+    <!-- アクティビティ系 -->
+    <view id="park_11" viewBox="0 140 20 20" />
+    <g transform="translate(0 140)">
+      <circle cx="7" cy="9" r="2" />
+      <circle cx="6" cy="6" r="3" />
+      <circle cx="10" cy="5" r="4" />
+      <circle cx="13" cy="6" r="3.5" />
+      <circle cx="12" cy="9" r="2" />
+      <path d="M 7.5 18 l 1 -1 l 0.5 -9 h 2 l 0.5 9 l 1 1 z" class="fill-and-stroke" />
+    </g>
     <!-- <g fill="none" stroke="red" stroke-width="0.2">
-      <path d="M 0 0 h 400 M 0 20 h 400 M 0 40 h 400 M 0 60 h 400 M 0 80 h 400 M 0 100 h 400 M 0 120 h 400 M 0 140 h 400 M 0 160 h 400 M 0 180 h 400 M 0 200 h 400" />
-      <path d="M 0 0 v 400 M 20 0 v 400 M 40 0 v 400 M 60 0 v 400 M 80 0 v 400 M 100 0 v 400 M 120 0 v 400 M 140 0 v 400 M 160 0 v 400 M 180 0 v 400 M 200 0 v 400" />
+      <path
+        d="M 0 0 h 400 M 0 20 h 400 M 0 40 h 400 M 0 60 h 400 M 0 80 h 400 M 0 100 h 400 M 0 120 h 400 M 0 140 h 400 M 0 160 h 400 M 0 180 h 400 M 0 200 h 400" />
+      <path
+        d="M 0 0 v 400 M 20 0 v 400 M 40 0 v 400 M 60 0 v 400 M 80 0 v 400 M 100 0 v 400 M 120 0 v 400 M 140 0 v 400 M 160 0 v 400 M 180 0 v 400 M 200 0 v 400" />
     </g> -->
   </g>
 </svg>
