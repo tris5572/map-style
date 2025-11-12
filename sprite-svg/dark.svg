@@ -103,6 +103,23 @@
       <path d="M 10 2.5 h -2 v 0.5 h 2 q -1 0 -1 1 v 4 h -6 v 1.5 l 6 2 l 0.5 5 l -2 1 v 0.5 l 3 -0.3 z"
         transform="translate(20) scale(-1, 1)" />
     </g>
+    <view id="heliport_11" viewBox="120 0 20 20" />
+    <g transform="translate(120 0)">
+      <defs>
+        <mask id="heliport_11_mask">
+          <rect x="0" y="0" width="20" height="20" fill="white" />
+          <path d="M 13 9 l 3 3 h -3 z" fill="black" stroke="black" stroke-width="1.5" stroke-linejoin="round" />
+        </mask>
+      </defs>
+      <path d="M 6 8 h 7 l 4 4 v 2 h -6 l -3 -5 h -2 z" class="fill-and-stroke" stroke-width="1.5"
+        mask="url(#heliport_11_mask)" />
+      <path d="M 15 15 v 1.5 z" class="stroke-only" stroke-width="1.2" />
+      <path d="M 11 4 v 3 z" class="stroke-only" stroke-width="1.2" />
+      <path d="M 6 4 h 10 z" class="stroke-only" stroke-width="1.5" />
+      <path d="M 11 15 v 1.5 z" class="stroke-only" stroke-width="1.2" />
+      <path d="M 8 16 l 1 1 h 8 l 1 -1" class="stroke-only" stroke-width="1.2" />
+      <circle cx="3.5" cy="8.5" r="1.5" class="stroke-only" stroke-width="1.2" />
+    </g>
     <!-- 交通系 2行目 -->
     <view id="harbor_11" viewBox="0 20 20 20" />
     <g transform="translate(0, 20)">
