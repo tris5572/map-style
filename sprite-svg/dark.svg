@@ -463,26 +463,26 @@
       <rect x="3" y="15" width="14" height="2" />
     </g>
     <view id="stadium_11" viewBox="40 140 20 20" />
-    <defs>
-      <mask id="stadium_11_mask">
-        <rect x="0" y="0" width="20" height="20" fill="white" />
-        <rect x="0" y="4" width="20" height="10" fill="black" />
-      </mask>
-    </defs>
     <g transform="translate(40 140)">
+      <defs>
+        <mask id="stadium_11_mask">
+          <rect x="0" y="0" width="20" height="20" fill="white" />
+          <rect x="0" y="4" width="20" height="10" fill="black" />
+        </mask>
+      </defs>
       <path d="M 10 2 v 3 l 3 -1.5 z" class="fill-and-stroke" />
       <ellipse cx="10" cy="8" rx="6" ry="2" class="fill-and-stroke" />
       <ellipse cx="10" cy="14" rx="6" ry="2" class="stroke-only" mask="url(#stadium_11_mask)" />
       <path d="M 4 8 v 6 M 7 9.2 v 6 M 13 9.2 v 6 M 16 8 v 6" class="stroke-only" />
     </g>
     <view id="pitch_11" viewBox="60 140 20 20" />
-    <defs>
-      <mask id="pitch_11_mask">
-        <rect x="0" y="0" width="20" height="20" fill="white" />
-        <rect x="0" y="4" width="20" height="10" fill="black" />
-      </mask>
-    </defs>
     <g transform="translate(60 140)">
+      <defs>
+        <mask id="pitch_11_mask">
+          <rect x="0" y="0" width="20" height="20" fill="white" />
+          <rect x="0" y="4" width="20" height="10" fill="black" />
+        </mask>
+      </defs>
       <path d="M 10 2 v 3 l 3 -1.5 z" class="fill-and-stroke" />
       <ellipse cx="10" cy="8" rx="6" ry="2" class="fill-and-stroke" />
       <ellipse cx="10" cy="14" rx="6" ry="2" class="stroke-only" mask="url(#pitch_11_mask)" />
