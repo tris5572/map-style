@@ -488,6 +488,16 @@
       <ellipse cx="10" cy="14" rx="6" ry="2" class="stroke-only" mask="url(#pitch_11_mask)" />
       <path d="M 4 8 v 6 M 7 9.2 v 6 M 13 9.2 v 6 M 16 8 v 6" class="stroke-only" />
     </g>
+    <view id="amusement_park_11" viewBox="80 140 20 20" />
+    <g transform="translate(80 140)">
+      <circle cx="10" cy="9" r="6" class="stroke-only" stroke-width="1.5" />
+      <circle cx="10" cy="9" r="2.5" class="fill-only" />
+      <path d="M 10 4 v 10" class="stroke-only" />
+      <path d="M 6 5 l 8 8" class="stroke-only" />
+      <path d="M 4 9 h 12" class="stroke-only" />
+      <path d="M 6 13 l 8 -8" class="stroke-only" />
+      <path d="M 8 15 l -2 2.5 h 8 l -2 -2.5" class="fill-and-stroke" />
+    </g>
     <!-- アクティビティ系2行目 -->
     <view id="park_11" viewBox="0 160 20 20" />
     <g transform="translate(0 160)">
