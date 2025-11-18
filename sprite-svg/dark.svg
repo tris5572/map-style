@@ -498,6 +498,18 @@
       <path d="M 6 13 l 8 -8" class="stroke-only" />
       <path d="M 8 15 l -2 2.5 h 8 l -2 -2.5" class="fill-and-stroke" />
     </g>
+    <view id="aquarium_11" viewBox="100 140 20 20" />
+    <g transform="translate(100 140)">
+      <defs>
+        <mask id="aquarium_11_mask">
+          <rect x="0" y="0" width="20" height="20" fill="white" />
+          <circle cx="7" cy="10" r="1.8" fill="black" />
+        </mask>
+      </defs>
+      <path d="M 3 11 q 3 -8 10 -8 l 4 1 l -3 1 v 9 l 3 1 l -4 1 q -7 0 -10 -4 z" class="fill-and-stroke"
+        mask="url(#aquarium_11_mask)" />
+      <path d="M 14 9 l 3 -2 v 5 l -3 -2 z" class="fill-and-stroke" />
+    </g>
     <!-- アクティビティ系2行目 -->
     <view id="park_11" viewBox="0 160 20 20" />
     <g transform="translate(0 160)">
