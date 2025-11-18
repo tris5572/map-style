@@ -510,6 +510,21 @@
         mask="url(#aquarium_11_mask)" />
       <path d="M 14 9 l 3 -2 v 5 l -3 -2 z" class="fill-and-stroke" />
     </g>
+    <view id="castle_11" viewBox="120 140 20 20" />
+    <g transform="translate(120 140)">
+      <defs>
+        <mask id="castle_11_mask">
+          <rect x="0" y="0" width="20" height="20" fill="white" />
+          <path d="M 8 17 v -4 a 2 2 0 0 1 4 0 v 4 z" fill="black" />
+        </mask>
+      </defs>
+      <rect x="4" y="2" width="2" height="5" />
+      <rect x="9" y="2" width="2" height="5" />
+      <rect x="14" y="2" width="2" height="5" />
+      <rect x="4" y="5" width="12" height="2" />
+      <path d="M 3 17 h 14" class="stroke-only" stroke-width="2" />
+      <path d="M 5 17 l 2 -8 h 6 l 2 8" class="fill-and-stroke" mask="url(#castle_11_mask)" />
+    </g>
     <!-- アクティビティ系2行目 -->
     <view id="park_11" viewBox="0 160 20 20" />
     <g transform="translate(0 160)">
