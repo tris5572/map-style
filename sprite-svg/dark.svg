@@ -566,6 +566,11 @@
       <path d="M 4 17 h 6" class="stroke-only" stroke-width="1.2" />
       <path d="M 10 11 h 3 l 3 7 h 2" class="stroke-only" stroke-width="2" />
     </g>
+    <view id="campsite_11" viewBox="60 160 20 20" />
+    <g transform="translate(60 160)">
+      <path d="M 10 5 l -7 12 h 4 L 10 10 l 3 7 h 4 z" class="fill-and-stroke" />
+      <path d="M 8 3 L 10 5 L 12 3" class="stroke-only" />
+    </g>
     <!-- <g fill="none" stroke="red" stroke-width="0.2">
       <path
         d="M 0 0 h 400 M 0 20 h 400 M 0 40 h 400 M 0 60 h 400 M 0 80 h 400 M 0 100 h 400 M 0 120 h 400 M 0 140 h 400 M 0 160 h 400 M 0 180 h 400 M 0 200 h 400" />
