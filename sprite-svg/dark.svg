@@ -533,6 +533,18 @@
       <path d="M 3 17 h 14" class="stroke-only" stroke-width="2" />
       <path d="M 5 17 l 2 -8 h 6 l 2 8" class="fill-and-stroke" mask="url(#castle_11_mask)" />
     </g>
+    <view id="theatre_11" viewBox="140 140 20 20" />
+    <g transform="translate(140 140)">
+      <defs>
+        <mask id="theatre_11_mask">
+          <rect x="0" y="0" width="20" height="20" fill="white" />
+          <circle cx="7.5" cy="9" r="1.5" fill="black" />
+          <circle cx="12.5" cy="9" r="1.5" fill="black" />
+          <path d="M 7 13 a 4 6 0 0 0 6 0 z" fill="black" />
+        </mask>
+      </defs>
+      <path d="M 15 4 q -5 2 -10 0 v 8 a 5 5 0 0 0 10 0 z" class="fill-and-stroke" mask="url(#theatre_11_mask)" />
+    </g>
     <!-- アクティビティ系2行目 -->
     <view id="park_11" viewBox="0 160 20 20" />
     <g transform="translate(0 160)">
