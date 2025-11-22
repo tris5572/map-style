@@ -591,6 +591,20 @@
       <path d="M 4 11 h 4" class="stroke-only" stroke-width="2" />
       <path d="M 12 11 h 4" class="stroke-only" stroke-width="2" />
     </g>
+    <view id="zoo_11" viewBox="100 160 20 20" />
+    <g transform="translate(100 160)">
+      <defs>
+        <mask id="zoo_11_mask">
+          <rect x="0" y="0" width="20" height="20" fill="white" />
+          <circle cx="6" cy="8.5" r="1.2" fill="black" />
+          <path d="M 7 5 a 2 3 0 0 1 3 5" fill="none" stroke="black" stroke-width="1" />
+        </mask>
+      </defs>
+      <path
+        d="M 8 3 q -4 0 -5 4 q -1 8 2 10 l 1 -1 q -2 -5 0 -5 l 2 6 h 2 l 0.5 -4 a 3 4 0 0 0 3 0 l 0.5 4 h 2 l 1 -6 q 1 -8 -6 -8 z"
+        mask="url(#zoo_11_mask)" />
+      <path d="M 16 8 l 2 4 l -2 -2" class="fill-and-stroke" />
+    </g>
     <!-- <g fill="none" stroke="red" stroke-width="0.2">
       <path
         d="M 0 0 h 400 M 0 20 h 400 M 0 40 h 400 M 0 60 h 400 M 0 80 h 400 M 0 100 h 400 M 0 120 h 400 M 0 140 h 400 M 0 160 h 400 M 0 180 h 400 M 0 200 h 400 M 0 220 h 400 M 0 240 h 400 M 0 260 h 400" />
