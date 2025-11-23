@@ -605,6 +605,12 @@
         mask="url(#zoo_11_mask)" />
       <path d="M 16 8 l 2 4 l -2 -2" class="fill-and-stroke" />
     </g>
+    <!-- アクティビティ系3行目 -->
+    <view id="mountain_11" viewBox="0 180 20 20" />
+    <g transform="translate(0 180)">
+      <path d="M 3 16 L 10 3 L 17 16 z" class="stroke-only" stroke-width="1.5" />
+      <path d="M 3 16 L 5 14 L 8.5 11 L 10 13 L 11.5 11 L 15 14 L 17 16 z" class="fill-only" />
+    </g>
     <!-- <g fill="none" stroke="red" stroke-width="0.2">
       <path
         d="M 0 0 h 400 M 0 20 h 400 M 0 40 h 400 M 0 60 h 400 M 0 80 h 400 M 0 100 h 400 M 0 120 h 400 M 0 140 h 400 M 0 160 h 400 M 0 180 h 400 M 0 200 h 400 M 0 220 h 400 M 0 240 h 400 M 0 260 h 400" />
