@@ -165,6 +165,13 @@
       <path d="M 7.5 11 v -3 a 1.5 1.5 0 0 1 3 0 z" class="fill-only" />
       <path d="M 4 16 h 3 l 6 -6 h 3 " class="stroke-only" stroke-width="2" />
     </g>
+    <view id="bicycle_rental_11" viewBox="60 20 20 20" />
+    <g transform="translate(60 20)">
+      <circle cx="13" cy="3" r="1.5" class="fill-only" />
+      <path d="M 8 12 a 3 3 0 1 0 0 3" class="stroke-only" stroke-width="1.2" />
+      <path d="M 12 12 a 3 3 0 1 1 0 3" class="stroke-only" stroke-width="1.2" />
+      <path d="M 10 15 v -5 l -2 -2 l 3 -3 l 3 3 h 2" class="stroke-only" stroke-width="1.5" />
+    </g>
     <!-- 公共系 1行目 -->
     <view id="school_11" viewBox="0 40 20 20" />
     <g transform="translate(0 40)">
