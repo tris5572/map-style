@@ -685,6 +685,14 @@
       <path d="M 3 16 l 2.4 -1 l 2.4 1 l 2.4 -1 l 2.4 1 l 2.4 -1 l 2.4 1" class="stroke-only" stroke-width="1.5" />
       <circle cx="14.5" cy="8" r="1.5" class="fill-only" />
     </g>
+    <!-- 信仰系 -->
+    <view id="place_of_worship_11" viewBox="0 200 20 20" />
+    <g transform="translate(0 200)">
+      <path d="M 10 2 l -2 3 v 2 h 4 v -2 z" class="fill-only" />
+      <path d="M 4 17 v -7 l 3 -1.5 h 6 l 3 1.5 v 7 z" class="fill-only" />
+      <path d="M 2.5 10 v 6.5" class="stroke-only" />
+      <path d="M 17.5 10 v 6.5" class="stroke-only" />
+    </g>
     <!-- <g fill="none" stroke="red" stroke-width="0.2">
       <path
         d="M 0 0 h 400 M 0 20 h 400 M 0 40 h 400 M 0 60 h 400 M 0 80 h 400 M 0 100 h 400 M 0 120 h 400 M 0 140 h 400 M 0 160 h 400 M 0 180 h 400 M 0 200 h 400 M 0 220 h 400 M 0 240 h 400 M 0 260 h 400" />
