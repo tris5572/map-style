@@ -644,6 +644,12 @@
       <path d="M 16 5 l -5 -3" class="fill-and-stroke" stroke-width="1.2" />
       <circle cx="10" cy="2" r="1.2" class="fill-only" />
     </g>
+    <view id="swimming_11" viewBox="60 180 20 20" />
+    <g transform="translate(60 180)">
+      <path d="M 14 3 l -6 4 l 5 5 h -7 l 3 -3 v 2 h 1" class="stroke-only" stroke-width="2" />
+      <path d="M 3 16 l 2.4 -1 l 2.4 1 l 2.4 -1 l 2.4 1 l 2.4 -1 l 2.4 1" class="stroke-only" stroke-width="1.5" />
+      <circle cx="14.5" cy="8" r="1.5" class="fill-only" />
+    </g>
     <!-- <g fill="none" stroke="red" stroke-width="0.2">
       <path
         d="M 0 0 h 400 M 0 20 h 400 M 0 40 h 400 M 0 60 h 400 M 0 80 h 400 M 0 100 h 400 M 0 120 h 400 M 0 140 h 400 M 0 160 h 400 M 0 180 h 400 M 0 200 h 400 M 0 220 h 400 M 0 240 h 400 M 0 260 h 400" />
