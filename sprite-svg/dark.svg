@@ -120,6 +120,19 @@
       <path d="M 8 16 l 1 1 h 8 l 1 -1" class="stroke-only" stroke-width="1.2" />
       <circle cx="3.5" cy="8.5" r="1.5" class="stroke-only" stroke-width="1.2" />
     </g>
+    <view id="rocket_11" viewBox="140 0 20 20" />
+    <g transform="translate(140 0)">
+      <defs>
+        <mask id="rocket_11_mask">
+          <rect x="0" y="0" width="20" height="20" fill="white" />
+          <circle cx="10" cy="8" r="1.5" fill="black" />
+        </mask>
+      </defs>
+      <path d="M 10 3 q -3 2 -2 8 l -2 2 v 2 l 2 -2 h 2 z M 10 15 h -1 q 0 2 1 2 z" class="fill-and-stroke"
+        mask="url(#rocket_11_mask)" transform="rotate(45 10 10)" />
+      <path d="M 10 3 q -3 2 -2 8 l -2 2 v 2 l 2 -2 h 2 z M 10 15 h -1 q 0 2 1 2 z" class="fill-and-stroke"
+        mask="url(#rocket_11_mask)" transform="translate(20 0) scale(-1 1) rotate(-45 10 10) " />
+    </g>
     <!-- 交通系 2行目 -->
     <view id="harbor_11" viewBox="0 20 20 20" />
     <g transform="translate(0, 20)">
