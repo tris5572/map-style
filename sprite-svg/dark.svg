@@ -172,6 +172,11 @@
       <path d="M 12 12 a 3 3 0 1 1 0 3" class="stroke-only" stroke-width="1.2" />
       <path d="M 10 15 v -5 l -2 -2 l 3 -3 l 3 3 h 2" class="stroke-only" stroke-width="1.5" />
     </g>
+    <view id="information_11" viewBox="80 20 20 20" />
+    <g transform="translate(80 20)">
+      <circle cx="10" cy="5" r="2" class="fill-only" />
+      <path d="M 7.5 9 h 2 v 8 h -2 h 6 h -2 v -8 z" class="fill-and-stroke" stroke-width="1.5" />
+    </g>
     <!-- 公共系 1行目 -->
     <view id="school_11" viewBox="0 40 20 20" />
     <g transform="translate(0 40)">
