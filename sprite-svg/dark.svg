@@ -294,6 +294,16 @@
       <path d="M 10 3 l -7 4 v 10 h 14 v -10 z" class="fill-and-stroke" stroke-width="2"
         mask="url(#pharmacy_11_mask)" />
     </g>
+    <view id="toilet_11" viewBox="100 60 20 20" />
+    <g transform="translate(100 60)">
+      <circle cx="5.5" cy="4" r="1.6" class="fill-only" />
+      <path d="M 4 7 v 3 l -1 4 h 5 l -1 -4 v -3 z" class="fill-and-stroke" />
+      <path d="M 4 7 l -2 3 M 7 7 l 2 3" class="stroke-only" />
+      <path d="M 4.5 12 v 6 M 6.5 12 v 6" class="stroke-only" />
+      <circle cx="14.5" cy="4" r="1.6" class="fill-only" />
+      <rect x="12.5" y="6" width="4" height="7" />
+      <path d="M 14.5 12 v 6" class="stroke-only" />
+    </g>
     <view id="prison_11" viewBox="120 60 20 20" />
     <g transform="translate(120 60)" class="stroke-only" stroke-width="1.5">
       <rect x="4" y="3" width="12" height="14" />
