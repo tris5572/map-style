@@ -711,6 +711,11 @@
       <rect x="8.5" y="2" width="3" height="16" class="fill-only" />
       <rect x="5" y="6" width="10" height="3" class="fill-only" />
     </g>
+    <view id="religious_jewish_11" viewBox="60 200 20 20" />
+    <g transform="translate(60 200)">
+      <path d="M 10 2 l -7 12 h 14 z" class="fill-only" />
+      <path d="M 10 18 l -7 -12 h 14 z" class="fill-only" />
+    </g>
     <!-- <g fill="none" stroke="red" stroke-width="0.2">
       <path
         d="M 0 0 h 400 M 0 20 h 400 M 0 40 h 400 M 0 60 h 400 M 0 80 h 400 M 0 100 h 400 M 0 120 h 400 M 0 140 h 400 M 0 160 h 400 M 0 180 h 400 M 0 200 h 400 M 0 220 h 400 M 0 240 h 400 M 0 260 h 400" />
