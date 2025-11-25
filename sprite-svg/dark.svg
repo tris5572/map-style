@@ -658,6 +658,11 @@
         d="M 7 6 l -2 -2 q 2 -1 0 -2 l -1 2 q -2 0 -2 2 h -1 q 0 2 3 2 l 1 3 v 6 h 1 l 1 -4 l 1 4 h 1 l 1 -5 h 3 l 1 5 h 1 l 1 -4 l 1 4 h 1 l 0 -8 l 1 -5 l -1 0 l -2 3 z"
         class="fill-only" mask="url(#dog_park_11_mask)" />
     </g>
+    <view id="monument_11" viewBox="140 160 20 20" />
+    <g transform="translate(140 160)">
+      <path d="M 10 2 l -2 3 v 6 h 4 v -6 z" class="fill-only" />
+      <path d="M 5 17 v -3 a 2 2 0 0 1 2 -2 h 6 a 2 2 0 0 1 2 2 v 3 z" class="fill-only" />
+    </g>
     <!-- アクティビティ系3行目 -->
     <view id="mountain_11" viewBox="0 180 20 20" />
     <g transform="translate(0 180)">
