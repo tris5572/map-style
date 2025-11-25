@@ -742,6 +742,10 @@
     <g transform="translate(20 220)">
       <path d="M 10 2 L 5 18 L 18 8 L 2 8 L 15 18 z" class="fill-only" />
     </g>
+    <view id="circle_11" viewBox="40 220 20 20" />
+    <g transform="translate(40 220)">
+      <circle cx="10" cy="10" r="6" class="fill-and-stroke" stroke-width="1.5" />
+    </g>
     <!-- <g fill="none" stroke="red" stroke-width="0.2">
       <path
         d="M 0 0 h 400 M 0 20 h 400 M 0 40 h 400 M 0 60 h 400 M 0 80 h 400 M 0 100 h 400 M 0 120 h 400 M 0 140 h 400 M 0 160 h 400 M 0 180 h 400 M 0 200 h 400 M 0 220 h 400 M 0 240 h 400 M 0 260 h 400" />
