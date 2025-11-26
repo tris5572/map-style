@@ -1,5 +1,15 @@
 <svg viewBox="0 0 160 260" xmlns="http://www.w3.org/2000/svg">
   <style>
+    .f {
+      fill: hsl(0 0% 80%);
+    }
+
+    .s {
+      stroke: hsl(0 0% 80%);
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+
     .fill-only {
       fill: hsl(0 0% 80%);
       stroke: none;
