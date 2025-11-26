@@ -22,7 +22,7 @@
   <g class="fill-only">
     <!-- 交通系 1行目 -->
     <view id="bus_11" viewBox="0 0 20 20" />
-    <g transform="translate(0, 0)">
+    <g transform="translate(0 0)">
       <defs>
         <mask id="bus_11_mask">
           <rect x="0" y="0" width="20" height="20" fill="white" />
@@ -37,7 +37,7 @@
       <rect x="13" y="15" width="2" height="2" rx="0.5" mask="url(#bus_11_mask)" />
     </g>
     <view id="railway_11" viewBox="20 0 20 20" />
-    <g transform="translate(20, 0)">
+    <g transform="translate(20 0)">
       <defs>
         <mask id="railway_11_mask">
           <rect x="0" y="0" width="20" height="20" fill="white" />
@@ -54,7 +54,7 @@
       <path d="M 3.5 17.5 l 13 0" stroke="hsl(0 0% 80%)" stroke-width="0.5" />
     </g>
     <view id="rail_metro_11" viewBox="40 0 20 20" />
-    <g transform="translate(40, 0)">
+    <g transform="translate(40 0)">
       <defs>
         <mask id="rail_metro_11_mask">
           <rect x="0" y="0" width="20" height="20" fill="white" />
@@ -76,7 +76,7 @@
       <path d="M 3.5 17.5 l 13 0" class="stroke-only" stroke-width="0.5" />
     </g>
     <view id="rail_light_11" viewBox="60 0 20 20" />
-    <g transform="translate(60, 0)">
+    <g transform="translate(60 0)">
       <defs>
         <mask id="rail_light_11_mask">
           <rect x="0" y="0" width="20" height="20" fill="white" />
@@ -92,16 +92,16 @@
       <path d="M 3.5 17.5 l 13 0" class="stroke-only" stroke-width="0.5" />
     </g>
     <view id="airport_11" viewBox="80 0 20 20" />
-    <g transform="translate(80, 0)">
+    <g transform="translate(80 0)">
       <path d="M 10 2 q -1 0.5 -1 1 v 5 l -7 3 v 1 l 7 -0.5 v5 l -2 1 v 0.5 l 3 -0.3 z" />
       <path d="M 10 2 q -1 0.5 -1 1 v 5 l -7 3 v 1 l 7 -0.5 v5 l -2 1 v 0.5 l 3 -0.3 z"
-        transform="translate(20) scale(-1, 1)" />
+        transform="translate(20) scale(-1 1)" />
     </g>
     <view id="airfield_11" viewBox="100 0 20 20" />
-    <g transform="translate(100, 0)">
+    <g transform="translate(100 0)">
       <path d="M 10 2.5 h -2 v 0.5 h 2 q -1 0 -1 1 v 4 h -6 v 1.5 l 6 2 l 0.5 5 l -2 1 v 0.5 l 3 -0.3 z" />
       <path d="M 10 2.5 h -2 v 0.5 h 2 q -1 0 -1 1 v 4 h -6 v 1.5 l 6 2 l 0.5 5 l -2 1 v 0.5 l 3 -0.3 z"
-        transform="translate(20) scale(-1, 1)" />
+        transform="translate(20) scale(-1 1)" />
     </g>
     <view id="heliport_11" viewBox="120 0 20 20" />
     <g transform="translate(120 0)">
@@ -135,14 +135,14 @@
     </g>
     <!-- 交通系 2行目 -->
     <view id="harbor_11" viewBox="0 20 20 20" />
-    <g transform="translate(0, 20)">
+    <g transform="translate(0 20)">
       <circle cx="10" cy="5" r="2" class="stroke-only" stroke-width="1.5" />
       <path d="M 10 7 v 8 " class="stroke-only" stroke-width="1.5" />
       <path d="M 3 8 q 0 8 7 8 t 7 -8" class="stroke-only" stroke-width="1.5" />
       <path d="M 3 8 q 0 8 7 9 q 7 -1 7 -9" class="stroke-only" stroke-width="1.5" />
     </g>
     <view id="ferry_terminal_11" viewBox="20 20 20 20" />
-    <g transform="translate(20, 20)">
+    <g transform="translate(20 20)">
       <defs>
         <mask id="ferry_terminal_11_mask">
           <rect x="0" y="0" width="20" height="20" fill="white" />
@@ -273,7 +273,7 @@
     <g transform="translate(20 60)">
       <path d="M 10 3 C 9 3 8 2 7 2 C 3 2 3 6 3 7 S 4 11 5 13 S 6.5 18 8 18 S 8.5 13 10 13 z" class="fill-only" />
       <path d="M 10 3 C 9 3 8 2 7 2 C 3 2 3 6 3 7 S 4 11 5 13 S 6.5 18 8 18 S 8.5 13 10 13 z" class="fill-only"
-        transform="translate(20) scale(-1,1)" />
+        transform="translate(20) scale(-1 1)" />
     </g>
     <view id="doctor_11" viewBox="40 60 20 20" />
     <g transform="translate(40 60)">
