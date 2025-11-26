@@ -9,13 +9,8 @@
       stroke-linejoin: round;
       stroke-linecap: round;
     }
-
-    .fill-only {
-      fill: hsl(0 0% 80%);
-      stroke: none;
-    }
   </style>
-  <g class="fill-only">
+  <g>
     <!-- 交通系 1行目 -->
     <view id="bus_11" viewBox="0 0 20 20" />
     <g transform="translate(0 0)">
@@ -156,20 +151,20 @@
     </g>
     <view id="entrance_11" viewBox="40 20 20 20" />
     <g transform="translate(40 20)">
-      <circle cx="9" cy="4.5" r="1.5" class="fill-only" />
-      <path d="M 7.5 11 v -3 a 1.5 1.5 0 0 1 3 0 z" class="fill-only" />
+      <circle cx="9" cy="4.5" r="1.5" class="f" />
+      <path d="M 7.5 11 v -3 a 1.5 1.5 0 0 1 3 0 z" class="f" />
       <path d="M 4 16 h 3 l 6 -6 h 3 " class="s" stroke-width="2" />
     </g>
     <view id="bicycle_rental_11" viewBox="60 20 20 20" />
     <g transform="translate(60 20)">
-      <circle cx="13" cy="3" r="1.5" class="fill-only" />
+      <circle cx="13" cy="3" r="1.5" class="f" />
       <path d="M 8 12 a 3 3 0 1 0 0 3" class="s" stroke-width="1.2" />
       <path d="M 12 12 a 3 3 0 1 1 0 3" class="s" stroke-width="1.2" />
       <path d="M 10 15 v -5 l -2 -2 l 3 -3 l 3 3 h 2" class="s" stroke-width="1.5" />
     </g>
     <view id="information_11" viewBox="80 20 20 20" />
     <g transform="translate(80 20)">
-      <circle cx="10" cy="5" r="2" class="fill-only" />
+      <circle cx="10" cy="5" r="2" class="f" />
       <path d="M 7.5 9 h 2 v 8 h -2 h 6 h -2 v -8 z" class="f s" stroke-width="1.5" />
     </g>
     <!-- 公共系 1行目 -->
@@ -188,7 +183,7 @@
           <rect x="14" y="13.5" width="2" height="2" fill="black" />
         </mask>
       </defs>
-      <path d="M 6 3 h 8 v 5 h 4 v 9 h -16 v -9 h 4 z" class="fill-only" mask="url(#school_11_mask)" />
+      <path d="M 6 3 h 8 v 5 h 4 v 9 h -16 v -9 h 4 z" class="f" mask="url(#school_11_mask)" />
     </g>
     <view id="college_11" viewBox="20 40 20 20" />
     <g transform="translate(20 40)">
@@ -234,7 +229,7 @@
     </g>
     <view id="town_hall_11" viewBox="100 40 20 20" />
     <g transform="translate(100 40)">
-      <path d="M 10 3 l -7 2 v 1 h 14 v -1 z" class="fill-only" />
+      <path d="M 10 3 l -7 2 v 1 h 14 v -1 z" class="f" />
       <path d="M 5 14 v -6 h 10 v 6" class="s" stroke-width="1.5" />
       <path d="M 8.333 14 v -6 h 3.333 v 6" class="s" stroke-width="1.5" />
       <path d="M 5 14 l -2 1.5 v 1 h 14 v -1 l -2 -1.5 z" class="f s" />
@@ -265,8 +260,8 @@
     </g>
     <view id="dentist_11" viewBox="20 60 20 20" />
     <g transform="translate(20 60)">
-      <path d="M 10 3 C 9 3 8 2 7 2 C 3 2 3 6 3 7 S 4 11 5 13 S 6.5 18 8 18 S 8.5 13 10 13 z" class="fill-only" />
-      <path d="M 10 3 C 9 3 8 2 7 2 C 3 2 3 6 3 7 S 4 11 5 13 S 6.5 18 8 18 S 8.5 13 10 13 z" class="fill-only"
+      <path d="M 10 3 C 9 3 8 2 7 2 C 3 2 3 6 3 7 S 4 11 5 13 S 6.5 18 8 18 S 8.5 13 10 13 z" class="f" />
+      <path d="M 10 3 C 9 3 8 2 7 2 C 3 2 3 6 3 7 S 4 11 5 13 S 6.5 18 8 18 S 8.5 13 10 13 z" class="f"
         transform="translate(20) scale(-1 1)" />
     </g>
     <view id="doctor_11" viewBox="40 60 20 20" />
@@ -281,18 +276,18 @@
         <mask id="pharmacy_11_mask">
           <rect x="0" y="0" width="20" height="20" fill="white" />
           <path d="M 6 11 a 2 2 0 0 0 4 4 l 4 -4 a 2 2 0 0 0 -4 -4 z" class="s" style="stroke:black; stroke-width:2" />
-          <path d="M 6 11 a 2 2 0 0 0 4 4 l 2 -2 l -4 -4 z" class="fill-only" style="fill:black" />
+          <path d="M 6 11 a 2 2 0 0 0 4 4 l 2 -2 l -4 -4 z" class="f" style="fill:black" />
         </mask>
       </defs>
       <path d="M 10 3 l -7 4 v 10 h 14 v -10 z" class="f s" stroke-width="2" mask="url(#pharmacy_11_mask)" />
     </g>
     <view id="toilet_11" viewBox="100 60 20 20" />
     <g transform="translate(100 60)">
-      <circle cx="5.5" cy="4" r="1.6" class="fill-only" />
+      <circle cx="5.5" cy="4" r="1.6" class="f" />
       <path d="M 4 7 v 3 l -1 4 h 5 l -1 -4 v -3 z" class="f s" />
       <path d="M 4 7 l -2 3 M 7 7 l 2 3" class="s" />
       <path d="M 4.5 12 v 6 M 6.5 12 v 6" class="s" />
-      <circle cx="14.5" cy="4" r="1.6" class="fill-only" />
+      <circle cx="14.5" cy="4" r="1.6" class="f" />
       <rect x="12.5" y="6" width="4" height="7" />
       <path d="M 14.5 12 v 6" class="s" />
     </g>
@@ -305,9 +300,9 @@
     </g>
     <view id="drinking_water_11" viewBox="140 60 20 20" />
     <g transform="translate(140 60)">
-      <path d="M 16 4 h -8 q -2 0 -2 2 v 4 h 3 v -3 h 7 z" class="fill-only" />
-      <path d="M 7.5 12 q -3 5 0 5 z" class="fill-only" />
-      <path d="M 7.5 12 q 3 5 0 5 z" class="fill-only" />
+      <path d="M 16 4 h -8 q -2 0 -2 2 v 4 h 3 v -3 h 7 z" class="f" />
+      <path d="M 7.5 12 q -3 5 0 5 z" class="f" />
+      <path d="M 7.5 12 q 3 5 0 5 z" class="f" />
     </g>
     <!-- 店舗系1行目 -->
     <view id="shop_11" viewBox="0 80 20 20" />
@@ -318,7 +313,7 @@
     <view id="grocery_11" viewBox="20 80 20 20" />
     <g transform="translate(20 80)">
       <path d="M 15 6 h -12 l 2 7 h 10 v -7 l 1 -4 h 2" class="s" stroke-width="1.5" />
-      <path d="M 15 6 h -12 l 2 7 h 10 z" class="fill-only" />
+      <path d="M 15 6 h -12 l 2 7 h 10 z" class="f" />
       <circle cx="6" cy="16" r="1.5" />
       <circle cx="14" cy="16" r="1.5" />
     </g>
@@ -376,7 +371,7 @@
     <view id="art_gallery_11" viewBox="140 80 20 20" />
     <g transform="translate(140 80)">
       <rect x="4" y="6" width="12" height="10" class="s" stroke-width="1.5" />
-      <circle cx="7" cy="9" r="1" class="fill-only" />
+      <circle cx="7" cy="9" r="1" class="f" />
       <path d="M 8 14 l 1 -2 l 1 2 l 2 -5 l 2 5 z" />
       <path d="M 5 6 L 10 2 L 15 6" class="s" stroke-width="1.2" />
     </g>
@@ -460,7 +455,7 @@
     <g transform="translate(80 120)">
       <path d="M 10 3 h -7 l 7 7 v 6 l -4 1 h 4" class="s" stroke-width="1.5" />
       <path d="M 10 3 h -7 l 7 7 v 6 l -4 1 h 4" class="s" stroke-width="1.5" transform="translate(20 0) scale(-1 1)" />
-      <path d="M 6 6 l 4 4 l 4 -4 z" class="fill-only" />
+      <path d="M 6 6 l 4 4 l 4 -4 z" class="f" />
     </g>
     <view id="beer_11" viewBox="100 120 20 20" />
     <g transform="translate(100 120)">
@@ -529,7 +524,7 @@
     <view id="amusement_park_11" viewBox="80 140 20 20" />
     <g transform="translate(80 140)">
       <circle cx="10" cy="9" r="6" class="s" stroke-width="1.5" />
-      <circle cx="10" cy="9" r="2.5" class="fill-only" />
+      <circle cx="10" cy="9" r="2.5" class="f" />
       <path d="M 10 4 v 10" class="s" />
       <path d="M 6 5 l 8 8" class="s" />
       <path d="M 4 9 h 12" class="s" />
@@ -645,18 +640,18 @@
       </defs>
       <path
         d="M 7 6 l -2 -2 q 2 -1 0 -2 l -1 2 q -2 0 -2 2 h -1 q 0 2 3 2 l 1 3 v 6 h 1 l 1 -4 l 1 4 h 1 l 1 -5 h 3 l 1 5 h 1 l 1 -4 l 1 4 h 1 l 0 -8 l 1 -5 l -1 0 l -2 3 z"
-        class="fill-only" mask="url(#dog_park_11_mask)" />
+        class="f" mask="url(#dog_park_11_mask)" />
     </g>
     <view id="monument_11" viewBox="140 160 20 20" />
     <g transform="translate(140 160)">
-      <path d="M 10 2 l -2 3 v 6 h 4 v -6 z" class="fill-only" />
-      <path d="M 5 17 v -3 a 2 2 0 0 1 2 -2 h 6 a 2 2 0 0 1 2 2 v 3 z" class="fill-only" />
+      <path d="M 10 2 l -2 3 v 6 h 4 v -6 z" class="f" />
+      <path d="M 5 17 v -3 a 2 2 0 0 1 2 -2 h 6 a 2 2 0 0 1 2 2 v 3 z" class="f" />
     </g>
     <!-- アクティビティ系3行目 -->
     <view id="mountain_11" viewBox="0 180 20 20" />
     <g transform="translate(0 180)">
       <path d="M 3 16 L 10 3 L 17 16 z" class="s" stroke-width="1.5" />
-      <path d="M 3 16 L 5 14 L 8.5 11 L 10 13 L 11.5 11 L 15 14 L 17 16 z" class="fill-only" />
+      <path d="M 3 16 L 5 14 L 8.5 11 L 10 13 L 11.5 11 L 15 14 L 17 16 z" class="f" />
     </g>
     <view id="volcano_11" viewBox="20 180 20 20" />
     <g transform="translate(20 180)">
@@ -674,21 +669,21 @@
     <view id="golf_11" viewBox="40 180 20 20" />
     <g transform="translate(40 180)">
       <path d="M 6 8 L 15 5 L 6 8 L 7 12 L 6 17 L 7 12 L 10 12 L 10 17 L 10 12 L 9 8 z" class="f s" stroke-width="2" />
-      <circle cx="6" cy="4" r="1.5" class="fill-only" />
+      <circle cx="6" cy="4" r="1.5" class="f" />
       <path d="M 16 5 l -5 -3" class="f s" stroke-width="1.2" />
-      <circle cx="10" cy="2" r="1.2" class="fill-only" />
+      <circle cx="10" cy="2" r="1.2" class="f" />
     </g>
     <view id="swimming_11" viewBox="60 180 20 20" />
     <g transform="translate(60 180)">
       <path d="M 14 3 l -6 4 l 5 5 h -7 l 3 -3 v 2 h 1" class="s" stroke-width="2" />
       <path d="M 3 16 l 2.4 -1 l 2.4 1 l 2.4 -1 l 2.4 1 l 2.4 -1 l 2.4 1" class="s" stroke-width="1.5" />
-      <circle cx="14.5" cy="8" r="1.5" class="fill-only" />
+      <circle cx="14.5" cy="8" r="1.5" class="f" />
     </g>
     <!-- 信仰系 -->
     <view id="place_of_worship_11" viewBox="0 200 20 20" />
     <g transform="translate(0 200)">
-      <path d="M 10 2 l -2 3 v 2 h 4 v -2 z" class="fill-only" />
-      <path d="M 4 17 v -7 l 3 -1.5 h 6 l 3 1.5 v 7 z" class="fill-only" />
+      <path d="M 10 2 l -2 3 v 2 h 4 v -2 z" class="f" />
+      <path d="M 4 17 v -7 l 3 -1.5 h 6 l 3 1.5 v 7 z" class="f" />
       <path d="M 2.5 10 v 6.5" class="s" />
       <path d="M 17.5 10 v 6.5" class="s" />
     </g>
@@ -707,28 +702,28 @@
     </g>
     <view id="religious_christian_11" viewBox="40 200 20 20" />
     <g transform="translate(40 200)">
-      <rect x="8.5" y="2" width="3" height="16" class="fill-only" />
-      <rect x="5" y="6" width="10" height="3" class="fill-only" />
+      <rect x="8.5" y="2" width="3" height="16" class="f" />
+      <rect x="5" y="6" width="10" height="3" class="f" />
     </g>
     <view id="religious_jewish_11" viewBox="60 200 20 20" />
     <g transform="translate(60 200)">
-      <path d="M 10 2 l -7 12 h 14 z" class="fill-only" />
-      <path d="M 10 18 l -7 -12 h 14 z" class="fill-only" />
+      <path d="M 10 2 l -7 12 h 14 z" class="f" />
+      <path d="M 10 18 l -7 -12 h 14 z" class="f" />
     </g>
     <view id="religious_jewish_11" viewBox="80 200 20 20" />
     <g transform="translate(80 200)">
-      <path d="M 12 3 a 7.5 7.5 0 1 0 0 14 a 6 6 0 1 1 0 -14" class="fill-only" />
-      <path d="M 15 6 l -3 8 l 7 -5 h -8 l 7 5 z" class="fill-only" />
+      <path d="M 12 3 a 7.5 7.5 0 1 0 0 14 a 6 6 0 1 1 0 -14" class="f" />
+      <path d="M 15 6 l -3 8 l 7 -5 h -8 l 7 5 z" class="f" />
     </g>
     <!-- 記号系 -->
     <view id="marker_11" viewBox="0 220 20 20" />
     <g transform="translate(0 220)">
-      <path d="M 10 3 q -4.5 0 -5 5 q 0 3 5 10 z" class="fill-only" />
-      <path d="M 10 3 q -4.5 0 -5 5 q 0 3 5 10 z" class="fill-only" transform="translate(20) scale(-1 1)" />
+      <path d="M 10 3 q -4.5 0 -5 5 q 0 3 5 10 z" class="f" />
+      <path d="M 10 3 q -4.5 0 -5 5 q 0 3 5 10 z" class="f" transform="translate(20) scale(-1 1)" />
     </g>
     <view id="star_11" viewBox="20 220 20 20" />
     <g transform="translate(20 220)">
-      <path d="M 10 2 L 5 18 L 18 8 L 2 8 L 15 18 z" class="fill-only" />
+      <path d="M 10 2 L 5 18 L 18 8 L 2 8 L 15 18 z" class="f" />
     </g>
     <view id="circle_11" viewBox="40 220 20 20" />
     <g transform="translate(40 220)">
