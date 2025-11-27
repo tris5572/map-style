@@ -11,8 +11,7 @@
       stroke-linecap: round;
     }
 
-    .fs,
-    .sf {
+    .fs {
       fill: hsl(0 0% 80%);
       stroke: hsl(0 0% 80%);
       stroke-linejoin: round;
