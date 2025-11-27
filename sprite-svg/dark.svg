@@ -1,28 +1,62 @@
 <svg viewBox="0 0 160 260" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .fill-only {
+    /* 塗りのみ */
+    .f {
       fill: hsl(0 0% 80%);
-      stroke: none;
     }
 
-    .stroke-only {
+    /* 線のみ */
+    .s {
       fill: none;
       stroke: hsl(0 0% 80%);
       stroke-linejoin: round;
       stroke-linecap: round;
     }
 
-    .fill-and-stroke {
+    /* 塗と線 */
+    .fs {
       fill: hsl(0 0% 80%);
       stroke: hsl(0 0% 80%);
       stroke-linejoin: round;
       stroke-linecap: round;
     }
+
+    .w05 {
+      stroke-width: 0.5;
+    }
+
+    .w07 {
+      stroke-width: 0.7;
+    }
+
+    .w10 {
+      stroke-width: 1;
+    }
+
+    .w12 {
+      stroke-width: 1.2;
+    }
+
+    .w14 {
+      stroke-width: 1.4;
+    }
+
+    .w15 {
+      stroke-width: 1.5;
+    }
+
+    .w18 {
+      stroke-width: 1.8;
+    }
+
+    .w20 {
+      stroke-width: 2.0;
+    }
   </style>
-  <g class="fill-only">
+  <g>
     <!-- 交通系 1行目 -->
     <view id="bus_11" viewBox="0 0 20 20" />
-    <g transform="translate(0, 0)">
+    <g transform="translate(0 0)">
       <defs>
         <mask id="bus_11_mask">
           <rect x="0" y="0" width="20" height="20" fill="white" />
@@ -32,12 +66,12 @@
           <rect x="13" y="13.5" width="2" height="1.5" fill="black" />
         </mask>
       </defs>
-      <rect x="4" y="3" width="12" height="13" rx="1.5" mask="url(#bus_11_mask)" />
-      <rect x="5" y="15" width="2" height="2" rx="0.5" mask="url(#bus_11_mask)" />
-      <rect x="13" y="15" width="2" height="2" rx="0.5" mask="url(#bus_11_mask)" />
+      <rect x="4" y="3" width="12" height="13" rx="1.5" class="f" mask="url(#bus_11_mask)" />
+      <rect x="5" y="15" width="2" height="2" rx="0.5" class="f" mask="url(#bus_11_mask)" />
+      <rect x="13" y="15" width="2" height="2" rx="0.5" class="f" mask="url(#bus_11_mask)" />
     </g>
     <view id="railway_11" viewBox="20 0 20 20" />
-    <g transform="translate(20, 0)">
+    <g transform="translate(20 0)">
       <defs>
         <mask id="railway_11_mask">
           <rect x="0" y="0" width="20" height="20" fill="white" />
@@ -47,14 +81,14 @@
           <circle cx="14" cy="12" r="1" fill="black" />
         </mask>
       </defs>
-      <rect x="4" y="2" width="12" height="13" rx="1.5" mask="url(#railway_11_mask)" />
-      <path d="M 7 15.5 l -3 3 l 1 0 l 3 -3" />
-      <path d="M 12 15.5 l 3 3 l 1 0 l -3 -3" />
-      <path d="M 5 16 l 10 0" class="stroke-only" stroke-width="0.5" />
-      <path d="M 3.5 17.5 l 13 0" stroke="hsl(0 0% 80%)" stroke-width="0.5" />
+      <rect x="4" y="2" width="12" height="13" rx="1.5" class="f" mask="url(#railway_11_mask)" />
+      <path d="M 7 15.5 l -3 3 l 1 0 l 3 -3" class="f" />
+      <path d="M 12 15.5 l 3 3 l 1 0 l -3 -3" class="f" />
+      <path d="M 5 16 l 10 0" class="s w05" />
+      <path d="M 3.5 17.5 l 13 0" class="s w05" />
     </g>
     <view id="rail_metro_11" viewBox="40 0 20 20" />
-    <g transform="translate(40, 0)">
+    <g transform="translate(40 0)">
       <defs>
         <mask id="rail_metro_11_mask">
           <rect x="0" y="0" width="20" height="20" fill="white" />
@@ -68,15 +102,15 @@
           <rect x="0" y="16" width="20" height="5" fill="black" />
         </mask>
       </defs>
-      <rect x="5" y="3" width="10" height="12" rx="1.5" mask="url(#rail_metro_11_mask)" />
-      <circle cx="10" cy="10" r="9" class="stroke-only" stroke-width="0.7" mask="url(#rail_metro_11_tunnel_mask)" />
-      <path d="M 7 15.5 l -3 3 l 1 0 l 3 -3" />
-      <path d="M 12 15.5 l 3 3 l 1 0 l -3 -3" />
-      <path d="M 5 16 l 10 0" class="stroke-only" stroke-width="0.5" />
-      <path d="M 3.5 17.5 l 13 0" class="stroke-only" stroke-width="0.5" />
+      <rect x="5" y="3" width="10" height="12" rx="1.5" class="f" mask="url(#rail_metro_11_mask)" />
+      <circle cx="10" cy="10" r="9" class="s w07" mask="url(#rail_metro_11_tunnel_mask)" />
+      <path d="M 7 15.5 l -3 3 l 1 0 l 3 -3" class="f" />
+      <path d="M 12 15.5 l 3 3 l 1 0 l -3 -3" class="f" />
+      <path d="M 5 16 l 10 0" class="s w05" />
+      <path d="M 3.5 17.5 l 13 0" class="s w05" />
     </g>
     <view id="rail_light_11" viewBox="60 0 20 20" />
-    <g transform="translate(60, 0)">
+    <g transform="translate(60 0)">
       <defs>
         <mask id="rail_light_11_mask">
           <rect x="0" y="0" width="20" height="20" fill="white" />
@@ -85,23 +119,23 @@
           <circle cx="10" cy="12.5" r="0.8" fill="black" />
         </mask>
       </defs>
-      <rect x="5" y="2" width="10" height="13" rx="1.5" mask="url(#rail_light_11_mask)" />
-      <path d="M 7 15.5 l -3 3 l 1 0 l 3 -3" />
-      <path d="M 12 15.5 l 3 3 l 1 0 l -3 -3" />
-      <path d="M 5 16 l 10 0" class="stroke-only" stroke-width="0.5" />
-      <path d="M 3.5 17.5 l 13 0" class="stroke-only" stroke-width="0.5" />
+      <rect x="5" y="2" width="10" height="13" rx="1.5" class="f" mask="url(#rail_light_11_mask)" />
+      <path d="M 7 15.5 l -3 3 l 1 0 l 3 -3" class="f" />
+      <path d="M 12 15.5 l 3 3 l 1 0 l -3 -3" class="f" />
+      <path d="M 5 16 l 10 0" class="s w05" />
+      <path d="M 3.5 17.5 l 13 0" class="s w05" />
     </g>
     <view id="airport_11" viewBox="80 0 20 20" />
-    <g transform="translate(80, 0)">
-      <path d="M 10 2 q -1 0.5 -1 1 v 5 l -7 3 v 1 l 7 -0.5 v5 l -2 1 v 0.5 l 3 -0.3 z" />
-      <path d="M 10 2 q -1 0.5 -1 1 v 5 l -7 3 v 1 l 7 -0.5 v5 l -2 1 v 0.5 l 3 -0.3 z"
-        transform="translate(20) scale(-1, 1)" />
+    <g transform="translate(80 0)">
+      <path d="M 10 2 q -1 0.5 -1 1 v 5 l -7 3 v 1 l 7 -0.5 v5 l -2 1 v 0.5 l 3 -0.3 z" class="f" />
+      <path d="M 10 2 q -1 0.5 -1 1 v 5 l -7 3 v 1 l 7 -0.5 v5 l -2 1 v 0.5 l 3 -0.3 z" class="f"
+        transform="translate(20) scale(-1 1)" />
     </g>
     <view id="airfield_11" viewBox="100 0 20 20" />
-    <g transform="translate(100, 0)">
-      <path d="M 10 2.5 h -2 v 0.5 h 2 q -1 0 -1 1 v 4 h -6 v 1.5 l 6 2 l 0.5 5 l -2 1 v 0.5 l 3 -0.3 z" />
-      <path d="M 10 2.5 h -2 v 0.5 h 2 q -1 0 -1 1 v 4 h -6 v 1.5 l 6 2 l 0.5 5 l -2 1 v 0.5 l 3 -0.3 z"
-        transform="translate(20) scale(-1, 1)" />
+    <g transform="translate(100 0)">
+      <path d="M 10 2.5 h -2 v 0.5 h 2 q -1 0 -1 1 v 4 h -6 v 1.5 l 6 2 l 0.5 5 l -2 1 v 0.5 l 3 -0.3 z" class="f" />
+      <path d="M 10 2.5 h -2 v 0.5 h 2 q -1 0 -1 1 v 4 h -6 v 1.5 l 6 2 l 0.5 5 l -2 1 v 0.5 l 3 -0.3 z" class="f"
+        transform="translate(20) scale(-1 1)" />
     </g>
     <view id="heliport_11" viewBox="120 0 20 20" />
     <g transform="translate(120 0)">
@@ -111,14 +145,13 @@
           <path d="M 13 9 l 3 3 h -3 z" fill="black" stroke="black" stroke-width="1.5" stroke-linejoin="round" />
         </mask>
       </defs>
-      <path d="M 6 8 h 7 l 4 4 v 2 h -6 l -3 -5 h -2 z" class="fill-and-stroke" stroke-width="1.5"
-        mask="url(#heliport_11_mask)" />
-      <path d="M 15 15 v 1.5 z" class="stroke-only" stroke-width="1.2" />
-      <path d="M 11 4 v 3 z" class="stroke-only" stroke-width="1.2" />
-      <path d="M 6 4 h 10 z" class="stroke-only" stroke-width="1.5" />
-      <path d="M 11 15 v 1.5 z" class="stroke-only" stroke-width="1.2" />
-      <path d="M 8 16 l 1 1 h 8 l 1 -1" class="stroke-only" stroke-width="1.2" />
-      <circle cx="3.5" cy="8.5" r="1.5" class="stroke-only" stroke-width="1.2" />
+      <path d="M 6 8 h 7 l 4 4 v 2 h -6 l -3 -5 h -2 z" class="fs w15" mask="url(#heliport_11_mask)" />
+      <path d="M 15 15 v 1.5 z" class="s w12" />
+      <path d="M 11 4 v 3 z" class="s w12" />
+      <path d="M 6 4 h 10 z" class="s w15" />
+      <path d="M 11 15 v 1.5 z" class="s w12" />
+      <path d="M 8 16 l 1 1 h 8 l 1 -1" class="s w12" />
+      <circle cx="3.5" cy="8.5" r="1.5" class="s w12" />
     </g>
     <view id="rocket_11" viewBox="140 0 20 20" />
     <g transform="translate(140 0)">
@@ -128,21 +161,21 @@
           <circle cx="10" cy="8" r="1.5" fill="black" />
         </mask>
       </defs>
-      <path d="M 10 3 q -3 2 -2 8 l -2 2 v 2 l 2 -2 h 2 z M 10 15 h -1 q 0 2 1 2 z" class="fill-and-stroke"
+      <path d="M 10 3 q -3 2 -2 8 l -2 2 v 2 l 2 -2 h 2 z M 10 15 h -1 q 0 2 1 2 z" class="fs"
         mask="url(#rocket_11_mask)" transform="rotate(45 10 10)" />
-      <path d="M 10 3 q -3 2 -2 8 l -2 2 v 2 l 2 -2 h 2 z M 10 15 h -1 q 0 2 1 2 z" class="fill-and-stroke"
+      <path d="M 10 3 q -3 2 -2 8 l -2 2 v 2 l 2 -2 h 2 z M 10 15 h -1 q 0 2 1 2 z" class="fs"
         mask="url(#rocket_11_mask)" transform="translate(20 0) scale(-1 1) rotate(-45 10 10) " />
     </g>
     <!-- 交通系 2行目 -->
     <view id="harbor_11" viewBox="0 20 20 20" />
-    <g transform="translate(0, 20)">
-      <circle cx="10" cy="5" r="2" class="stroke-only" stroke-width="1.5" />
-      <path d="M 10 7 v 8 " class="stroke-only" stroke-width="1.5" />
-      <path d="M 3 8 q 0 8 7 8 t 7 -8" class="stroke-only" stroke-width="1.5" />
-      <path d="M 3 8 q 0 8 7 9 q 7 -1 7 -9" class="stroke-only" stroke-width="1.5" />
+    <g transform="translate(0 20)">
+      <circle cx="10" cy="5" r="2" class="s w15" />
+      <path d="M 10 7 v 8 " class="s w15" />
+      <path d="M 3 8 q 0 8 7 8 t 7 -8" class="s w15" />
+      <path d="M 3 8 q 0 8 7 9 q 7 -1 7 -9" class="s w15" />
     </g>
     <view id="ferry_terminal_11" viewBox="20 20 20 20" />
-    <g transform="translate(20, 20)">
+    <g transform="translate(20 20)">
       <defs>
         <mask id="ferry_terminal_11_mask">
           <rect x="0" y="0" width="20" height="20" fill="white" />
@@ -154,28 +187,28 @@
             stroke-width="3.5" />
         </mask>
       </defs>
-      <rect x="8" y="1.5" width="4" height="1.5" />
-      <rect x="5" y="4" width="10" height="5" mask="url(#ferry_terminal_11_mask)" />
-      <path d="M 3 9 l 7 -2 l 7 2 l -3 6 h -8" mask="url(#ferry_terminal_11_mask)" />
-      <path d="M 2 17 c 2 0 2 -2 4 -2 s 2 2 4 2 s 2 -2 4 -2 s 2 2 4 2" class="stroke-only" stroke-width="1.5" />
+      <rect x="8" y="1.5" width="4" height="1.5" class="f" />
+      <rect x="5" y="4" width="10" height="5" class="f" mask="url(#ferry_terminal_11_mask)" />
+      <path d="M 3 9 l 7 -2 l 7 2 l -3 6 h -8" class="f" mask="url(#ferry_terminal_11_mask)" />
+      <path d="M 2 17 c 2 0 2 -2 4 -2 s 2 2 4 2 s 2 -2 4 -2 s 2 2 4 2" class="s w15" />
     </g>
     <view id="entrance_11" viewBox="40 20 20 20" />
     <g transform="translate(40 20)">
-      <circle cx="9" cy="4.5" r="1.5" class="fill-only" />
-      <path d="M 7.5 11 v -3 a 1.5 1.5 0 0 1 3 0 z" class="fill-only" />
-      <path d="M 4 16 h 3 l 6 -6 h 3 " class="stroke-only" stroke-width="2" />
+      <circle cx="9" cy="4.5" r="1.5" class="f" />
+      <path d="M 7.5 11 v -3 a 1.5 1.5 0 0 1 3 0 z" class="f" />
+      <path d="M 4 16 h 3 l 6 -6 h 3 " class="s w20" />
     </g>
     <view id="bicycle_rental_11" viewBox="60 20 20 20" />
     <g transform="translate(60 20)">
-      <circle cx="13" cy="3" r="1.5" class="fill-only" />
-      <path d="M 8 12 a 3 3 0 1 0 0 3" class="stroke-only" stroke-width="1.2" />
-      <path d="M 12 12 a 3 3 0 1 1 0 3" class="stroke-only" stroke-width="1.2" />
-      <path d="M 10 15 v -5 l -2 -2 l 3 -3 l 3 3 h 2" class="stroke-only" stroke-width="1.5" />
+      <circle cx="13" cy="3" r="1.5" class="f" />
+      <path d="M 8 12 a 3 3 0 1 0 0 3" class="s w12" />
+      <path d="M 12 12 a 3 3 0 1 1 0 3" class="s w12" />
+      <path d="M 10 15 v -5 l -2 -2 l 3 -3 l 3 3 h 2" class="s w15" />
     </g>
     <view id="information_11" viewBox="80 20 20 20" />
     <g transform="translate(80 20)">
-      <circle cx="10" cy="5" r="2" class="fill-only" />
-      <path d="M 7.5 9 h 2 v 8 h -2 h 6 h -2 v -8 z" class="fill-and-stroke" stroke-width="1.5" />
+      <circle cx="10" cy="5" r="2" class="f" />
+      <path d="M 7.5 9 h 2 v 8 h -2 h 6 h -2 v -8 z" class="fs w15" />
     </g>
     <!-- 公共系 1行目 -->
     <view id="school_11" viewBox="0 40 20 20" />
@@ -193,13 +226,13 @@
           <rect x="14" y="13.5" width="2" height="2" fill="black" />
         </mask>
       </defs>
-      <path d="M 6 3 h 8 v 5 h 4 v 9 h -16 v -9 h 4 z" class="fill-only" mask="url(#school_11_mask)" />
+      <path d="M 6 3 h 8 v 5 h 4 v 9 h -16 v -9 h 4 z" class="f" mask="url(#school_11_mask)" />
     </g>
     <view id="college_11" viewBox="20 40 20 20" />
     <g transform="translate(20 40)">
-      <path d="M 18 7 l -8 -4 l -8 4 l 8 4 l 8 -4 z" class="fill-and-stroke" />
-      <path d="M 18 7 v6" class="stroke-only" />
-      <path d="M 5 11 v 4 l 5 2.5 l 5 -2.5 v -4 l -5 2.5 z" />
+      <path d="M 18 7 l -8 -4 l -8 4 l 8 4 l 8 -4 z" class="fs" />
+      <path d="M 18 7 v6" class="s" />
+      <path d="M 5 11 v 4 l 5 2.5 l 5 -2.5 v -4 l -5 2.5 z" class="f" />
     </g>
     <view id="police_11" viewBox="40 40 20 20" />
     <g transform="translate(40 40)">
@@ -209,12 +242,12 @@
           <path d="M 18 6 l -10 12" style="fill:none; stroke:black; stroke-width:2" />
         </mask>
       </defs>
-      <rect x="8" y="8" width="8" height="8" rx="4" ry="2" mask="url(#police_11_mask)" />
-      <rect x="8" y="14" width="8" height="4" rx="1" mask="url(#police_11_mask)" />
-      <path d="M 8 10 l -4 -2 l 3.5 -2" class="stroke-only" style="stroke-width:2" />
-      <rect x="10" y="4" width="4" height="3.5" rx="2" />
-      <rect x="10" y="4" width="4" height="2" />
-      <path d="M 9.5 2 h 5 l -0.5 0.5 h -4 z" class="fill-and-stroke" />
+      <rect x="8" y="8" width="8" height="8" rx="4" ry="2" class="f" mask="url(#police_11_mask)" />
+      <rect x="8" y="14" width="8" height="4" rx="1" class="f" mask="url(#police_11_mask)" />
+      <path d="M 8 10 l -4 -2 l 3.5 -2" class="s w20" />
+      <rect x="10" y="4" width="4" height="3.5" class="f" rx="2" />
+      <rect x="10" y="4" width="4" height="2" class="f" />
+      <path d="M 9.5 2 h 5 l -0.5 0.5 h -4 z" class="fs" />
     </g>
     <view id="fire_station_11" viewBox="60 40 20 20" />
     <g transform="translate(60 40)">
@@ -224,7 +257,7 @@
           <path d="M 10 9 Q 5 14 10 15 Q 15 14 10 9 z" style="fill:black" />
         </mask>
       </defs>
-      <path d="M 10 3 L 7.5 8 L 5 5 Q 0 15 10 16 Q 20 15 15 5 L 12.5 8 z" class="fill-and-stroke"
+      <path d="M 10 3 L 7.5 8 L 5 5 Q 0 15 10 16 Q 20 15 15 5 L 12.5 8 z" class="fs"
         mask="url(#fire_station_11_mask)" />
     </g>
     <view id="post_11" viewBox="80 40 20 20" />
@@ -235,77 +268,73 @@
           <path d="M 2 6 L 10 10 L 18 6" style="fill:none; stroke:black; stroke-width:2.5; stroke-linejoin:round" />
         </mask>
       </defs>
-      <rect x="3" y="4" width="14" height="12" rx="2" mask="url(#post_11_mask)" />
+      <rect x="3" y="4" width="14" height="12" rx="2" class="f" mask="url(#post_11_mask)" />
     </g>
     <view id="town_hall_11" viewBox="100 40 20 20" />
     <g transform="translate(100 40)">
-      <path d="M 10 3 l -7 2 v 1 h 14 v -1 z" class="fill-only" />
-      <path d="M 5 14 v -6 h 10 v 6" class="stroke-only" stroke-width="1.5" />
-      <path d="M 8.333 14 v -6 h 3.333 v 6" class="stroke-only" stroke-width="1.5" />
-      <path d="M 5 14 l -2 1.5 v 1 h 14 v -1 l -2 -1.5 z" class="fill-and-stroke" />
+      <path d="M 10 3 l -7 2 v 1 h 14 v -1 z" class="f" />
+      <path d="M 5 14 v -6 h 10 v 6" class="s w15" />
+      <path d="M 8.333 14 v -6 h 3.333 v 6" class="s w15" />
+      <path d="M 5 14 l -2 1.5 v 1 h 14 v -1 l -2 -1.5 z" class="fs" />
     </g>
     <view id="library_11" viewBox="120 40 20 20" />
     <g transform="translate(120 40)">
-      <path d="M 10 6 q -2 -2 -7 -2 v 10 q 5 0 7 2" class="stroke-only" stroke-width="1.5" />
-      <path d="M 10 6 q -2 -2 -7 -2 v 10 q 5 0 7 2" class="stroke-only" stroke-width="1.5"
-        transform="translate(20 0) scale(-1 1)" />
-      <path d="M 8 8 q -1 -0.8 -3 -1" class="stroke-only" stroke-width="1" />
-      <path d="M 8 10 q -1 -0.8 -3 -1" class="stroke-only" stroke-width="1" />
-      <path d="M 8 12 q -1 -0.8 -3 -1" class="stroke-only" stroke-width="1" />
-      <path d="M 12 8 q 1 -0.8 3 -1" class="stroke-only" stroke-width="1" />
-      <path d="M 12 10 q 1 -0.8 3 -1" class="stroke-only" stroke-width="1" />
-      <path d="M 12 12 q 1 -0.8 3 -1" class="stroke-only" stroke-width="1" />
+      <path d="M 10 6 q -2 -2 -7 -2 v 10 q 5 0 7 2" class="s w15" />
+      <path d="M 10 6 q -2 -2 -7 -2 v 10 q 5 0 7 2" class="s w15" transform="translate(20 0) scale(-1 1)" />
+      <path d="M 8 8 q -1 -0.8 -3 -1" class="s" />
+      <path d="M 8 10 q -1 -0.8 -3 -1" class="s" />
+      <path d="M 8 12 q -1 -0.8 -3 -1" class="s" />
+      <path d="M 12 8 q 1 -0.8 3 -1" class="s" />
+      <path d="M 12 10 q 1 -0.8 3 -1" class="s" />
+      <path d="M 12 12 q 1 -0.8 3 -1" class="s" />
     </g>
     <view id="embassy_11" viewBox="140 40 20 20" />
     <g transform="translate(140 40)">
-      <circle cx="4" cy="4" r="1.8" />
-      <path d="M 4 8 v 10" class="stroke-only" stroke-width="1.5" />
-      <path d="M 7.5 6 q 2 -3 5 -1 q 2 2 5 -1 v 6 q -3 3 -5 1 q -3 -2 -5 1 z" class="fill-and-stroke"
-        stroke-width="1.5" />
+      <circle cx="4" cy="4" r="1.8" class="f" />
+      <path d="M 4 8 v 10" class="s w15" />
+      <path d="M 7.5 6 q 2 -3 5 -1 q 2 2 5 -1 v 6 q -3 3 -5 1 q -3 -2 -5 1 z" class="fs w15" />
     </g>
     <!-- 公共系 2行目 -->
     <view id="hospital_11" viewBox="0 60 20 20" />
     <g transform="translate(0 60)">
-      <rect x="2" y="8" width="16" height="4" rx="1.5" />
-      <rect x="8" y="2" width="4" height="16" rx="1.5" />
+      <rect x="2" y="8" width="16" height="4" rx="1.5" class="f" />
+      <rect x="8" y="2" width="4" height="16" rx="1.5" class="f" />
     </g>
     <view id="dentist_11" viewBox="20 60 20 20" />
     <g transform="translate(20 60)">
-      <path d="M 10 3 C 9 3 8 2 7 2 C 3 2 3 6 3 7 S 4 11 5 13 S 6.5 18 8 18 S 8.5 13 10 13 z" class="fill-only" />
-      <path d="M 10 3 C 9 3 8 2 7 2 C 3 2 3 6 3 7 S 4 11 5 13 S 6.5 18 8 18 S 8.5 13 10 13 z" class="fill-only"
-        transform="translate(20) scale(-1,1)" />
+      <path d="M 10 3 C 9 3 8 2 7 2 C 3 2 3 6 3 7 S 4 11 5 13 S 6.5 18 8 18 S 8.5 13 10 13 z" class="f" />
+      <path d="M 10 3 C 9 3 8 2 7 2 C 3 2 3 6 3 7 S 4 11 5 13 S 6.5 18 8 18 S 8.5 13 10 13 z" class="f"
+        transform="translate(20) scale(-1 1)" />
     </g>
     <view id="doctor_11" viewBox="40 60 20 20" />
     <g transform="translate(40 60)">
-      <path d="M 5 3 h -2 v 4 a 4 4 0 0 0 8 0 v -4 h -2 " class="stroke-only" stroke-width="1.5" />
-      <path d="M 7 11 v 2 a 4 4 0 0 0 9 0 v -4" class="stroke-only" stroke-width="1.5" />
-      <circle cx="16" cy="7" r="2" class="stroke-only" stroke-width="1.5" />
+      <path d="M 5 3 h -2 v 4 a 4 4 0 0 0 8 0 v -4 h -2 " class="s w15" />
+      <path d="M 7 11 v 2 a 4 4 0 0 0 9 0 v -4" class="s w15" />
+      <circle cx="16" cy="7" r="2" class="s w15" />
     </g>
     <view id="pharmacy_11" viewBox="60 60 20 20" />
     <g transform="translate(60 60)">
       <defs>
         <mask id="pharmacy_11_mask">
           <rect x="0" y="0" width="20" height="20" fill="white" />
-          <path d="M 6 11 a 2 2 0 0 0 4 4 l 4 -4 a 2 2 0 0 0 -4 -4 z" class="stroke-only"
-            style="stroke:black; stroke-width:2" />
-          <path d="M 6 11 a 2 2 0 0 0 4 4 l 2 -2 l -4 -4 z" class="fill-only" style="fill:black" />
+          <path d="M 6 11 a 2 2 0 0 0 4 4 l 4 -4 a 2 2 0 0 0 -4 -4 z" class="s" style="stroke:black; stroke-width:2" />
+          <path d="M 6 11 a 2 2 0 0 0 4 4 l 2 -2 l -4 -4 z" class="f" style="fill:black" />
         </mask>
       </defs>
-      <path d="M 10 3 l -7 4 v 10 h 14 v -10 z" class="fill-and-stroke" stroke-width="2"
-        mask="url(#pharmacy_11_mask)" />
+      <path d="M 10 3 l -7 4 v 10 h 14 v -10 z" class="fs w20" mask="url(#pharmacy_11_mask)" />
     </g>
     <view id="toilet_11" viewBox="100 60 20 20" />
     <g transform="translate(100 60)">
-      <circle cx="5.5" cy="4" r="1.6" class="fill-only" />
-      <path d="M 4 7 v 3 l -1 4 h 5 l -1 -4 v -3 z" class="fill-and-stroke" />
-      <path d="M 4 7 l -2 3 M 7 7 l 2 3" class="stroke-only" />
-      <path d="M 4.5 12 v 6 M 6.5 12 v 6" class="stroke-only" />
-      <circle cx="14.5" cy="4" r="1.6" class="fill-only" />
-      <rect x="12.5" y="6" width="4" height="7" />
-      <path d="M 14.5 12 v 6" class="stroke-only" />
+      <circle cx="5.5" cy="4" r="1.6" class="f" />
+      <path d="M 4 7 v 3 l -1 4 h 5 l -1 -4 v -3 z" class="fs" />
+      <path d="M 4 7 l -2 3 M 7 7 l 2 3" class="s" />
+      <path d="M 4.5 12 v 6 M 6.5 12 v 6" class="s" />
+      <circle cx="14.5" cy="4" r="1.6" class="f" />
+      <rect x="12.5" y="6" width="4" height="7" class="f" />
+      <path d="M 14.5 12 v 6" class="s" />
     </g>
     <view id="prison_11" viewBox="120 60 20 20" />
-    <g transform="translate(120 60)" class="stroke-only" stroke-width="1.5">
+    <g transform="translate(120 60)" class="s w15">
       <rect x="4" y="3" width="12" height="14" />
       <rect x="8" y="3" width="4" height="14" />
       <rect x="12" y="8" width="4" height="4" />
@@ -313,27 +342,27 @@
     </g>
     <view id="drinking_water_11" viewBox="140 60 20 20" />
     <g transform="translate(140 60)">
-      <path d="M 16 4 h -8 q -2 0 -2 2 v 4 h 3 v -3 h 7 z" class="fill-only" />
-      <path d="M 7.5 12 q -3 5 0 5 z" class="fill-only" />
-      <path d="M 7.5 12 q 3 5 0 5 z" class="fill-only" />
+      <path d="M 16 4 h -8 q -2 0 -2 2 v 4 h 3 v -3 h 7 z" class="f" />
+      <path d="M 7.5 12 q -3 5 0 5 z" class="f" />
+      <path d="M 7.5 12 q 3 5 0 5 z" class="f" />
     </g>
     <!-- 店舗系1行目 -->
     <view id="shop_11" viewBox="0 80 20 20" />
     <g transform="translate(0 80)">
-      <path d="M 3 8 h 14 l -2 8 h -10 z" class="fill-and-stroke" />
-      <path d="M 5 10 l 1.5 -7 h 7 l 1.5 7 z" class="stroke-only" />
+      <path d="M 3 8 h 14 l -2 8 h -10 z" class="fs" />
+      <path d="M 5 10 l 1.5 -7 h 7 l 1.5 7 z" class="s" />
     </g>
     <view id="grocery_11" viewBox="20 80 20 20" />
     <g transform="translate(20 80)">
-      <path d="M 15 6 h -12 l 2 7 h 10 v -7 l 1 -4 h 2" class="stroke-only" stroke-width="1.5" />
-      <path d="M 15 6 h -12 l 2 7 h 10 z" class="fill-only" />
-      <circle cx="6" cy="16" r="1.5" />
-      <circle cx="14" cy="16" r="1.5" />
+      <path d="M 15 6 h -12 l 2 7 h 10 v -7 l 1 -4 h 2" class="s w15" />
+      <path d="M 15 6 h -12 l 2 7 h 10 z" class="f" />
+      <circle cx="6" cy="16" r="1.5" class="f" />
+      <circle cx="14" cy="16" r="1.5" class="f" />
     </g>
     <view id="suitcase_11" viewBox="40 80 20 20" />
     <g transform="translate(40 80)">
-      <rect x="3" y="6" width="14" height="11" rx="1" />
-      <rect x="7" y="3" width="6" height="12" rx="1" class="stroke-only" stroke-width="1.5" />
+      <rect x="3" y="6" width="14" height="11" rx="1" class="f" />
+      <rect x="7" y="3" width="6" height="12" rx="1" class="s w15" />
     </g>
     <view id="alcohol_shop_11" viewBox="60 80 20 20" />
     <g transform="translate(60 80)">
@@ -344,18 +373,17 @@
           <circle cx="14.5" cy="12.5" r="2.5" fill="black" />
         </mask>
       </defs>
-      <rect x="5" y="2.5" width="2" height="4" rx="0.5" />
-      <circle cx="6" cy="9" r="3" mask="url(#alcohol_shop_11_mask)" />
-      <rect x="3" y="9" width="6" height="8" rx="1" mask="url(#alcohol_shop_11_mask)" />
-      <path d="M 14.5 3 h -0.5 c 0 5 -2 5 -2 7 v 6.5 h 2 z" class="fill-and-stroke" mask="url(#alcohol_shop_11_mask)" />
-      <path d="M 14.5 3 h -0.5 c 0 5 -2 5 -2 7 v 6.5 h 2 z" class="fill-and-stroke" mask="url(#alcohol_shop_11_mask)"
+      <rect x="5" y="2.5" width="2" height="4" rx="0.5" class="f" />
+      <circle cx="6" cy="9" r="3" class="f" mask="url(#alcohol_shop_11_mask)" />
+      <rect x="3" y="9" width="6" height="8" rx="1" class="f" mask="url(#alcohol_shop_11_mask)" />
+      <path d="M 14.5 3 h -0.5 c 0 5 -2 5 -2 7 v 6.5 h 2 z" class="fs" mask="url(#alcohol_shop_11_mask)" />
+      <path d="M 14.5 3 h -0.5 c 0 5 -2 5 -2 7 v 6.5 h 2 z" class="fs" mask="url(#alcohol_shop_11_mask)"
         transform="translate(28.5 0) scale(-1 1)" />
     </g>
     <view id="clothing_store_11" viewBox="80 80 20 20" />
     <g transform="translate(80 80)">
-      <path d="M 10 5 q -2 0 -3 -2 l -5 3 l 2 3 l 2 -1 v 9 h 4 z" class="fill-and-stroke" />
-      <path d="M 10 5 q -2 0 -3 -2 l -5 3 l 2 3 l 2 -1 v 9 h 4 z" class="fill-and-stroke"
-        transform="translate(20 0) scale(-1 1)" />
+      <path d="M 10 5 q -2 0 -3 -2 l -5 3 l 2 3 l 2 -1 v 9 h 4 z" class="fs" />
+      <path d="M 10 5 q -2 0 -3 -2 l -5 3 l 2 3 l 2 -1 v 9 h 4 z" class="fs" transform="translate(20 0) scale(-1 1)" />
     </g>
     <view id="fuel_11" viewBox="100 80 20 20" />
     <g transform="translate(100 80)">
@@ -365,8 +393,8 @@
           <rect x="4.5" y="5" width="7" height="5" rx="1" fill="black" />
         </mask>
       </defs>
-      <rect x="3" y="3" width="10" height="14" rx="1" mask="url(#fuel_11_mask)" />
-      <path d="M 12 10 h 2 a 1 1 0 0 1 1 1 v 3 a 1 1 0 0 0 2 0 v -7 h -1.5 v -3" class="stroke-only" />
+      <rect x="3" y="3" width="10" height="14" rx="1" class="f" mask="url(#fuel_11_mask)" />
+      <path d="M 12 10 h 2 a 1 1 0 0 1 1 1 v 3 a 1 1 0 0 0 2 0 v -7 h -1.5 v -3" class="s" />
     </g>
     <view id="car_11" viewBox="120 80 20 20" />
     <g transform="translate(120 80)">
@@ -377,41 +405,41 @@
           <circle cx="14" cy="12" r="1.5" fill="black" />
         </mask>
       </defs>
-      <rect x="3" y="9" width="14" height="6" rx="1" mask="url(#car_11_mask)" />
-      <rect x="4" y="14" width="3" height="4" rx="1" />
-      <rect x="13" y="14" width="3" height="4" rx="1" />
-      <path d="M 4 10 l 2 -6 h 8 l 2 6" class="stroke-only" stroke-width="1.5" />
+      <rect x="3" y="9" width="14" height="6" rx="1" class="f" mask="url(#car_11_mask)" />
+      <rect x="4" y="14" width="3" height="4" class="f" rx="1" />
+      <rect x="13" y="14" width="3" height="4" class="f" rx="1" />
+      <path d="M 4 10 l 2 -6 h 8 l 2 6" class="s w15" />
     </g>
     <view id="art_gallery_11" viewBox="140 80 20 20" />
     <g transform="translate(140 80)">
-      <rect x="4" y="6" width="12" height="10" class="stroke-only" stroke-width="1.5" />
-      <circle cx="7" cy="9" r="1" class="fill-only" />
-      <path d="M 8 14 l 1 -2 l 1 2 l 2 -5 l 2 5 z" />
-      <path d="M 5 6 L 10 2 L 15 6" class="stroke-only" stroke-width="1.2" />
+      <rect x="4" y="6" width="12" height="10" class="s w15" />
+      <circle cx="7" cy="9" r="1" class="f" />
+      <path d="M 8 14 l 1 -2 l 1 2 l 2 -5 l 2 5 z" class="f" />
+      <path d="M 5 6 L 10 2 L 15 6" class="s w12" />
     </g>
     <!-- 店舗系2行目 -->
     <view id="bank_11" viewBox="0 100 20 20" />
     <g transform="translate(0 100)">
-      <rect x="2" y="5" width="16" height="10" class="stroke-only" stroke-width="1.5" />
-      <ellipse cx="10" cy="10" rx="2.5" ry="3" class="stroke-only" stroke-width="1.5" />
-      <path d="M 6 7 h -2 v 2" class="stroke-only" />
-      <path d="M 6 13 h -2 v -2" class="stroke-only" />
-      <path d="M 14 7 h 2 v 2" class="stroke-only" />
-      <path d="M 14 13 h 2 v -2" class="stroke-only" />
+      <rect x="2" y="5" width="16" height="10" class="s w15" />
+      <ellipse cx="10" cy="10" rx="2.5" ry="3" class="s w15" />
+      <path d="M 6 7 h -2 v 2" class="s" />
+      <path d="M 6 13 h -2 v -2" class="s" />
+      <path d="M 14 7 h 2 v 2" class="s" />
+      <path d="M 14 13 h 2 v -2" class="s" />
     </g>
     <view id="lodging_11" viewBox="20 100 20 20" />
     <g transform="translate(20 100)">
-      <path d="M 3 15 v -3 h 14 v 3" class="stroke-only" stroke-width="1.5" />
-      <path d="M 3 5 v 8" class="stroke-only" stroke-width="1.5" />
-      <circle cx="6.5" cy="8" r="1.5" />
-      <path d="M 9 6 h 4 q 3 0 3.5 3.5 h -7.5 z" />
+      <path d="M 3 15 v -3 h 14 v 3" class="s w15" />
+      <path d="M 3 5 v 8" class="s w15" />
+      <circle cx="6.5" cy="8" r="1.5" class="f" />
+      <path d="M 9 6 h 4 q 3 0 3.5 3.5 h -7.5 z" class="f" />
     </g>
     <view id="cinema_11" viewBox="40 100 20 20" />
     <g transform="translate(40 100)">
-      <rect x="3" y="10" width="11" height="7" />
-      <circle cx="5" cy="7" r="1.5" class="stroke-only" />
-      <circle cx="11" cy="6" r="2.5" class="stroke-only" />
-      <path d="M 13 12 h 3.5 v -1.5 v 3" class="stroke-only" stroke-width="1.5" />
+      <rect x="3" y="10" width="11" height="7" class="f" />
+      <circle cx="5" cy="7" r="1.5" class="s" />
+      <circle cx="11" cy="6" r="2.5" class="s" />
+      <path d="M 13 12 h 3.5 v -1.5 v 3" class="s w15" />
     </g>
     <view id="laundry_11" viewBox="60 100 20 20" />
     <g transform="translate(60 100)">
@@ -423,69 +451,67 @@
           <rect x="10" y="3.5" width="5" height="1" fill="black" />
         </mask>
       </defs>
-      <rect x="4" y="3" width="12" height="14" rx="1" mask="url(#laundry_11_mask)" />
+      <rect x="4" y="3" width="12" height="14" rx="1" class="f" mask="url(#laundry_11_mask)" />
     </g>
     <view id="music_11" viewBox="80 100 20 20" />
     <g transform="translate(80 100)">
-      <circle cx="5" cy="16" r="1.5" class="fill-and-stroke" />
-      <circle cx="15" cy="14" r="1.5" class="fill-and-stroke" />
-      <path d="M 6.5 16 v -12 l 10 -2 v 12" class="stroke-only" stroke-width="1.5" />
-      <path d="M 6.5 8 l 10 -2" class="stroke-only" stroke-width="1.5" />
+      <circle cx="5" cy="16" r="1.5" class="fs" />
+      <circle cx="15" cy="14" r="1.5" class="fs" />
+      <path d="M 6.5 16 v -12 l 10 -2 v 12" class="s w15" />
+      <path d="M 6.5 8 l 10 -2" class="s w15" />
     </g>
     <view id="bicycle_11" viewBox="100 100 20 20" />
     <g transform="translate(100 100)">
-      <circle cx="5" cy="14" r="3" class="stroke-only" stroke-width="1.4" />
-      <circle cx="15" cy="14" r="3" class="stroke-only" stroke-width="1.4" />
-      <path d="M 6 8 l 1 3 l 6 -3" class="stroke-only" stroke-width="1.5" />
-      <path d="M 4 7 h 3" class="stroke-only" stroke-width="2" />
-      <path d="M 10 4 h 2 l 2 6" class="stroke-only" stroke-width="1.5" />
+      <circle cx="5" cy="14" r="3" class="s w14" />
+      <circle cx="15" cy="14" r="3" class="s w14" />
+      <path d="M 6 8 l 1 3 l 6 -3" class="s w15" />
+      <path d="M 4 7 h 3" class="s w20" />
+      <path d="M 10 4 h 2 l 2 6" class="s w15" />
     </g>
     <!-- 食事系 -->
     <view id="fast_food_11" viewBox="0 120 20 20" />
     <g transform="translate(0 120)">
-      <path d="M10 4 q -6 0 -6 3 h 12 q 0 -3 -6 -3" class="fill-and-stroke" stroke-width="1.5" />
-      <rect x="2.5" y="9.5" width="15" height="3" rx="2" />
-      <path d="M 4 15 l 1 1 h 10 l 1 -1 z" class="fill-and-stroke" stroke-width="1.5" />
+      <path d="M10 4 q -6 0 -6 3 h 12 q 0 -3 -6 -3" class="fs w15" />
+      <rect x="2.5" y="9.5" width="15" height="3" rx="2" class="f" />
+      <path d="M 4 15 l 1 1 h 10 l 1 -1 z" class="fs w15" />
     </g>
     <view id="restaurant_11" viewBox="20 120 20 20" />
     <g transform="translate(20 120)">
-      <path d="M 7 7 h -2 v -4 l -0.4 4 l 2 3 v 7 z" class="fill-and-stroke" />
-      <path d="M 7 7 h -2 v -4 l -0.4 4 l 2 3 v 7 z" class="fill-and-stroke" transform="translate(14 0) scale(-1 1)" />
-      <rect x="6.5" y="2.5" width="1" height="4" rx="0.2" />
-      <path d="M 15 3 q -2 1 -2 3 v4 h 1.5 v 7 h 0.5 z" class="fill-and-stroke" />
+      <path d="M 7 7 h -2 v -4 l -0.4 4 l 2 3 v 7 z" class="fs" />
+      <path d="M 7 7 h -2 v -4 l -0.4 4 l 2 3 v 7 z" class="fs" transform="translate(14 0) scale(-1 1)" />
+      <rect x="6.5" y="2.5" width="1" height="4" rx="0.2" class="f" />
+      <path d="M 15 3 q -2 1 -2 3 v4 h 1.5 v 7 h 0.5 z" class="fs" />
     </g>
     <view id="bakery_11" viewBox="40 120 20 20" />
     <g transform="translate(40 120)">
-      <path d="M 5 8 v 8 h 10 v -8 a 6.5 3 0 1 0 -10 0 z" class="fill-and-stroke" stroke-width="1.5" />
+      <path d="M 5 8 v 8 h 10 v -8 a 6.5 3 0 1 0 -10 0 z" class="fs w15" />
     </g>
     <view id="cafe_11" viewBox="60 120 20 20" />
     <g transform="translate(60 120)">
-      <rect x="4" y="4" width="10" height="6" rx="1" />
-      <rect x="4" y="7" width="10" height="6" rx="3" ry="4" />
-      <path d="M 12 6 h 3 a 2 2 0 0 1 0 4 h -3" class="stroke-only" stroke-width="1.5" />
-      <path d="M 3 15 h 12 l -1 1 h -10 z" class="fill-and-stroke" />
+      <rect x="4" y="4" width="10" height="6" rx="1" class="f" />
+      <rect x="4" y="7" width="10" height="6" rx="3" ry="4" class="f" />
+      <path d="M 12 6 h 3 a 2 2 0 0 1 0 4 h -3" class="s w15" />
+      <path d="M 3 15 h 12 l -1 1 h -10 z" class="fs" />
     </g>
     <view id="bar_11" viewBox="80 120 20 20" />
     <g transform="translate(80 120)">
-      <path d="M 10 3 h -7 l 7 7 v 6 l -4 1 h 4" class="stroke-only" stroke-width="1.5" />
-      <path d="M 10 3 h -7 l 7 7 v 6 l -4 1 h 4" class="stroke-only" stroke-width="1.5"
-        transform="translate(20 0) scale(-1 1)" />
-      <path d="M 6 6 l 4 4 l 4 -4 z" class="fill-only" />
+      <path d="M 10 3 h -7 l 7 7 v 6 l -4 1 h 4" class="s w15" />
+      <path d="M 10 3 h -7 l 7 7 v 6 l -4 1 h 4" class="s w15" transform="translate(20 0) scale(-1 1)" />
+      <path d="M 6 6 l 4 4 l 4 -4 z" class="f" />
     </g>
     <view id="beer_11" viewBox="100 120 20 20" />
     <g transform="translate(100 120)">
-      <rect x="4" y="7" width="9" height="8" />
-      <rect x="4" y="7" width="9" height="11" rx="1" />
-      <path d="M 12 9 h 2 q 2 0 2 2 v 2 q 0 2 -2 2 h -2" class="stroke-only" stroke-width="1.5" />
-      <path d="M 4 6 q -1 -1 1 -2 q 0.5 -2 3 -1 q 3 -2 4 1 q 2 1 1 2" class="stroke-only" stroke-width="1.2" />
+      <rect x="4" y="7" width="9" height="8" class="f" />
+      <rect x="4" y="7" width="9" height="11" rx="1" class="f" />
+      <path d="M 12 9 h 2 q 2 0 2 2 v 2 q 0 2 -2 2 h -2" class="s w15" />
+      <path d="M 4 6 q -1 -1 1 -2 q 0.5 -2 3 -1 q 3 -2 4 1 q 2 1 1 2" class="s w12" />
     </g>
     <view id="ice_cream_11" viewBox="120 120 20 20" />
     <g transform="translate(120 120)">
-      <path d="M 6 8 a 0.7 0.5 0 0 1 0 -1 a 4 4 0 0 1 8 0 a 0.7 0.5 0 0 1 0 1" class="fill-and-stroke"
-        stroke-width="1.2" />
-      <path d="M 6 8 L 10 17 L 14 8 z" class="stroke-only" stroke-width="1.2" />
-      <path d="M 8 11 l 1 -2" class="stroke-only" stroke-width="1" />
-      <path d="M 9 13 l 1 -2" class="stroke-only" stroke-width="1" />
+      <path d="M 6 8 a 0.7 0.5 0 0 1 0 -1 a 4 4 0 0 1 8 0 a 0.7 0.5 0 0 1 0 1" class="fs w12" />
+      <path d="M 6 8 L 10 17 L 14 8 z" class="s w12" />
+      <path d="M 8 11 l 1 -2" class="s" />
+      <path d="M 9 13 l 1 -2" class="s" />
     </g>
     <!-- アクティビティ系1行目 -->
     <view id="attraction_11" viewBox="0 140 20 20" />
@@ -497,19 +523,19 @@
           <circle cx="10" cy="11" r="1.3" fill="white" />
         </mask>
       </defs>
-      <rect x="3" y="6" width="14" height="10" rx="1" mask="url(#attraction_11_mask)" />
-      <path d="M 8 6 l 1 -1 h 2 l 1 1 z" class="fill-and-stroke" stroke-width="2" />
+      <rect x="3" y="6" width="14" height="10" rx="1" class="f" mask="url(#attraction_11_mask)" />
+      <path d="M 8 6 l 1 -1 h 2 l 1 1 z" class="fs w20" />
     </g>
     <view id="museum_11" viewBox="20 140 20 20" />
     <g transform="translate(20 140)">
-      <path d="M 10 2 l -6 2 v 0.5 h 12 v -0.5 z" class="fill-and-stroke" />
-      <rect x="4.5" y="5.5" width="11" height="1" />
-      <rect x="5" y="7" width="1.8" height="6" />
-      <rect x="7.7" y="7" width="1.8" height="6" />
-      <rect x="10.4" y="7" width="1.8" height="6" />
-      <rect x="13" y="7" width="1.8" height="6" />
-      <rect x="4.5" y="13.5" width="11" height="1" />
-      <rect x="3" y="15" width="14" height="2" />
+      <path d="M 10 2 l -6 2 v 0.5 h 12 v -0.5 z" class="fs" />
+      <rect x="4.5" y="5.5" width="11" height="1" class="f" />
+      <rect x="5" y="7" width="1.8" height="6" class="f" />
+      <rect x="7.7" y="7" width="1.8" height="6" class="f" />
+      <rect x="10.4" y="7" width="1.8" height="6" class="f" />
+      <rect x="13" y="7" width="1.8" height="6" class="f" />
+      <rect x="4.5" y="13.5" width="11" height="1" class="f" />
+      <rect x="3" y="15" width="14" height="2" class="f" />
     </g>
     <view id="stadium_11" viewBox="40 140 20 20" />
     <g transform="translate(40 140)">
@@ -519,10 +545,10 @@
           <rect x="0" y="4" width="20" height="10" fill="black" />
         </mask>
       </defs>
-      <path d="M 10 2 v 3 l 3 -1.5 z" class="fill-and-stroke" />
-      <ellipse cx="10" cy="8" rx="6" ry="2" class="fill-and-stroke" />
-      <ellipse cx="10" cy="14" rx="6" ry="2" class="stroke-only" mask="url(#stadium_11_mask)" />
-      <path d="M 4 8 v 6 M 7 9.2 v 6 M 13 9.2 v 6 M 16 8 v 6" class="stroke-only" />
+      <path d="M 10 2 v 3 l 3 -1.5 z" class="fs" />
+      <ellipse cx="10" cy="8" rx="6" ry="2" class="fs" />
+      <ellipse cx="10" cy="14" rx="6" ry="2" class="s" mask="url(#stadium_11_mask)" />
+      <path d="M 4 8 v 6 M 7 9.2 v 6 M 13 9.2 v 6 M 16 8 v 6" class="s" />
     </g>
     <view id="pitch_11" viewBox="60 140 20 20" />
     <g transform="translate(60 140)">
@@ -532,20 +558,20 @@
           <rect x="0" y="4" width="20" height="10" fill="black" />
         </mask>
       </defs>
-      <path d="M 10 2 v 3 l 3 -1.5 z" class="fill-and-stroke" />
-      <ellipse cx="10" cy="8" rx="6" ry="2" class="fill-and-stroke" />
-      <ellipse cx="10" cy="14" rx="6" ry="2" class="stroke-only" mask="url(#pitch_11_mask)" />
-      <path d="M 4 8 v 6 M 7 9.2 v 6 M 13 9.2 v 6 M 16 8 v 6" class="stroke-only" />
+      <path d="M 10 2 v 3 l 3 -1.5 z" class="fs" />
+      <ellipse cx="10" cy="8" rx="6" ry="2" class="fs" />
+      <ellipse cx="10" cy="14" rx="6" ry="2" class="s" mask="url(#pitch_11_mask)" />
+      <path d="M 4 8 v 6 M 7 9.2 v 6 M 13 9.2 v 6 M 16 8 v 6" class="s" />
     </g>
     <view id="amusement_park_11" viewBox="80 140 20 20" />
     <g transform="translate(80 140)">
-      <circle cx="10" cy="9" r="6" class="stroke-only" stroke-width="1.5" />
-      <circle cx="10" cy="9" r="2.5" class="fill-only" />
-      <path d="M 10 4 v 10" class="stroke-only" />
-      <path d="M 6 5 l 8 8" class="stroke-only" />
-      <path d="M 4 9 h 12" class="stroke-only" />
-      <path d="M 6 13 l 8 -8" class="stroke-only" />
-      <path d="M 8 15 l -2 2.5 h 8 l -2 -2.5" class="fill-and-stroke" />
+      <circle cx="10" cy="9" r="6" class="s w15" />
+      <circle cx="10" cy="9" r="2.5" class="f" />
+      <path d="M 10 4 v 10" class="s" />
+      <path d="M 6 5 l 8 8" class="s" />
+      <path d="M 4 9 h 12" class="s" />
+      <path d="M 6 13 l 8 -8" class="s" />
+      <path d="M 8 15 l -2 2.5 h 8 l -2 -2.5" class="fs" />
     </g>
     <view id="aquarium_11" viewBox="100 140 20 20" />
     <g transform="translate(100 140)">
@@ -555,9 +581,9 @@
           <circle cx="7" cy="10" r="1.8" fill="black" />
         </mask>
       </defs>
-      <path d="M 3 11 q 3 -8 10 -8 l 4 1 l -3 1 v 9 l 3 1 l -4 1 q -7 0 -10 -4 z" class="fill-and-stroke"
+      <path d="M 3 11 q 3 -8 10 -8 l 4 1 l -3 1 v 9 l 3 1 l -4 1 q -7 0 -10 -4 z" class="fs"
         mask="url(#aquarium_11_mask)" />
-      <path d="M 14 9 l 3 -2 v 5 l -3 -2 z" class="fill-and-stroke" />
+      <path d="M 14 9 l 3 -2 v 5 l -3 -2 z" class="fs" />
     </g>
     <view id="castle_11" viewBox="120 140 20 20" />
     <g transform="translate(120 140)">
@@ -567,12 +593,12 @@
           <path d="M 8 17 v -4 a 2 2 0 0 1 4 0 v 4 z" fill="black" />
         </mask>
       </defs>
-      <rect x="4" y="2" width="2" height="5" />
-      <rect x="9" y="2" width="2" height="5" />
-      <rect x="14" y="2" width="2" height="5" />
-      <rect x="4" y="5" width="12" height="2" />
-      <path d="M 3 17 h 14" class="stroke-only" stroke-width="2" />
-      <path d="M 5 17 l 2 -8 h 6 l 2 8" class="fill-and-stroke" mask="url(#castle_11_mask)" />
+      <rect x="4" y="2" width="2" height="5" class="f" />
+      <rect x="9" y="2" width="2" height="5" class="f" />
+      <rect x="14" y="2" width="2" height="5" class="f" />
+      <rect x="4" y="5" width="12" height="2" class="f" />
+      <path d="M 3 17 h 14" class="s w20" />
+      <path d="M 5 17 l 2 -8 h 6 l 2 8" class="fs" mask="url(#castle_11_mask)" />
     </g>
     <view id="theatre_11" viewBox="140 140 20 20" />
     <g transform="translate(140 140)">
@@ -584,24 +610,24 @@
           <path d="M 7 13 a 4 6 0 0 0 6 0 z" fill="black" />
         </mask>
       </defs>
-      <path d="M 15 4 q -5 2 -10 0 v 8 a 5 5 0 0 0 10 0 z" class="fill-and-stroke" mask="url(#theatre_11_mask)" />
+      <path d="M 15 4 q -5 2 -10 0 v 8 a 5 5 0 0 0 10 0 z" class="fs" mask="url(#theatre_11_mask)" />
     </g>
     <!-- アクティビティ系2行目 -->
     <view id="park_11" viewBox="0 160 20 20" />
     <g transform="translate(0 160)">
-      <circle cx="7" cy="9" r="2" />
-      <circle cx="6" cy="6" r="3" />
-      <circle cx="10" cy="5" r="4" />
-      <circle cx="13" cy="6" r="3.5" />
-      <circle cx="12" cy="9" r="2" />
-      <path d="M 7.5 18 l 1 -1 l 0.5 -9 h 2 l 0.5 9 l 1 1 z" class="fill-and-stroke" />
+      <circle cx="7" cy="9" r="2" class="f" />
+      <circle cx="6" cy="6" r="3" class="f" />
+      <circle cx="10" cy="5" r="4" class="f" />
+      <circle cx="13" cy="6" r="3.5" class="f" />
+      <circle cx="12" cy="9" r="2" class="f" />
+      <path d="M 7.5 18 l 1 -1 l 0.5 -9 h 2 l 0.5 9 l 1 1 z" class="fs" />
     </g>
     <view id="garden_11" viewBox="20 160 20 20" />
     <g transform="translate(20 160)">
-      <path d="M 10 17 a 6 6 0 0 1 -6 -5 a 6 6 0 0 1 6 5" class="fill-and-stroke" />
-      <path d="M 10 17 a 6 6 0 0 1 6 -5 a 6 6 0 0 1 -6 5" class="fill-and-stroke" />
-      <path d="M 10 17 v -8" class="stroke-only" />
-      <path d="M 10 2 l -2 3 l -2 -2 a 4 4 0 0 0 4 6 a 4 4 0 0 0 4 -6 l -2 2 z" class="fill-and-stroke" />
+      <path d="M 10 17 a 6 6 0 0 1 -6 -5 a 6 6 0 0 1 6 5" class="fs" />
+      <path d="M 10 17 a 6 6 0 0 1 6 -5 a 6 6 0 0 1 -6 5" class="fs" />
+      <path d="M 10 17 v -8" class="s" />
+      <path d="M 10 2 l -2 3 l -2 -2 a 4 4 0 0 0 4 6 a 4 4 0 0 0 4 -6 l -2 2 z" class="fs" />
     </g>
     <view id="playground_11" viewBox="40 160 20 20" />
     <g transform="translate(40 160)">
@@ -611,26 +637,26 @@
           <circle cx="7" cy="9" r="2" fill="black" />
         </mask>
       </defs>
-      <path d="M 7 2 l -4 4 h 8 z" class="fill-and-stroke" stroke-width="1.8" />
-      <rect x="3" y="6" width="8" height="7" mask="url(#playground_11_mask)" />
-      <path d="M 4 10 v 8" class="stroke-only" stroke-width="1.5" />
-      <path d="M 10 10 v 8" class="stroke-only" stroke-width="1.5" />
-      <path d="M 4 14.5 h 6" class="stroke-only" stroke-width="1.2" />
-      <path d="M 4 17 h 6" class="stroke-only" stroke-width="1.2" />
-      <path d="M 10 11 h 3 l 3 7 h 2" class="stroke-only" stroke-width="2" />
+      <path d="M 7 2 l -4 4 h 8 z" class="fs w18" />
+      <rect x="3" y="6" width="8" height="7" class="f" mask="url(#playground_11_mask)" />
+      <path d="M 4 10 v 8" class="s w15" />
+      <path d="M 10 10 v 8" class="s w15" />
+      <path d="M 4 14.5 h 6" class="s w12" />
+      <path d="M 4 17 h 6" class="s w12" />
+      <path d="M 10 11 h 3 l 3 7 h 2" class="s w20" \ />
     </g>
     <view id="campsite_11" viewBox="60 160 20 20" />
     <g transform="translate(60 160)">
-      <path d="M 10 5 l -7 12 h 4 L 10 10 l 3 7 h 4 z" class="fill-and-stroke" />
-      <path d="M 8 3 L 10 5 L 12 3" class="stroke-only" />
+      <path d="M 10 5 l -7 12 h 4 L 10 10 l 3 7 h 4 z" class="fs" />
+      <path d="M 8 3 L 10 5 L 12 3" class="s" />
     </g>
     <view id="picnic_site_11" viewBox="80 160 20 20" />
     <g transform="translate(80 160)">
-      <path d="M 7 5 h 6" class="stroke-only" stroke-width="2" />
-      <path d="M 8 7 l -3 10" class="stroke-only" stroke-width="1.5" />
-      <path d="M 12 7 l 3 10" class="stroke-only" stroke-width="1.5" />
-      <path d="M 4 11 h 4" class="stroke-only" stroke-width="2" />
-      <path d="M 12 11 h 4" class="stroke-only" stroke-width="2" />
+      <path d="M 7 5 h 6" class="s w20" \ />
+      <path d="M 8 7 l -3 10" class="s w15" />
+      <path d="M 12 7 l 3 10" class="s w15" />
+      <path d="M 4 11 h 4" class="s w20" \ />
+      <path d="M 12 11 h 4" class="s w20" \ />
     </g>
     <view id="zoo_11" viewBox="100 160 20 20" />
     <g transform="translate(100 160)">
@@ -638,13 +664,13 @@
         <mask id="zoo_11_mask">
           <rect x="0" y="0" width="20" height="20" fill="white" />
           <circle cx="6" cy="8.5" r="1.2" fill="black" />
-          <path d="M 7 5 a 2 3 0 0 1 3 5" fill="none" stroke="black" stroke-width="1" />
+          <path d="M 7 5 a 2 3 0 0 1 3 5" fill="none" stroke="black" />
         </mask>
       </defs>
       <path
         d="M 8 3 q -4 0 -5 4 q -1 8 2 10 l 1 -1 q -2 -5 0 -5 l 2 6 h 2 l 0.5 -4 a 3 4 0 0 0 3 0 l 0.5 4 h 2 l 1 -6 q 1 -8 -6 -8 z"
-        mask="url(#zoo_11_mask)" />
-      <path d="M 16 8 l 2 4 l -2 -2" class="fill-and-stroke" />
+        class="f" mask="url(#zoo_11_mask)" />
+      <path d="M 16 8 l 2 4 l -2 -2" class="fs" />
     </g>
     <view id="dog_park_11" viewBox="120 160 20 20" />
     <g transform="translate(120 160)">
@@ -656,18 +682,18 @@
       </defs>
       <path
         d="M 7 6 l -2 -2 q 2 -1 0 -2 l -1 2 q -2 0 -2 2 h -1 q 0 2 3 2 l 1 3 v 6 h 1 l 1 -4 l 1 4 h 1 l 1 -5 h 3 l 1 5 h 1 l 1 -4 l 1 4 h 1 l 0 -8 l 1 -5 l -1 0 l -2 3 z"
-        class="fill-only" mask="url(#dog_park_11_mask)" />
+        class="f" mask="url(#dog_park_11_mask)" />
     </g>
     <view id="monument_11" viewBox="140 160 20 20" />
     <g transform="translate(140 160)">
-      <path d="M 10 2 l -2 3 v 6 h 4 v -6 z" class="fill-only" />
-      <path d="M 5 17 v -3 a 2 2 0 0 1 2 -2 h 6 a 2 2 0 0 1 2 2 v 3 z" class="fill-only" />
+      <path d="M 10 2 l -2 3 v 6 h 4 v -6 z" class="f" />
+      <path d="M 5 17 v -3 a 2 2 0 0 1 2 -2 h 6 a 2 2 0 0 1 2 2 v 3 z" class="f" />
     </g>
     <!-- アクティビティ系3行目 -->
     <view id="mountain_11" viewBox="0 180 20 20" />
     <g transform="translate(0 180)">
-      <path d="M 3 16 L 10 3 L 17 16 z" class="stroke-only" stroke-width="1.5" />
-      <path d="M 3 16 L 5 14 L 8.5 11 L 10 13 L 11.5 11 L 15 14 L 17 16 z" class="fill-only" />
+      <path d="M 3 16 L 10 3 L 17 16 z" class="s w15" />
+      <path d="M 3 16 L 5 14 L 8.5 11 L 10 13 L 11.5 11 L 15 14 L 17 16 z" class="f" />
     </g>
     <view id="volcano_11" viewBox="20 180 20 20" />
     <g transform="translate(20 180)">
@@ -679,30 +705,29 @@
           <path d="M 12 5 v 5" fill="none" stroke="black" stroke-width="2" />
         </mask>
       </defs>
-      <path d="M 3 16 L 10 3 L 17 16 z" class="fill-and-stroke" stroke-width="1.5" mask="url(#volcano_11_mask)" />
-      <path d="M 8 6 l -3 -3 l 3 2 l 1 -3 l 1 3 l 4 -1 l -3 2 z" class="fill-and-stroke" />
+      <path d="M 3 16 L 10 3 L 17 16 z" class="fs w15" mask="url(#volcano_11_mask)" />
+      <path d="M 8 6 l -3 -3 l 3 2 l 1 -3 l 1 3 l 4 -1 l -3 2 z" class="fs" />
     </g>
     <view id="golf_11" viewBox="40 180 20 20" />
     <g transform="translate(40 180)">
-      <path d="M 6 8 L 15 5 L 6 8 L 7 12 L 6 17 L 7 12 L 10 12 L 10 17 L 10 12 L 9 8 z" class="fill-and-stroke"
-        stroke-width="2" />
-      <circle cx="6" cy="4" r="1.5" class="fill-only" />
-      <path d="M 16 5 l -5 -3" class="fill-and-stroke" stroke-width="1.2" />
-      <circle cx="10" cy="2" r="1.2" class="fill-only" />
+      <path d="M 6 8 L 15 5 L 6 8 L 7 12 L 6 17 L 7 12 L 10 12 L 10 17 L 10 12 L 9 8 z" class="fs w20" />
+      <circle cx="6" cy="4" r="1.5" class="f" />
+      <path d="M 16 5 l -5 -3" class="fs w12" />
+      <circle cx="10" cy="2" r="1.2" class="f" />
     </g>
     <view id="swimming_11" viewBox="60 180 20 20" />
     <g transform="translate(60 180)">
-      <path d="M 14 3 l -6 4 l 5 5 h -7 l 3 -3 v 2 h 1" class="stroke-only" stroke-width="2" />
-      <path d="M 3 16 l 2.4 -1 l 2.4 1 l 2.4 -1 l 2.4 1 l 2.4 -1 l 2.4 1" class="stroke-only" stroke-width="1.5" />
-      <circle cx="14.5" cy="8" r="1.5" class="fill-only" />
+      <path d="M 14 3 l -6 4 l 5 5 h -7 l 3 -3 v 2 h 1" class="s w20" />
+      <path d="M 3 16 l 2.4 -1 l 2.4 1 l 2.4 -1 l 2.4 1 l 2.4 -1 l 2.4 1" class="s w15" />
+      <circle cx="14.5" cy="8" r="1.5" class="f" />
     </g>
     <!-- 信仰系 -->
     <view id="place_of_worship_11" viewBox="0 200 20 20" />
     <g transform="translate(0 200)">
-      <path d="M 10 2 l -2 3 v 2 h 4 v -2 z" class="fill-only" />
-      <path d="M 4 17 v -7 l 3 -1.5 h 6 l 3 1.5 v 7 z" class="fill-only" />
-      <path d="M 2.5 10 v 6.5" class="stroke-only" />
-      <path d="M 17.5 10 v 6.5" class="stroke-only" />
+      <path d="M 10 2 l -2 3 v 2 h 4 v -2 z" class="f" />
+      <path d="M 4 17 v -7 l 3 -1.5 h 6 l 3 1.5 v 7 z" class="f" />
+      <path d="M 2.5 10 v 6.5" class="s" />
+      <path d="M 17.5 10 v 6.5" class="s" />
     </g>
     <view id="cemetery_11" viewBox="20 200 20 20" />
     <g transform="translate(20 200)">
@@ -712,51 +737,50 @@
           <rect x="8" y="7" width="4" height="2" fill="black" />
         </mask>
       </defs>
-      <path d="M 10 3 h -1 l -1 1 h -2l 2 10 h -2 v 2 h 4 z" class="fill-and-stroke" stroke-width="1.5"
+      <path d="M 10 3 h -1 l -1 1 h -2l 2 10 h -2 v 2 h 4 z" class="fs w15" mask="url(#cemetery_11_mask)" />
+      <path d="M 10 3 h -1 l -1 1 h -2 l 2 10 h -2 v 2 h 4 z" transform="translate(20) scale(-1 1)" class="fs w15"
         mask="url(#cemetery_11_mask)" />
-      <path d="M 10 3 h -1 l -1 1 h -2 l 2 10 h -2 v 2 h 4 z" transform="translate(20) scale(-1 1)"
-        class="fill-and-stroke" stroke-width="1.5" mask="url(#cemetery_11_mask)" />
     </g>
     <view id="religious_christian_11" viewBox="40 200 20 20" />
     <g transform="translate(40 200)">
-      <rect x="8.5" y="2" width="3" height="16" class="fill-only" />
-      <rect x="5" y="6" width="10" height="3" class="fill-only" />
+      <rect x="8.5" y="2" width="3" height="16" class="f" />
+      <rect x="5" y="6" width="10" height="3" class="f" />
     </g>
     <view id="religious_jewish_11" viewBox="60 200 20 20" />
     <g transform="translate(60 200)">
-      <path d="M 10 2 l -7 12 h 14 z" class="fill-only" />
-      <path d="M 10 18 l -7 -12 h 14 z" class="fill-only" />
+      <path d="M 10 2 l -7 12 h 14 z" class="f" />
+      <path d="M 10 18 l -7 -12 h 14 z" class="f" />
     </g>
     <view id="religious_jewish_11" viewBox="80 200 20 20" />
     <g transform="translate(80 200)">
-      <path d="M 12 3 a 7.5 7.5 0 1 0 0 14 a 6 6 0 1 1 0 -14" class="fill-only" />
-      <path d="M 15 6 l -3 8 l 7 -5 h -8 l 7 5 z" class="fill-only" />
+      <path d="M 12 3 a 7.5 7.5 0 1 0 0 14 a 6 6 0 1 1 0 -14" class="f" />
+      <path d="M 15 6 l -3 8 l 7 -5 h -8 l 7 5 z" class="f" />
     </g>
     <!-- 記号系 -->
     <view id="marker_11" viewBox="0 220 20 20" />
     <g transform="translate(0 220)">
-      <path d="M 10 3 q -4.5 0 -5 5 q 0 3 5 10 z" class="fill-only" />
-      <path d="M 10 3 q -4.5 0 -5 5 q 0 3 5 10 z" class="fill-only" transform="translate(20) scale(-1 1)" />
+      <path d="M 10 3 q -4.5 0 -5 5 q 0 3 5 10 z" class="f" />
+      <path d="M 10 3 q -4.5 0 -5 5 q 0 3 5 10 z" class="f" transform="translate(20) scale(-1 1)" />
     </g>
     <view id="star_11" viewBox="20 220 20 20" />
     <g transform="translate(20 220)">
-      <path d="M 10 2 L 5 18 L 18 8 L 2 8 L 15 18 z" class="fill-only" />
+      <path d="M 10 2 L 5 18 L 18 8 L 2 8 L 15 18 z" class="f" />
     </g>
     <view id="circle_11" viewBox="40 220 20 20" />
     <g transform="translate(40 220)">
-      <circle cx="10" cy="10" r="6" class="fill-and-stroke" stroke-width="1.5" />
+      <circle cx="10" cy="10" r="6" class="fs w15" />
     </g>
     <view id="circle_stroked_11" viewBox="60 220 20 20" />
     <g transform="translate(60 220)">
-      <circle cx="10" cy="10" r="6" class="stroke-only" stroke-width="1.5" />
+      <circle cx="10" cy="10" r="6" class="s w15" />
     </g>
     <view id="triangle_11" viewBox="80 220 20 20" />
     <g transform="translate(80 220)">
-      <path d="M 10 4 L 4 15 L 16 15 z" class="fill-and-stroke" stroke-width="1.5" />
+      <path d="M 10 4 L 4 15 L 16 15 z" class="fs w15" />
     </g>
     <view id="triangle_11" viewBox="100 220 20 20" />
     <g transform="translate(100 220)">
-      <path d="M 10 4 L 4 15 L 16 15 z" class="stroke-only" stroke-width="1.5" />
+      <path d="M 10 4 L 4 15 L 16 15 z" class="s w15" />
     </g>
     <!-- <g fill="none" stroke="red" stroke-width="0.2">
       <path
