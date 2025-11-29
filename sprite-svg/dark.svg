@@ -52,6 +52,14 @@
     .w20 {
       stroke-width: 2.0;
     }
+
+    /* 道路番号の基本スタイル */
+    .road {
+      fill: hsl(0 0% 0% / 80%);
+      stroke: hsl(0 0% 50%);
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
   </style>
   <g>
     <!-- 交通系 1行目 -->
@@ -781,6 +789,11 @@
     <view id="triangle_11" viewBox="100 220 20 20" />
     <g transform="translate(100 220)">
       <path d="M 10 4 L 4 15 L 16 15 z" class="s w15" />
+    </g>
+    <!-- 道路番号 -->
+    <view id="road_1" viewBox="0 500 14 14" />
+    <g transform="translate(0 500)">
+      <rect x="1" y="1" width="13" height="13" rx="2" class="road" />
     </g>
 
     <!-- <g fill="none" stroke="red" stroke-width="0.2">
