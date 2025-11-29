@@ -643,7 +643,7 @@
       <path d="M 10 10 v 8" class="s w15" />
       <path d="M 4 14.5 h 6" class="s w12" />
       <path d="M 4 17 h 6" class="s w12" />
-      <path d="M 10 11 h 3 l 3 7 h 2" class="s w20" \ />
+      <path d="M 10 11 h 3 l 3 7 h 2" class="s w20" />
     </g>
     <view id="campsite_11" viewBox="60 160 20 20" />
     <g transform="translate(60 160)">
@@ -652,11 +652,11 @@
     </g>
     <view id="picnic_site_11" viewBox="80 160 20 20" />
     <g transform="translate(80 160)">
-      <path d="M 7 5 h 6" class="s w20" \ />
+      <path d="M 7 5 h 6" class="s w20" />
       <path d="M 8 7 l -3 10" class="s w15" />
       <path d="M 12 7 l 3 10" class="s w15" />
-      <path d="M 4 11 h 4" class="s w20" \ />
-      <path d="M 12 11 h 4" class="s w20" \ />
+      <path d="M 4 11 h 4" class="s w20" />
+      <path d="M 12 11 h 4" class="s w20" />
     </g>
     <view id="zoo_11" viewBox="100 160 20 20" />
     <g transform="translate(100 160)">
