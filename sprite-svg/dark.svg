@@ -815,6 +815,10 @@
     <g transform="translate(40 520)">
       <rect x="1" y="1" width="42" height="12" rx="2" class="road" />
     </g>
+    <view id="oneway" viewBox="140 500 20 20" />
+    <g transform="translate(140 500)">
+      <path d="M 10 0 l -6 6 h 5 v 14 h 2 v -14 h 5 z" class="f" />
+    </g>
 
     <!-- <g fill="none" stroke="red" stroke-width="0.2">
       <path d="M 0 0 h 400 M 0 20 h 400 M 0 40 h 400 M 0 60 h 400 M 0 80 h 400" />
