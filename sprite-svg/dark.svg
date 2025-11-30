@@ -815,9 +815,14 @@
     <g transform="translate(40 520)">
       <rect x="1" y="1" width="42" height="12" rx="2" class="road" />
     </g>
+    <!-- その他 -->
     <view id="oneway" viewBox="140 500 20 20" />
     <g transform="translate(140 500)">
       <path d="M 10 0 l -6 6 h 5 v 14 h 2 v -14 h 5 z" class="f" />
+    </g>
+    <view id="wave" viewBox="140 520 20 10" />
+    <g transform="translate(140 520)">
+      <path d="M 0 8 q 3 0 5 -3 q 2 3 5 3 q 3 0 5 -3 q 2 3 5 3" class="s" stroke-opacity="0.3" />
     </g>
 
     <!-- <g fill="none" stroke="red" stroke-width="0.2">
