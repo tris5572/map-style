@@ -2343,7 +2343,7 @@
         "text-rotation-alignment": "viewport",
         "text-size": 10
       },
-      "paint": {}
+      "paint": { "text-color": "hsl(0 0% 80%)" }
     },
     {
       "id": "highway-shield-us-interstate",
@@ -2370,7 +2370,7 @@
         "text-rotation-alignment": "viewport",
         "text-size": 10
       },
-      "paint": { "text-color": "rgba(0, 0, 0, 1)" }
+      "paint": { "text-color": "hsl(0 0% 80%)" }
     },
     {
       "id": "highway-shield-us-other",
@@ -2401,7 +2401,7 @@
         "text-rotation-alignment": "viewport",
         "text-size": 10
       },
-      "paint": { "text-color": "rgba(0, 0, 0, 1)" }
+      "paint": { "text-color": "hsl(0 0% 80%)" }
     },
     {
       "id": "airport-label-major",
