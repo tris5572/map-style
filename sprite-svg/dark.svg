@@ -60,6 +60,10 @@
       stroke-linejoin: round;
       stroke-linecap: round;
     }
+
+    .road-fill {
+      fill: hsl(0 0% 50%);
+    }
   </style>
   <g>
     <!-- 交通系 1行目 -->
@@ -837,6 +841,21 @@
       <path d="M 14 2 Q 9.5 5 5 2 L 2 5 Q 4 6 2 12 Q 2 17 8 17 Q 9 17 14 18" class="road" />
       <path d="M 14 2 Q 9.5 5 5 2 L 2 5 Q 4 6 2 12 Q 2 17 8 17 Q 9 17 14 18" class="road"
         transform="translate(28) scale(-1 1)" />
+    </g>
+    <view id="us-interstate_1" viewBox="60 540 20 20" />
+    <view id="us-interstate_2" viewBox="60 540 20 20" />
+    <g transform="translate(60 540)">
+      <path d="M 10 2 Q 6.5 5 3 2 Q 2 4 2 8 Q 2 14.5 10 18" class="road" />
+      <path d="M 10 2 Q 6.5 5 3 2 Q 2 4 2 8 Q 2 14.5 10 18" class="road" transform="translate(20) scale(-1 1)" />
+      <path d="M 10 2 Q 6.5 5 3 2 Q 1 6 2 5 Q 6.5 4 10 4" class="road-fill" />
+      <path d="M 10 2 Q 6.5 5 3 2 Q 1 6 2 5 Q 6.5 4 10 4" class="road-fill" transform="translate(20) scale(-1 1)" />
+    </g>
+    <view id="us-interstate_3" viewBox="80 540 28 20" />
+    <g transform="translate(80 540)">
+      <path d="M 14 2 Q 8 5 3 2 Q 2 4 2 8 Q 2 14.5 14 18" class="road" />
+      <path d="M 14 2 Q 8 5 3 2 Q 2 4 2 8 Q 2 14.5 14 18" class="road" transform="translate(28) scale(-1 1)" />
+      <path d="M 14 2 Q 8 5 3 2 Q 1 6 2 5 Q 8 4 14 4" class="road-fill" />
+      <path d="M 14 2 Q 8 5 3 2 Q 1 6 2 5 Q 8 4 14 4" class="road-fill" transform="translate(28) scale(-1 1)" />
     </g>
 
     <!-- <g fill="none" stroke="red" stroke-width="0.2">
