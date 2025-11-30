@@ -824,6 +824,20 @@
     <g transform="translate(140 520)">
       <path d="M 0 8 q 3 0 5 -3 q 2 3 5 3 q 3 0 5 -3 q 2 3 5 3" class="s" stroke-opacity="0.3" />
     </g>
+    <!-- アメリカ -->
+    <view id="us-highway_1" viewBox="0 540 20 20" />
+    <view id="us-highway_2" viewBox="0 540 20 20" />
+    <g transform="translate(0 540)">
+      <path d="M 10 2 Q 7.5 5 5 2 L 2 5 Q 4 6 2 12 Q 2 17 8 17 Q 9 17 10 18" class="road" />
+      <path d="M 10 2 Q 7.5 5 5 2 L 2 5 Q 4 6 2 12 Q 2 17 8 17 Q 9 17 10 18" class="road"
+        transform="translate(20) scale(-1 1)" />
+    </g>
+    <view id="us-highway_3" viewBox="20 540 28 20" />
+    <g transform="translate(20 540)">
+      <path d="M 14 2 Q 9.5 5 5 2 L 2 5 Q 4 6 2 12 Q 2 17 8 17 Q 9 17 14 18" class="road" />
+      <path d="M 14 2 Q 9.5 5 5 2 L 2 5 Q 4 6 2 12 Q 2 17 8 17 Q 9 17 14 18" class="road"
+        transform="translate(28) scale(-1 1)" />
+    </g>
 
     <!-- <g fill="none" stroke="red" stroke-width="0.2">
       <path d="M 0 0 h 400 M 0 20 h 400 M 0 40 h 400 M 0 60 h 400 M 0 80 h 400" />
