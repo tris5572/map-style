@@ -20,9 +20,6 @@ importers:
       react-map-gl:
         specifier: ^8.1.0
         version: 8.1.0(maplibre-gl@5.8.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      svg2png-wasm:
-        specifier: ^1.4.1
-        version: 1.4.1
     devDependencies:
       '@eslint/js':
         specifier: ^9.36.0
@@ -57,6 +54,9 @@ importers:
       globals:
         specifier: ^16.4.0
         version: 16.4.0
+      svg2png-wasm:
+        specifier: ^1.4.1
+        version: 1.4.1
       typescript:
         specifier: ~5.9.3
         version: 5.9.3
