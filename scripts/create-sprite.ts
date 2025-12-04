@@ -10,7 +10,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { createSpriteJson, doubledSpriteJson } from "./sprite-utils.ts";
 
 /** 処理対象のスタイル名。フォルダ名やスプライトのファイル名を同名にする必要がある。 */
-const TARGET_STYLE_NAMES = ["dark"];
+const TARGET_STYLE_NAMES = ["dark", "light"];
 
 const OUTPUT_DIR = "./public/";
 
