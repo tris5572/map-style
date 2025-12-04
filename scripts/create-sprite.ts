@@ -22,7 +22,7 @@ await initialize(readFileSync("./node_modules/svg2png-wasm/svg2png_wasm_bg.wasm"
  */
 export async function create() {
   for (const name of TARGET_STYLE_NAMES) {
-    const svg = readFileSync("./sprite-svg/dark.svg").toString();
+    const svg = readFileSync(`./sprite-svg/${name}.svg`).toString();
 
     const png1 = await svg2png(svg, {
       scale: 1,
