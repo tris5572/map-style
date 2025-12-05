@@ -33,7 +33,16 @@ MapLibre GL JS の `style` として、提供しているスタイルファイ�
 
 POI で使用されるスプライトについても、自分好みのものを作成している。
 
-## 備考メモ
+## 開発時の備考メモ
+
+### 新スタイル追加時の作業
+
+- `public/<スタイル名>/style.json` を作成
+  - スタイルを編集
+  - `"sprite": "http://localhost:5173/map-style/<スタイル名>/sprite",` へ変更
+    - ただし既存のスプライトをそのまま利用する場合は、以降の手順とともに不要
+- `sprite-svg/<スタイル名>.svg` を作成し、スプライトを編集
+- `scripts/create-sprite.ts` の `TARGET_STYLE_NAMES` に `"<スタイル名>"` の文字列を追加
 
 ### スプライト
 

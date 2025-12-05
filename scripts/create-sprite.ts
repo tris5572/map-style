@@ -10,7 +10,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { createSpriteJson, doubledSpriteJson } from "./sprite-utils.ts";
 
 /** 処理対象のスタイル名。フォルダ名やスプライトのファイル名を同名にする必要がある。 */
-const TARGET_STYLE_NAMES = ["dark"];
+const TARGET_STYLE_NAMES = ["dark", "light"];
 
 const OUTPUT_DIR = "./public/";
 
@@ -22,7 +22,7 @@ await initialize(readFileSync("./node_modules/svg2png-wasm/svg2png_wasm_bg.wasm"
  */
 export async function create() {
   for (const name of TARGET_STYLE_NAMES) {
-    const svg = readFileSync("./sprite-svg/dark.svg").toString();
+    const svg = readFileSync(`./sprite-svg/${name}.svg`).toString();
 
     const png1 = await svg2png(svg, {
       scale: 1,
