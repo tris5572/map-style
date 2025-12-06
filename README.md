@@ -2,36 +2,39 @@
 
 MapLibre GL JS で使用する地図スタイルを提供するリポジトリ。
 
-> [!IMPORTANT]
-> 🚧 作業中 🚧
-> 
-> まだ作成途上であり、完成していないため、アクティブに変更される。
-
 ## 使い方
 
 MapLibre GL JS の `style` として、提供しているスタイルファイル(`JSON`)の URL を指定する。
 
+React で表示する例は、本リポジトリの [`src/` 以下](https://github.com/tris5572/map-style/tree/main/src)を参照。
+
 ## 提供しているスタイル
 
-スタイルのサンプルは https://tris5572.github.io/map-style/ で確認可能。
-
-### Light
-
-明るい色のスタイル。
-
-`https://tris5572.github.io/map-style/light/style.json` を指定する。
+表示サンプルは https://tris5572.github.io/map-style/ で確認可能。
 
 ### Dark
 
+<img width="400" alt="Image" src="https://github.com/user-attachments/assets/cebec66f-f2ea-4609-ad88-3dca46b1d10b" />
+
 暗い色のスタイル。
 
-`https://tris5572.github.io/map-style/dark/style.json` を指定する。
+`https://tris5572.github.io/map-style/dark/style.json`
+
+### Light
+
+<img width="400" alt="Image" src="https://github.com/user-attachments/assets/c9de2ad5-7ca2-40b2-9114-7976bd8d9022" />
+
+明るい色のスタイル。
+
+`https://tris5572.github.io/map-style/light/style.json`
 
 ## モチベーション
 
 自分が使いたい地図スタイル（ダークモードなど）が見付からなかったため、自分で作成した。
 
-POI で使用されるスプライトについても、自分好みのものを作成している。
+POI のアイコンとなるスプライトについても、自分好みのものを作成している。
+
+---
 
 ## 開発時の備考メモ
 
