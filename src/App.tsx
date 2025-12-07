@@ -33,7 +33,6 @@ export function App() {
           zoom: 7,
         }}
         mapStyle={STYLES[selectedStyleIndex].json}
-        attributionControl={false}
       >
         <ScaleControl />
         <NavigationControl />
