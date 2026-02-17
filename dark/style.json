@@ -807,6 +807,16 @@
       }
     },
     {
+      "id": "road_area_pier",
+      "type": "fill",
+      "metadata": {},
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": ["all", ["==", "$type", "Polygon"], ["==", "class", "pier"]],
+      "layout": { "visibility": "visible" },
+      "paint": { "fill-antialias": true, "fill-color": "hsl(200 10% 10%)" }
+    },
+    {
       "id": "aeroway-area",
       "type": "fill",
       "metadata": { "mapbox:group": "1444849345966.4436" },
@@ -879,16 +889,6 @@
           ]
         }
       }
-    },
-    {
-      "id": "road_area_pier",
-      "type": "fill",
-      "metadata": {},
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "filter": ["all", ["==", "$type", "Polygon"], ["==", "class", "pier"]],
-      "layout": { "visibility": "visible" },
-      "paint": { "fill-antialias": true, "fill-color": "hsl(200 10% 10%)" }
     },
     {
       "id": "road_pier",
