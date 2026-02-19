@@ -22,22 +22,22 @@ await initialize(readFileSync("./node_modules/svg2png-wasm/svg2png_wasm_bg.wasm"
  */
 export async function create() {
   for (const name of TARGET_STYLE_NAMES) {
-    const svg = readFileSync(`./sprite-svg/${name}.svg`).toString();
+    try {
+      const svg = readFileSync(`./sprite-svg/${name}.svg`).toString();
 
-    const png1 = await svg2png(svg, {
-      scale: 1,
-    });
-    const spriteData1 = createSpriteJson(svg);
-    writeFileSync(`${OUTPUT_DIR}${name}/sprite.png`, png1);
-    writeFileSync(`${OUTPUT_DIR}${name}/sprite.json`, JSON.stringify(spriteData1));
+      const png1 = await svg2png(svg, { scale: 1 });
+      const spriteData1 = createSpriteJson(svg);
+      writeFileSync(`${OUTPUT_DIR}${name}/sprite.png`, png1);
+      writeFileSync(`${OUTPUT_DIR}${name}/sprite.json`, JSON.stringify(spriteData1));
 
-    // 高解像度用のデータを生成
-    const png2 = await svg2png(svg, {
-      scale: 2,
-    });
-    const spriteData2 = doubledSpriteJson(spriteData1);
-    writeFileSync(`${OUTPUT_DIR}${name}/sprite@2x.png`, png2);
-    writeFileSync(`${OUTPUT_DIR}${name}/sprite@2x.json`, JSON.stringify(spriteData2));
+      // 高解像度用のデータを生成
+      const png2 = await svg2png(svg, { scale: 2 });
+      const spriteData2 = doubledSpriteJson(spriteData1);
+      writeFileSync(`${OUTPUT_DIR}${name}/sprite@2x.png`, png2);
+      writeFileSync(`${OUTPUT_DIR}${name}/sprite@2x.json`, JSON.stringify(spriteData2));
+    } catch (error) {
+      console.error(`Error creating sprite "${name}":\n`, error);
+    }
   }
 }
 
