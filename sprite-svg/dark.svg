@@ -588,6 +588,7 @@
       <path d="M 4 8 v 6 M 7 9.2 v 6 M 13 9.2 v 6 M 16 8 v 6" class="s" />
     </g>
     <view id="amusement_park_11" viewBox="80 140 20 20" />
+<view id="theme_park_11" viewBox="80 140 20 20" />
     <g transform="translate(80 140)">
       <circle cx="10" cy="9" r="6" class="s w15" />
       <circle cx="10" cy="9" r="2.5" class="f" />
