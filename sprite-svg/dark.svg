@@ -2,21 +2,21 @@
   <style>
     /* 塗りのみ */
     .f {
-      fill: hsl(0 0% 80%);
+      fill: hsl(0 0% 50%);
     }
 
     /* 線のみ */
     .s {
       fill: none;
-      stroke: hsl(0 0% 80%);
+      stroke: hsl(0 0% 50%);
       stroke-linejoin: round;
       stroke-linecap: round;
     }
 
     /* 塗と線 */
     .fs {
-      fill: hsl(0 0% 80%);
-      stroke: hsl(0 0% 80%);
+      fill: hsl(0 0% 50%);
+      stroke: hsl(0 0% 50%);
       stroke-linejoin: round;
       stroke-linecap: round;
     }
@@ -55,7 +55,7 @@
 
     /* 道路番号の基本スタイル。塗りの不透明度は各要素の `fill-opacity` で指定（依存ライブラリの関係で、色として指定しても効かないため） */
     .road {
-      fill: hsl(0 0% 0%);
+      fill: hsl(0 0% 50%);
       stroke: hsl(0 0% 50%);
       stroke-linejoin: round;
       stroke-linecap: round;
@@ -588,7 +588,7 @@
       <path d="M 4 8 v 6 M 7 9.2 v 6 M 13 9.2 v 6 M 16 8 v 6" class="s" />
     </g>
     <view id="amusement_park_11" viewBox="80 140 20 20" />
-<view id="theme_park_11" viewBox="80 140 20 20" />
+    <view id="theme_park_11" viewBox="80 140 20 20" />
     <g transform="translate(80 140)">
       <circle cx="10" cy="9" r="6" class="s w15" />
       <circle cx="10" cy="9" r="2.5" class="f" />
@@ -895,6 +895,11 @@
     <view id="us-state_6" viewBox="60 480 48 14" />
     <g transform="translate(60 480)">
       <path d="M 7 1 a 6 6 0 0 0 0 12 h 34 a 6 6 0 0 0 0 -12 z" class="road" fill-opacity="0.2" />
+    </g>
+
+    <view id="" viewBox="140 480 20 20" />
+    <g transform="translate(140 480)">
+      <circle cx="10" cy="10" r="9" fill="red" />
     </g>
 
     <!-- <g fill="none" stroke="red" stroke-width="0.2">
