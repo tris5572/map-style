@@ -337,6 +337,7 @@
       <path d="M 10 3 l -7 4 v 10 h 14 v -10 z" class="fs w20" mask="url(#pharmacy_11_mask)" />
     </g>
     <view id="toilet_11" viewBox="100 60 20 20" />
+<view id="toilets_11" viewBox="100 60 20 20" />
     <g transform="translate(100 60)">
       <circle cx="5.5" cy="4" r="1.6" class="f" />
       <path d="M 4 7 v 3 l -1 4 h 5 l -1 -4 v -3 z" class="fs" />
