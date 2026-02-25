@@ -13,8 +13,8 @@ import * as lightStyleJson from "../public/light/style.json";
 
 /** 地図スタイルのデータのリスト */
 const STYLES = [
-  { name: "Dark", json: darkStyleJson as StyleSpecification },
-  { name: "Light", json: lightStyleJson as StyleSpecification },
+  { name: "Dark", json: darkStyleJson as unknown as StyleSpecification },
+  { name: "Light", json: lightStyleJson as unknown as StyleSpecification },
 ];
 
 export function App() {
