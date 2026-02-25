@@ -12,16 +12,16 @@
     "sprite": "node ./scripts/create-sprite.ts"
   },
   "dependencies": {
-    "maplibre-gl": "^5.8.0",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
+    "maplibre-gl": "^5.19.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "react-map-gl": "^8.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "@types/node": "^24.6.0",
-    "@types/react": "^19.1.16",
-    "@types/react-dom": "^19.1.9",
+    "@types/react": "^19.2.3",
+    "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.0.4",
     "eslint": "^9.36.0",
     "eslint-plugin-react-dom": "^2.0.6",
