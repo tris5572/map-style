@@ -1,7 +1,7 @@
 import { defineConfig } from "oxlint";
 
 export default defineConfig({
-  plugins: null,
+  plugins: ["import", "jsx-a11y", "react", "react-perf", "jsdoc", "vitest"],
   categories: {},
   rules: {},
   settings: {
