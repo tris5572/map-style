@@ -1,0 +1,41 @@
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  plugins: ["import", "jsx-a11y", "react", "react-perf", "jsdoc", "vitest"],
+  categories: {},
+  rules: {},
+  settings: {
+    "jsx-a11y": {
+      polymorphicPropName: null,
+      components: {},
+      attributes: {},
+    },
+    next: {
+      rootDir: [],
+    },
+    react: {
+      formComponents: [],
+      linkComponents: [],
+      version: null,
+      componentWrapperFunctions: [],
+    },
+    jsdoc: {
+      ignorePrivate: false,
+      ignoreInternal: false,
+      ignoreReplacesDocs: true,
+      overrideReplacesDocs: true,
+      augmentsExtendsReplacesDocs: false,
+      implementsReplacesDocs: false,
+      exemptDestructuredRootsFromChecks: false,
+      tagNamePreference: {},
+    },
+    vitest: {
+      typecheck: false,
+    },
+  },
+  env: {
+    builtin: true,
+  },
+  globals: {},
+  ignorePatterns: [],
+});
