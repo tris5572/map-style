@@ -48,9 +48,12 @@ export function App() {
  * 地図スタイルの切替ボタンを表示するコンポーネント
  */
 function StyleSwitcher(props: { styleIndex: number; handleStyleChange: (index: number) => void }) {
-  const handleClick = useCallback((index: number) => {
-    props.handleStyleChange(index);
-  }, []);
+  const handleClick = useCallback(
+    (index: number) => {
+      props.handleStyleChange(index);
+    },
+    [props],
+  );
 
   return (
     <div id="style-switcher">
