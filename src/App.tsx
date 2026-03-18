@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Map, {
   FullscreenControl,
   GeolocateControl,
@@ -21,6 +21,12 @@ type MapView = {
   latitude: number;
   longitude: number;
   zoom: number;
+};
+
+type InitialUrlState = {
+  viewState: MapView;
+  styleIndex: number;
+  shouldRewriteUrl: boolean;
 };
 
 const DEFAULT_VIEW_STATE: MapView = {
@@ -51,43 +57,48 @@ function parseNumericQueryParam(params: URLSearchParams, key: string) {
 }
 
 /**
- * URL に含まれる座標とズーム値から地図の初期表示位置を組み立てる。
+ * URL から初期表示に使う地図状態を読み取り、不正な指定の有無も返す。
  */
-function parseViewStateFromUrl(): MapView {
+function parseInitialUrlState(): InitialUrlState {
   const params = new URLSearchParams(window.location.search);
   const latitude = parseNumericQueryParam(params, "lat");
   const longitude = parseNumericQueryParam(params, "lng");
   const zoom = parseNumericQueryParam(params, "zoom");
+  const styleKey = params.get("style");
+  const hasViewParams = params.has("lat") || params.has("lng") || params.has("zoom");
+  const hasCompleteViewParams = params.has("lat") && params.has("lng") && params.has("zoom");
 
-  if (latitude === null || longitude === null || zoom === null) {
-    return DEFAULT_VIEW_STATE;
+  let viewState = DEFAULT_VIEW_STATE;
+  let styleIndex = DEFAULT_STYLE_INDEX;
+  let shouldRewriteUrl = false;
+
+  if (hasViewParams) {
+    if (hasCompleteViewParams && latitude !== null && longitude !== null && zoom !== null) {
+      viewState = {
+        latitude,
+        longitude,
+        zoom,
+      };
+    } else {
+      shouldRewriteUrl = true;
+    }
+  }
+
+  if (styleKey !== null) {
+    const parsedStyleIndex = STYLES.findIndex((style) => style.key === styleKey.toLowerCase());
+
+    if (parsedStyleIndex === -1) {
+      shouldRewriteUrl = true;
+    } else {
+      styleIndex = parsedStyleIndex;
+    }
   }
 
   return {
-    latitude,
-    longitude,
-    zoom,
+    viewState,
+    styleIndex,
+    shouldRewriteUrl,
   };
-}
-
-/**
- * URL に含まれるスタイル名を読み取り、不正値は既定値へ戻す。
- */
-function parseStyleIndexFromUrl() {
-  const params = new URLSearchParams(window.location.search);
-  const styleKey = params.get("style");
-
-  if (styleKey === null) {
-    return DEFAULT_STYLE_INDEX;
-  }
-
-  const styleIndex = STYLES.findIndex((style) => style.key === styleKey.toLowerCase());
-
-  if (styleIndex === -1) {
-    return DEFAULT_STYLE_INDEX;
-  }
-
-  return styleIndex;
 }
 
 /**
@@ -106,9 +117,18 @@ function updateUrlFromState(viewState: MapView, styleIndex: number) {
  * 地図本体とスタイル切替 UI を表示する。
  */
 export function App() {
-  const [initialViewState] = useState<MapView>(() => parseViewStateFromUrl());
-  const [currentViewState, setCurrentViewState] = useState<MapView>(() => parseViewStateFromUrl());
-  const [selectedStyleIndex, setSelectedStyleIndex] = useState<number>(() => parseStyleIndexFromUrl());
+  const [initialUrlState] = useState<InitialUrlState>(() => parseInitialUrlState());
+  const [currentViewState, setCurrentViewState] = useState<MapView>(initialUrlState.viewState);
+  const [selectedStyleIndex, setSelectedStyleIndex] = useState<number>(initialUrlState.styleIndex);
+
+  /** 不正な URL パラメータでアクセスされた場合に、表示中の状態へ URL を補正する */
+  useEffect(() => {
+    if (!initialUrlState.shouldRewriteUrl) {
+      return;
+    }
+
+    updateUrlFromState(initialUrlState.viewState, initialUrlState.styleIndex);
+  }, [initialUrlState]);
 
   /** 選択中の地図スタイルを更新する */
   const handleStyleChange = useCallback(
@@ -130,7 +150,7 @@ export function App() {
 
   return (
     <div id="map">
-      <Map initialViewState={initialViewState} mapStyle={STYLES[selectedStyleIndex].json} onMove={handleMove}>
+      <Map initialViewState={initialUrlState.viewState} mapStyle={STYLES[selectedStyleIndex].json} onMove={handleMove}>
         <ScaleControl />
         <NavigationControl />
         <FullscreenControl />
