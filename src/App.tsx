@@ -13,8 +13,8 @@ import * as lightStyleJson from "../public/light/style.json";
 
 /** 地図スタイルのデータのリスト */
 const STYLES = [
-  { name: "Dark", json: darkStyleJson as unknown as StyleSpecification },
-  { name: "Light", json: lightStyleJson as unknown as StyleSpecification },
+  { key: "dark", name: "Dark", json: darkStyleJson as unknown as StyleSpecification },
+  { key: "light", name: "Light", json: lightStyleJson as unknown as StyleSpecification },
 ];
 
 type MapView = {
@@ -28,6 +28,8 @@ const DEFAULT_VIEW_STATE: MapView = {
   longitude: 138,
   zoom: 7,
 };
+
+const DEFAULT_STYLE_INDEX = 0;
 
 /**
  * URL クエリから数値パラメータを読み取り、不正値は null として扱う。
@@ -69,13 +71,34 @@ function parseViewStateFromUrl(): MapView {
 }
 
 /**
- * 現在の地図表示位置を URL クエリへ反映する。
+ * URL に含まれるスタイル名を読み取り、不正値は既定値へ戻す。
  */
-function updateUrlFromViewState(viewState: MapView) {
+function parseStyleIndexFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const styleKey = params.get("style");
+
+  if (styleKey === null) {
+    return DEFAULT_STYLE_INDEX;
+  }
+
+  const styleIndex = STYLES.findIndex((style) => style.key === styleKey.toLowerCase());
+
+  if (styleIndex === -1) {
+    return DEFAULT_STYLE_INDEX;
+  }
+
+  return styleIndex;
+}
+
+/**
+ * 現在の地図表示位置とスタイルを URL クエリへ反映する。
+ */
+function updateUrlFromState(viewState: MapView, styleIndex: number) {
   const url = new URL(window.location.href);
   url.searchParams.set("lat", viewState.latitude.toFixed(6));
   url.searchParams.set("lng", viewState.longitude.toFixed(6));
   url.searchParams.set("zoom", viewState.zoom.toFixed(2));
+  url.searchParams.set("style", STYLES[styleIndex].key);
   window.history.replaceState(null, "", url);
 }
 
@@ -83,18 +106,27 @@ function updateUrlFromViewState(viewState: MapView) {
  * 地図本体とスタイル切替 UI を表示する。
  */
 export function App() {
-  const [selectedStyleIndex, setSelectedStyleIndex] = useState<number>(0);
   const [initialViewState] = useState<MapView>(() => parseViewStateFromUrl());
+  const [currentViewState, setCurrentViewState] = useState<MapView>(() => parseViewStateFromUrl());
+  const [selectedStyleIndex, setSelectedStyleIndex] = useState<number>(() => parseStyleIndexFromUrl());
 
   /** 選択中の地図スタイルを更新する */
-  const handleStyleChange = useCallback((index: number) => {
-    setSelectedStyleIndex(index);
-  }, []);
+  const handleStyleChange = useCallback(
+    (index: number) => {
+      setSelectedStyleIndex(index);
+      updateUrlFromState(currentViewState, index);
+    },
+    [currentViewState],
+  );
 
   /** 地図の移動やズームに応じて URL を更新する */
-  const handleMove = useCallback((event: { viewState: MapView }) => {
-    updateUrlFromViewState(event.viewState);
-  }, []);
+  const handleMove = useCallback(
+    (event: { viewState: MapView }) => {
+      setCurrentViewState(event.viewState);
+      updateUrlFromState(event.viewState, selectedStyleIndex);
+    },
+    [selectedStyleIndex],
+  );
 
   return (
     <div id="map">
