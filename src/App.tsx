@@ -79,10 +79,14 @@ function updateUrlFromViewState(viewState: MapView) {
   window.history.replaceState(null, "", url);
 }
 
+/**
+ * 地図本体とスタイル切替 UI を表示する。
+ */
 export function App() {
   const [selectedStyleIndex, setSelectedStyleIndex] = useState<number>(0);
   const [initialViewState] = useState<MapView>(() => parseViewStateFromUrl());
 
+  /** 選択中の地図スタイルを更新する */
   const handleStyleChange = useCallback((index: number) => {
     setSelectedStyleIndex(index);
   }, []);
@@ -109,6 +113,7 @@ export function App() {
  * 地図スタイルの切替ボタンを表示するコンポーネント
  */
 function StyleSwitcher(props: { styleIndex: number; handleStyleChange: (index: number) => void }) {
+  /** クリックされたスタイル番号を親コンポーネントへ通知する */
   const handleClick = useCallback(
     (index: number) => {
       props.handleStyleChange(index);
