@@ -10,24 +10,13 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import "./App.css";
 import * as darkStyleJson from "../public/dark/style.json";
 import * as lightStyleJson from "../public/light/style.json";
+import type { MapView, InitialUrlState } from "./types";
 
 /** 地図スタイルのデータのリスト */
 const STYLES = [
   { key: "dark", name: "Dark", json: darkStyleJson as unknown as StyleSpecification },
   { key: "light", name: "Light", json: lightStyleJson as unknown as StyleSpecification },
 ];
-
-type MapView = {
-  latitude: number;
-  longitude: number;
-  zoom: number;
-};
-
-type InitialUrlState = {
-  viewState: MapView;
-  styleIndex: number;
-  shouldRewriteUrl: boolean;
-};
 
 const DEFAULT_VIEW_STATE: MapView = {
   latitude: 36,
