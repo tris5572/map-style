@@ -42,17 +42,13 @@ const DEFAULT_STYLE_INDEX = 0;
  */
 function parseNumericQueryParam(params: URLSearchParams, key: string) {
   const rawValue = params.get(key);
-
   if (rawValue === null) {
     return null;
   }
-
   const parsedValue = Number(rawValue);
-
   if (!Number.isFinite(parsedValue)) {
     return null;
   }
-
   return parsedValue;
 }
 
@@ -86,7 +82,6 @@ function parseInitialUrlState(): InitialUrlState {
 
   if (styleKey !== null) {
     const parsedStyleIndex = STYLES.findIndex((style) => style.key === styleKey.toLowerCase());
-
     if (parsedStyleIndex === -1) {
       shouldRewriteUrl = true;
     } else {
@@ -126,7 +121,6 @@ export function App() {
     if (!initialUrlState.shouldRewriteUrl) {
       return;
     }
-
     updateUrlFromState(initialUrlState.viewState, initialUrlState.styleIndex);
   }, [initialUrlState]);
 
