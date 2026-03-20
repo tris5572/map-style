@@ -1,30 +1,9 @@
 import { useCallback, useEffect, useState } from "react";
-import Map, {
-  FullscreenControl,
-  GeolocateControl,
-  NavigationControl,
-  ScaleControl,
-  type StyleSpecification,
-} from "react-map-gl/maplibre";
+import Map, { FullscreenControl, GeolocateControl, NavigationControl, ScaleControl } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./App.css";
-import * as darkStyleJson from "../public/dark/style.json";
-import * as lightStyleJson from "../public/light/style.json";
 import type { MapView, InitialUrlState } from "./types";
-
-/** 地図スタイルのデータのリスト */
-const STYLES = [
-  { key: "dark", name: "Dark", json: darkStyleJson as unknown as StyleSpecification },
-  { key: "light", name: "Light", json: lightStyleJson as unknown as StyleSpecification },
-];
-
-const DEFAULT_VIEW_STATE: MapView = {
-  latitude: 36,
-  longitude: 138,
-  zoom: 7,
-};
-
-const DEFAULT_STYLE_INDEX = 0;
+import { DEFAULT_VIEW_STATE, DEFAULT_STYLE_INDEX, STYLES } from "./constants";
 
 /**
  * URL クエリから数値パラメータを読み取り、不正値は null として扱う。
