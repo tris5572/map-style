@@ -2086,7 +2086,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 0.5,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1
@@ -2117,7 +2117,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 0.5,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1
@@ -2148,7 +2148,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 0.5,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1
@@ -2184,7 +2184,7 @@
         "text-size": 12
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 0.5,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1
@@ -2265,7 +2265,7 @@
         }
       },
       "paint": {
-        "text-color": "hsl(200 0% 90%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-color": "hsl(200 0% 10%)",
         "text-halo-width": 0.5
       }
@@ -2312,7 +2312,7 @@
           ]
         }
       },
-      "paint": { "text-color": "hsl(200 0% 90%)", "text-halo-blur": 0.5, "text-halo-width": 1 }
+      "paint": { "text-color": "hsl(200 0% 60%)", "text-halo-blur": 0.5, "text-halo-width": 1 }
     },
     {
       "id": "highway-shield",
@@ -2424,7 +2424,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 0.5,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1
@@ -2453,7 +2453,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1.2
       }
@@ -2479,7 +2479,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1.2
       }
@@ -2505,7 +2505,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1.2
       }
@@ -2531,7 +2531,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1.2
       }
@@ -2561,7 +2561,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1.2
       }
@@ -2587,7 +2587,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 1,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 2
@@ -2614,7 +2614,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 1,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 2
@@ -2641,7 +2641,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 1,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 2
@@ -2668,7 +2668,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 1,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 2
@@ -2691,7 +2691,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 1,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 2
