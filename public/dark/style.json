@@ -449,7 +449,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["==", "class", "minor"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(200 10% 35%)",
+        "line-color": "hsl(200 10% 25%)",
         "line-opacity": {
           "stops": [
             [12, 0],
@@ -987,7 +987,7 @@
       ],
       "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
-        "line-color": "hsl(200 10% 35%)",
+        "line-color": "hsl(200 10% 25%)",
         "line-opacity": {
           "stops": [
             [12, 0],
@@ -1214,7 +1214,7 @@
       ],
       "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
-        "line-color": "hsl(200 5% 30%)",
+        "line-color": "hsl(200 5% 25%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
