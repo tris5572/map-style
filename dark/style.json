@@ -449,7 +449,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["==", "class", "minor"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(200 10% 35%)",
+        "line-color": "hsl(200 10% 25%)",
         "line-opacity": {
           "stops": [
             [12, 0],
@@ -476,7 +476,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "tertiary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(50 20% 40%)",
+        "line-color": "hsl(50 20% 25%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -496,7 +496,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "tertiary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(50 20% 40%)",
+        "line-color": "hsl(50 20% 25%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -537,7 +537,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "trunk"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(30 20% 50%)",
+        "line-color": "hsl(30 20% 40%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -558,7 +558,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["==", "class", "motorway"]],
       "layout": { "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(165 60% 30%)",
+        "line-color": "hsl(165 50% 25%)",
         "line-dasharray": [0.5, 0.25],
         "line-width": {
           "base": 1.2,
@@ -934,7 +934,7 @@
       "filter": ["all", ["!in", "brunnel", "bridge", "tunnel"], ["==", "class", "motorway_link"]],
       "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
-        "line-color": "hsl(165 60% 30%)",
+        "line-color": "hsl(165 50% 25%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -987,7 +987,7 @@
       ],
       "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
-        "line-color": "hsl(200 10% 35%)",
+        "line-color": "hsl(200 10% 25%)",
         "line-opacity": {
           "stops": [
             [12, 0],
@@ -1014,7 +1014,7 @@
       "filter": ["all", ["!in", "brunnel", "bridge", "tunnel"], ["in", "class", "tertiary"]],
       "layout": { "line-cap": "butt", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(50 20% 30%)",
+        "line-color": "hsl(50 20% 25%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -1034,7 +1034,7 @@
       "filter": ["all", ["!in", "brunnel", "bridge", "tunnel"], ["in", "class", "secondary"]],
       "layout": { "line-cap": "butt", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(50 20% 30%)",
+        "line-color": "hsl(50 20% 25%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -1083,7 +1083,7 @@
       "filter": ["all", ["!in", "brunnel", "bridge", "tunnel"], ["in", "class", "trunk"]],
       "layout": { "line-cap": "butt", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(30 20% 50%)",
+        "line-color": "hsl(30 20% 40%)",
         "line-opacity": {
           "stops": [
             [5, 0],
@@ -1111,7 +1111,7 @@
       "filter": ["all", ["!in", "brunnel", "bridge", "tunnel"], ["==", "class", "motorway"]],
       "layout": { "line-cap": "butt", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "hsl(165 60% 30%)",
+        "line-color": "hsl(165 50% 25%)",
         "line-opacity": {
           "stops": [
             [4, 0],
@@ -1214,7 +1214,7 @@
       ],
       "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
-        "line-color": "hsl(200 5% 30%)",
+        "line-color": "hsl(200 5% 25%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -1482,7 +1482,7 @@
       "filter": ["all", ["==", "brunnel", "bridge"], ["==", "class", "motorway_link"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(165 60% 30%)",
+        "line-color": "hsl(165 50% 25%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -1530,7 +1530,7 @@
       "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "tertiary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(60 20% 30%)",
+        "line-color": "hsl(50 20% 25%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -1550,7 +1550,7 @@
       "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "secondary"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(50 20% 30%)",
+        "line-color": "hsl(50 20% 25%)",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -1591,7 +1591,7 @@
       "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "trunk"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(30 20% 50%)",
+        "line-color": "hsl(30 20% 40%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1612,7 +1612,7 @@
       "filter": ["all", ["==", "brunnel", "bridge"], ["==", "class", "motorway"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "hsl(165 60% 30%)",
+        "line-color": "hsl(165 50% 25%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1632,7 +1632,7 @@
       "source-layer": "transportation",
       "filter": ["all", ["==", "$type", "LineString"], ["all", ["==", "brunnel", "bridge"], ["==", "class", "path"]]],
       "paint": {
-        "line-color": "hsl(200 20% 30%)",
+        "line-color": "hsl(200 20% 25%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -2086,7 +2086,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 0.5,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1
@@ -2117,7 +2117,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 0.5,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1
@@ -2148,7 +2148,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 0.5,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1
@@ -2184,7 +2184,7 @@
         "text-size": 12
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 0.5,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1
@@ -2265,7 +2265,7 @@
         }
       },
       "paint": {
-        "text-color": "hsl(200 0% 90%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-color": "hsl(200 0% 10%)",
         "text-halo-width": 0.5
       }
@@ -2312,7 +2312,7 @@
           ]
         }
       },
-      "paint": { "text-color": "hsl(200 0% 90%)", "text-halo-blur": 0.5, "text-halo-width": 1 }
+      "paint": { "text-color": "hsl(200 0% 60%)", "text-halo-blur": 0.5, "text-halo-width": 1 }
     },
     {
       "id": "highway-shield",
@@ -2424,7 +2424,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 0.5,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1
@@ -2453,7 +2453,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1.2
       }
@@ -2479,7 +2479,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1.2
       }
@@ -2505,7 +2505,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1.2
       }
@@ -2531,7 +2531,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1.2
       }
@@ -2561,7 +2561,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 1.2
       }
@@ -2587,7 +2587,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 1,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 2
@@ -2614,7 +2614,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 1,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 2
@@ -2641,7 +2641,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 1,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 2
@@ -2668,7 +2668,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 1,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 2
@@ -2691,7 +2691,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(200 0% 80%)",
+        "text-color": "hsl(200 0% 60%)",
         "text-halo-blur": 1,
         "text-halo-color": "hsl(200 0% 0%)",
         "text-halo-width": 2
