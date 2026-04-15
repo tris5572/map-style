@@ -5,7 +5,8 @@ on:
     branches:
       - main # main ブランチに push されたときに実行される
 
-permissions: {}
+permissions:
+  contents: write # GitHub Pages にデプロイするために必要
 
 jobs:
   build-and-deploy:
