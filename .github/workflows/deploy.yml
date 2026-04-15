@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main # main ブランチに push されたときに実行される
+  workflow_dispatch: # 手動実行を許可
 
 permissions:
   contents: write # GitHub Pages にデプロイするために必要
