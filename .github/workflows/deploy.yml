@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main # main ブランチに push されたときに実行される
-  workflow_dispatch: # 手動実行を許可
+  pull_request:
+    branches: [main] # main への PR が作成・更新された時に実行
 
 permissions: {}
 
