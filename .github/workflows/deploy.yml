@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main # main ブランチに push されたときに実行される
-  pull_request:
-    branches: [main] # main への PR が作成・更新された時に実行
+  # pull_request:
+  #   branches: [main] # main への PR が作成・更新された時に実行 (動作確認用なので、通常時は OFF にしておく)
 
 permissions: {}
 
