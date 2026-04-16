@@ -6,13 +6,14 @@ on:
       - main # main ブランチに push されたときに実行される
   workflow_dispatch: # 手動実行を許可
 
-permissions:
-  contents: write # GitHub Pages にデプロイするために必要
+permissions: {}
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: write # GitHub Pages にデプロイするために必要
 
     steps:
       - name: Checkout repository
