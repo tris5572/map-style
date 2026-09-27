@@ -1,6 +1,7 @@
 import type { StyleSpecification } from "maplibre-gl";
 import * as darkStyleJson from "../public/dark/style.json";
 import * as lightStyleJson from "../public/light/style.json";
+import * as porcelainStyleJson from "../public/porcelain/style.json";
 import type { MapView } from "./types";
 
 /**
@@ -14,6 +15,7 @@ import type { MapView } from "./types";
 export const STYLES = [
   { key: "dark", name: "Dark", json: darkStyleJson as unknown as StyleSpecification },
   { key: "light", name: "Light", json: lightStyleJson as unknown as StyleSpecification },
+  { key: "porcelain", name: "Porcelain", json: porcelainStyleJson as unknown as StyleSpecification },
 ];
 
 /** デフォルトの地図表示状態（アプリ起動時の中心座標とズーム） */
