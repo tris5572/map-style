@@ -1953,7 +1953,7 @@
         "text-letter-spacing": 0.2,
         "text-max-width": 5,
         "text-rotation-alignment": "map",
-        "text-size": 14
+        "text-size": 12
       },
       "paint": {
         "text-color": "hsl(210 10% 60%)",
@@ -1975,7 +1975,7 @@
         "text-letter-spacing": 0.2,
         "text-max-width": 5,
         "text-rotation-alignment": "map",
-        "text-size": 14
+        "text-size": 12
       },
       "paint": {
         "text-color": "hsl(210 10% 60%)",
@@ -2022,7 +2022,7 @@
         "text-size": {
           "stops": [
             [0, 10],
-            [6, 14]
+            [6, 12]
           ]
         },
         "visibility": "visible"
