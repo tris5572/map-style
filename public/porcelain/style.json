@@ -2047,7 +2047,7 @@
         "text-max-width": 9,
         "text-padding": 2,
         "text-size": 12,
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "hsl(0 0% 60%)",
@@ -2076,7 +2076,7 @@
         "text-max-width": 9,
         "text-padding": 2,
         "text-size": 12,
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "hsl(0 0% 60%)",
@@ -2105,7 +2105,7 @@
         "text-max-width": 9,
         "text-padding": 2,
         "text-size": 12,
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "hsl(0 0% 60%)",
@@ -2404,7 +2404,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "hsl(0 0% 60%)",
