@@ -2390,7 +2390,7 @@
       "metadata": { "mapbox:group": "1444849242106.713" },
       "source": "openmaptiles",
       "source-layer": "place",
-      "filter": ["!in", "class", "city", "town", "village", "country", "continent"],
+      "filter": ["!in", "class", "city", "town", "village", "country", "continent", "province"],
       "layout": {
         "text-field": "{name}",
         "text-font": ["mplus2c-regular"],
@@ -2482,6 +2482,34 @@
             [11, 18]
           ]
         },
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "hsl(0 0% 60%)",
+        "text-halo-color": "hsl(0 0% 100%)",
+        "text-halo-width": 1.2
+      }
+    },
+    {
+      "id": "県名",
+      "type": "symbol",
+      "metadata": { "mapbox:group": "1444849242106.713" },
+      "source": "openmaptiles",
+      "source-layer": "place",
+      "filter": ["in", "class", "province"],
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["mplus2c-regular"],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 9,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [7, 14],
+            [11, 24]
+          ]
+        },
+        "text-transform": "uppercase",
         "visibility": "visible"
       },
       "paint": {
