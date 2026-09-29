@@ -2305,7 +2305,8 @@
         "text-field": "{ref}",
         "text-font": ["mplus2c-regular"],
         "text-rotation-alignment": "viewport",
-        "text-size": 10
+        "text-size": 10,
+        "visibility": "none"
       },
       "paint": { "text-color": "hsl(0 0% 60%)" }
     },
@@ -2332,7 +2333,8 @@
         "text-field": "{ref}",
         "text-font": ["mplus2c-regular"],
         "text-rotation-alignment": "viewport",
-        "text-size": 10
+        "text-size": 10,
+        "visibility": "none"
       },
       "paint": { "text-color": "hsl(0 0% 60%)" }
     },
@@ -2363,7 +2365,8 @@
         "text-field": "{ref}",
         "text-font": ["mplus2c-regular"],
         "text-rotation-alignment": "viewport",
-        "text-size": 10
+        "text-size": 10,
+        "visibility": "none"
       },
       "paint": { "text-color": "hsl(0 0% 60%)" }
     },
