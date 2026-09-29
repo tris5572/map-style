@@ -4,9 +4,7 @@ MapLibre GL JS で使用する地図スタイルを提供するリポジトリ�
 
 ## 使い方
 
-MapLibre GL JS の `style` として、提供しているスタイルファイル(`JSON`)の URL を指定する。
-
-React で表示する例は、本リポジトリの [`src/` 以下](https://github.com/tris5572/map-style/tree/main/src)を参照。
+MapLibre GL JS の地図スタイル指定プロパティ `style` として、使用したいスタイルファイル `.json` の URL を指定する。
 
 ## 提供しているスタイル
 
@@ -16,7 +14,7 @@ React で表示する例は、本リポジトリの [`src/` 以下](https://gith
 
 <img width="400" alt="Image" src="https://github.com/user-attachments/assets/cebec66f-f2ea-4609-ad88-3dca46b1d10b" />
 
-暗い色のスタイル。
+暗い色合いのスタイル。
 
 `https://tris5572.github.io/map-style/dark/style.json`
 
@@ -24,9 +22,17 @@ React で表示する例は、本リポジトリの [`src/` 以下](https://gith
 
 <img width="400" alt="Image" src="https://github.com/user-attachments/assets/c9de2ad5-7ca2-40b2-9114-7976bd8d9022" />
 
-明るい色のスタイル。
+明るい色合いのスタイル。
 
 `https://tris5572.github.io/map-style/light/style.json`
+
+### Porcelain
+
+<img width="400" alt="Image" src="https://github.com/user-attachments/assets/ec314751-a842-403b-b114-a3144cd41e8c" />
+
+白ベースの落ち着いたスタイル。表示される情報を減らしているため、データを重ねる用途に使用しやすい。
+
+`https://tris5572.github.io/map-style/porcelain/style.json`
 
 ## モチベーション
 
