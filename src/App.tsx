@@ -1,10 +1,23 @@
 import { useCallback, useEffect, useState } from "react";
-import Map, { FullscreenControl, GeolocateControl, NavigationControl, ScaleControl } from "react-map-gl/maplibre";
+import Map, {
+  FullscreenControl,
+  GeolocateControl,
+  NavigationControl,
+  ScaleControl,
+  useMap,
+} from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./App.css";
 import type { InitialUrlState, MapView } from "./types";
 import { STYLES } from "./constants";
 import { parseInitialUrlState, updateUrlFromState } from "./urlState";
+
+/** window.map をブラウザのコンソールから型安全に参照できるようにする */
+declare global {
+  interface Window {
+    map?: ReturnType<typeof useMap>["current"];
+  }
+}
 
 /**
  * 地図本体とスタイル切替 UI を表示する。
@@ -43,6 +56,7 @@ export function App() {
   return (
     <div id="map">
       <Map initialViewState={initialUrlState.viewState} mapStyle={STYLES[selectedStyleIndex].json} onMove={handleMove}>
+        <ExposeMap />
         <ScaleControl />
         <NavigationControl />
         <FullscreenControl />
@@ -51,6 +65,52 @@ export function App() {
       <StyleSwitcher styleIndex={selectedStyleIndex} handleStyleChange={handleStyleChange} />
     </div>
   );
+}
+
+/**
+ * useMap で取得した地図参照をブラウザのコンソールから使えるようにする
+ *
+ * ブラウザのコンソールから `map` にアクセスすることで、データの調査が可能。
+ * 例えば以下のようにして、地図データに含まれる地名をフィルタリングしつつ一覧表示するようなことが可能となる。
+ *
+ * ```
+ * const features = map.querySourceFeatures("openmaptiles", {
+ *   sourceLayer: "place"
+ * });
+ * console.table(
+ *   features
+ *     .filter(f =>
+ *       /絞り込む地名/.test(
+ *         `${f.properties.name ?? ""}${f.properties["name:ja"] ?? ""}`
+ *       )
+ *     )
+ *     .map(f => ({
+ *       name: f.properties.name,
+ *       name_ja: f.properties["name:ja"],
+ *       class: f.properties.class,
+ *       rank: f.properties.rank,
+ *       capital: f.properties.capital
+ *     }))
+ * );
+ * ```
+ */
+function ExposeMap() {
+  const map = useMap().current;
+
+  useEffect(() => {
+    if (!map) {
+      return;
+    }
+
+    window.map = map;
+    return () => {
+      if (window.map === map) {
+        delete window.map;
+      }
+    };
+  }, [map]);
+
+  return null;
 }
 
 /**
